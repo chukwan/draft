@@ -1,117 +1,156 @@
-Prabaharan: we have it ready for us by September, October timeline. And by that time, if we are able to even link up to Microsoft with something like inhibitions, I'm just giving an example here. So these are features that we can enable as it's ready. So we don't have to do extensive discovery across to make all of these become available. So that's the intention, to break it down as much as possible so that we have . So I was thinking initially we try and break this discovery into four parts. One is all the data discovery that we're doing. Because one, there is a new ask as well, which is to link up with whatever work that's happened on CRM. Right? And then we are already doing an analysis of the current data with ODK, YC data to see how much of that we can leverage. Right? And the data team is already doing an assessment to see, I believe, what is not there in any of these gaps. Right? But I am feeling that this study is a critical study and also an exhausting one. Right? Two is we need to know our data management requirements, right? Which is what Connie is working on right now. This is UI requirements, how the solution is going to work, what kind of microservice we are going to trigger, and all of that. Right? So that's work in progress. But that also requires more time because there's dependency and all the other things that this also needs to be completed. Then we also need to have requirements to do it around workflow, which is already done. I think we are lifting, shifting, and I think it's going to be a baseline for the fine tuning it. And the last thing is obviously the AI stuff. Right? Now, to be honest, right, and I can be corrected here, right, this is an open discussion, the least amount of volumes AI touches, the better it is. Right? That should be our basic premise. Right? We don't want AI to touch us. Right? Because obviously there's an RTP element to AI. Right? So if we want to make AI touch every item, then what ends up happening is that we are going to increase our RTP cost naturally. And it's 1.5 times the current human cost involved. Right? So we have to be careful about simplifying and is reducing volumes as much as possible. And I think there's work happening there. And as we are moving forward, we are going to be able to have a more efficient and efficient AI. Right? So I think that's what we are looking for. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay.
+You are a solution architecture coding agent. Your task is to create a business-readable data integration diagram that shows integration patterns between data producers and data consumers.
 
-SPEAKER_03: Okay. call out to D-Supp, right?
+Primary goal:
+Produce a single-page diagram that clearly shows:
+- Data producers and consumers.
+- Integration paths between them.
+- Protocol used on each integration path, for example HTTPS, SFTP, FTP, MQ, file drop, API, event stream, and so on.
+- Whether each integration path is B2B (machine-to-machine) or S2B (staff-to-machine).
+- Whether the integration is batch, real-time, or both.
+- Relevant platform mediation points such as API Platform and DSP used for AuthN.
+- Grouping of systems by infrastructure or ownership domain, for example HSBC managed cloud, HSBC on-prem, HASE on-prem, Group Solution, vendor-hosted, or external partner.
 
-Daniel: Thanks. Sorry, I joined in late. Thanks for bringing that up. I think this pretty valid statement that we're going to need to figure out how much AI would help us because we cannot throw everything to it and expecting to come up with this result that we're expecting. So I think we're going to need to create some input that we're expecting and some output and sort of expecting, not just the format, but the context and how AI would help, whether there's any value add of AI to help on this task. Because when we are trying to fit all the data, of course it can return some data, but whether or not it will eventually help us on delivering what we need, I think that is still a question mark to me. So I think we can work out some sample input and sample output and that is expecting and whether or not we must use AI or any other tools that we can enable in order to make it work. I think so that is what I want to supplement on top of what I just said. Thank you.
+Key behavior:
+1. Before generating the diagram, inspect the available source materials if they exist. These may include a Mermaid diagram, Confluence-style markdown export, markdown file, architecture notes, or existing SVG.
+2. Infer as much as possible from the source content.
+3. If information is missing or uncertain, ask the user focused clarification questions.
+4. If the protocol, pattern type, hosting group, or integration mode cannot be determined from the materials, mark it as "TBC".
+5. Prefer clarity and completeness over artistic layout. The diagram does not need to fit 4:3, 16:10, or other presentation aspect ratios. Expand the canvas as needed so all labels remain readable on one page.
 
-Prabaharan: Makes sense. Thanks for that input.
+Clarification questions to ask the user before drawing:
+Ask these questions in a concise checklist format if the answers are not already explicit in the source materials:
 
-SPEAKER_04: So Janav, you rightly mentioned, right? In general, when we look at all AI initiatives across the ASEAN and more recently we take the approach of simplify, automate, and then at AI as the last layer. So we'll kind of, as you rightly mentioned, we'll take the same approach. And whether or not AI will work on something, I think that's one of the reasons why we do the POC. So during the POC we'll find out. But of course the last thing we want to do is to add AI where it doesn't belong. I mean if something can be done with a pure automation, just absolutely no reason. There is a reason to add AI. Awesome.
+A. API platform
+- Should API Platform be shown in the diagram?
+- If yes, should it be shown only for selected flows or as a standard mediation layer for all applicable API-based integrations?
 
-Prabaharan: It seems we are aligned. Only thing is we need to figure out how to kind of do that work breakdown structure because I'm assuming since the project is so complicated, we need to figure out the best way to manage this, right? Because right now I think we are doing a very extensive discovery, which we should do, right? But I think that's going to take time. So we need to figure out chunks that we can break down and deploy immediately to show releases, right? And that's what brings me to the next slide. I think some of us already went through this, but for the people who were not on the previous call, I'll quickly explain. Thinking, right? And this is by no means an architecture diagram, so please take it with a pinch of salt. I think we will try and convert this into an architecture diagram with the help of Kenny and the IT team. Sorry?
+B. DSP for authentication
+- Confirm whether DSP is required for S2B authentication flows.
+- Confirm whether DSP is required for B2B authentication flows.
+- If both are used, show them as separate security mediation points unless the user explicitly wants them combined.
 
-SPEAKER_03: Yeah, I lost. I wanted to check out the slides. So I decided to. Yeah. Cheers.
+C. Swimlanes
+- Do you want swimlanes in this diagram?
+- If yes, choose one swimlane strategy:
+  1. By organization or owner, for example HSBC, HASE, external party.
+  2. By hosting environment, for example managed cloud, on-prem, vendor, group platform.
+  3. By business domain or function, for example channels, integration, core systems, external partners.
+  4. By interaction type, for example producer side, integration layer, consumer side.
+- If the user is unsure, recommend the most suitable swimlane strategy based on the source materials and explain why in one sentence.
 
-Kenny: Okay.
+D. Missing flow metadata
+For each unclear integration point, ask only for the missing fields:
+- Producer system.
+- Consumer system.
+- Protocol.
+- B2B or S2B.
+- Batch, real-time, or both.
+- Whether API Platform is involved.
+- Whether DSP is involved.
+- Hosting/infrastructure group for each system.
 
-SPEAKER_03: Good.
+Recommended swimlane guidance:
+- Use swimlanes only when they help separate responsibility, ownership, or environment clearly.
+- For cross-organization integrations, suggest swimlanes by organization.
+- For many internal systems across different platforms, suggest swimlanes by hosting environment.
+- For diagrams focused on business journey and handoff, suggest swimlanes by domain or function.
+- Avoid too many lanes. Prefer 3 to 6 lanes maximum because excessive lanes reduce readability.
 
-Prabaharan: Sorry. So basically, if you know, yes, yes, yes. Okay.
+Diagram semantics:
+1. Each node represents one system only.
+2. Each connector represents one integration path between systems.
+3. Each connector must be labeled with:
+- Protocol, or "TBC" if unknown.
+- Pattern type: B2B or S2B, or "TBC" if unknown.
+- Optional short note for purpose, for example customer master sync, trade file upload, payment status query.
+4. Connector color must indicate integration mode:
+- Real-time = one color.
+- Batch = another color.
+- Both = third color.
+- Unknown = neutral gray and label "TBC" if required.
+5. Show legend in the top-left corner so the viewer can immediately interpret connector colors and any line styles.
+6. Group related systems in bounded areas or soft containers based on inferred or provided infrastructure domains.
+7. Keep group labels prominent, for example HSBC Managed Cloud, HSBC On-Prem, HASE On-Prem, Group Solution, External Partner.
+8. If a system belongs to an uncertain hosting domain, mark the group as "TBC" rather than guessing.
 
-SPEAKER_03: Thank you. Thank you.
+Business readability rules:
+- Use business-friendly system names where possible.
+- Avoid deep infrastructure detail such as ports, pod counts, cluster internals, or firewall hops unless explicitly requested.
+- Keep labels short and readable.
+- Minimize line crossings.
+- Prefer left-to-right flow from producers to consumers unless the source materials imply a better arrangement.
+- Keep consistent node sizes within the same category.
+- Wrap long labels across multiple lines rather than shrinking font too far.
+- Ensure every label remains readable at normal page zoom.
 
-Prabaharan: So I think I'll just quickly give an example. So today, there was a call from one, right? And we've been given some insight that there is a solution called CRM that has been delivered, right? So CRM you today uses, you know, kind of solve for some of the things that we want to solve through our team. And I mean, Laura and Ardhan has already done a review on this. And I think we strongly believe that there is so much of lift and shift that we can do from CRM already, right? It connects with some of the data stuff, it connects with some of the systems, it's doing some of the microservices we need to do, like the network analysis, right? Only thing is that it's not doing a direct data pool. I think you need to feed the data to the system. It's not doing a direct data pool. Right? But it is able to solve some of the problems that we want to solve through our team in the end. Right? So the basic premise is that we want to try our best to build a single product solution, right? That already leverages existing capability as much as possible, right, number one. And two, build incrementally, right? Solve a small, small problem, incrementally as we do, right? And not try to solve big problems from day one, right? Because certain things like I told you needs more time, right? So I've broken the overall products into four parts. One is we want to have like a unified UI for which we will trigger and see services, right? So for example, if I'm envisioning fraud, fraud will be a service. Under fraud, you will have a subservice like RTMM or ADCC, some other fraud journey, whatever, right? So through that, you can go into that respective journey. And if you want to visualize information, you can visualize information on your UI, right? And if you want to trigger a microservice or you want to act on something, you can act on it on that, through that UI or outside that UI, but you have to confirm that you've done something, right? So this UI is the only thing that your user will be referring to, right? And this will be centrally orchestrated through orchestration hub. I'm sure our solution architects are keeping orchestration hub as their core orchestration capability, right? And we want to make sure that we are building, you know, business rules into an orchestration capability that is touching all systems, all users, all components, right? We also want to make sure that there is standard workflow management performance built into it, and then monitoring analysis part, right? So. We want to build as many standard features as much as possible so that we can leverage, right? The third thing is the key part that will enable the automation and the innovation to happen for our journey, right? This is where we will probably introduce all the microservices that we need, right? Either if you want to retrieve data or retrieve documents we need from, you know, like federated search capability, or if you want to manage case management, auto-trigger, or if you want to do the network analysis automatically, which CRM has done today, right? These microservices will be built, right, as a configurable for reusable capability across, you know, all of our FCS portfolios, right? So, yeah, if you build once, you need to be able to reuse it, right? So if you need an RFI capability, you can literally retrieve it from the RF, so . You need to be able to . Right? We use the same thing, right? Maybe we have to configure the forms a little bit differently, but that can be done by the user. You don't need to again figure an IT request to consider a form, right? We should create it in such a way that it's something that we can send and . And then obviously the foundation for all of this is supposed to be your data and system integration, right? So we will have all the data and it's integrated as much as possible, and we are doing the analysis. So let's assume that for RTMN, we will integrate IHUB, OBS, and, you know, some other thing, right? And for CRMU, we are integrating data and so forth. I think all of these data integrations should be leverageable to that same infrastructure, right? And I think I was having a very good discussion with Lisa earlier. So even though you do a direct integration into the infrastructure, you have to sometimes do some parameter changes or nuances to make the data available for other virtual capabilities within the same platform, right? But that's going to be minimal cost for us, right? So that's the intention, right? We build once and we reduce our cost over time to make sure that the solution is scalable across multiple services that we want to add into the product, right? And then connect all the AI integrations that we have. We can do, you know, Google AI, the global AI capability, document intelligence, other . I just put . We can think about whatever we want to integrate. We can start with one, and then we can start including more into it as we go. And then all the system integrations, right? Fraud relies on and a few other systems, collections on and so forth. If someone decides that we have to keep fraud and collections as two different things, completely fine. Nothing will set in stone. It is just the initial . So you can always debate about what we don't need to have and and all of that. So completely fine. But the thought process is that at least for fraud, if you're looking at something like this, like a single product, right? We want to make sure that one system integrations are done and every time we introduce another service, not a fraud, right? We don't have to . We can integrate, right? We can push data into that based on what the requirement is. So yeah, so yeah. Yeah, as a single product, we are going to start building incrementally, right? So we do discoveries also incrementally, right? And then start solving for those problems. And then this is probably the ideal state we want to get to. But we will . And this is a two-year project, right? So most of this is . So yeah, so we can continue to support and . I'll post there. I'm sure there are questions from people who are not on previous calls or even from people who are on previous calls for the thinking that we might have done. We can talk about it.
+Output format:
+- Default to SVG.
+- If Mermaid is better suited to the source material or explicitly requested, output Mermaid.
+- If Mermaid cannot achieve the required readability, grouping, or connector styling, switch to SVG and say why briefly before generating it.
 
-Unknown: Yeah. That sounds good. That's why . So yeah, I think that's a good point.
+Layout rules:
+- Auto-size canvas to fit all content on one page.
+- Use generous whitespace between groups, nodes, and connectors.
+- Use orthogonal or gently curved connectors.
+- Keep the legend fixed in the top-left corner.
+- Place group containers before placing nodes.
+- Keep lane headers or group headers visually distinct.
+- If there are too many systems for one flat layout, cluster by domain and route cross-cluster links carefully.
 
-SPEAKER_03: I think that's a good point. I think that's a good point. Yeah. Yeah. Yeah. The point here is that your team is .
+Source analysis workflow:
+1. Parse the source material and extract:
+- Systems.
+- Producer/consumer relationships.
+- Protocols.
+- Interaction purpose.
+- Hosting or ownership domains.
+- Evidence of API Platform usage.
+- Evidence of DSP usage.
+- Any indication of batch or real-time behavior.
+2. Build a structured intermediate table with columns:
+- Producer
+- Consumer
+- Purpose
+- Protocol
+- PatternType
+- Mode
+- APIPlatformIncluded
+- DSPIncluded
+- ProducerGroup
+- ConsumerGroup
+- Confidence
+3. For unknown values, populate "TBC".
+4. Ask the user only the minimum set of questions needed to complete the diagram well.
+5. After clarification, generate the final diagram.
 
-Prabaharan: Well, does it make sense or are they just the ? Makes sense shut up.
+Legend requirements:
+Place a compact legend in the top-left corner with:
+- Connector color for batch.
+- Connector color for real-time.
+- Connector color for both.
+- Optional neutral/TBC connector style.
+- Any node fill coding if used.
+- Short note explaining B2B = machine-to-machine and S2B = staff-to-machine.
 
-Kenny: Okay, yeah especially supplement more, so actually I'm talking, I was talking and I'm talking with the CIMU team, okay, this morning and actually We have got some updates from them, like for the data part, where they have already done some great jobs, like they are already working with iHub and OmniBase to get the data. They are already in the computer development and will start the SAT and UAT. From their capabilities, we can see they already work out the transaction analysis and also the network analysis. They already build the data model, they already have the data points. So I think we can reuse. They also leverage the United FCR. We can see the data fabric. So they already raised the data visa to get the data from the single point of the data fabric. I think they also recommend we can work with them.
+Validation checklist before final output:
+- All systems are represented as nodes.
+- Every connector has protocol and pattern type shown, or TBC.
+- API Platform inclusion is shown where applicable.
+- DSP for S2B and DSP for B2B are shown separately if both are required.
+- Hosting groups are shown where known.
+- Legend is in the top-left corner.
+- No unreadably small text.
+- Canvas is expanded as needed.
+- Swimlanes are used only if they improve clarity.
+- The final output is suitable for business review.
 
-Unknown: If they already have the data, we can use it.
+If information is incomplete:
+- Do not invent facts.
+- Mark unknown values as TBC.
+- Ask targeted clarification questions before generating the final diagram.
 
-Kenny: If they already have the data, we can use it. They also apply the data visa for the data fabric for those data, like the transaction or network. And then we can reuse the data visa, but we just need to update our use case there. So yes, and in the layer, the microservice layer, and they already develop the transaction analysis. And the network analysis managed by me before. So I think we also can leverage their capability to see whether their capability can fulfill our requirement. If no, then we can copy you for the microservices. And in the orchestration layer, we can reuse or we can leverage OH capabilities. And for the my world special entry plan, we can like the hands and image. We can use the single entry point for the overflow. So as the . I talked with Jana this morning, and I said I believe this language makes sense. Okay. Yeah.
-
-Prabaharan: Can I add to that? Yes.
-
-Kenny: Yes.
-
-Prabaharan: And I think Kenny, like you suggested, you can use it. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes.
-
-Kenny: Yes.
-
-Prabaharan: Yeah, sounds like a plan. I think, yeah, it will be good. So the good part is, since Visa is confirmed that we will have the workflow, so that is this middle component, right? Not fully, but I think partially completed. I don't think all features are going to have, or is going to be ready, but at least BPM right to OH movement, right? So for our BPM, for both AMH and CASE, we should be able to have it completed by October, mid-October, which means that that's the timeline that we're looking at, right? I think there's a granular plan. We can discuss more on that when we have our working groups, right? I think I've sent it to Lisa. Lisa will review and validate it. I don't want to present it here right now, but I think that's the timeline. So we have some more life that we can definitely, we need to now figure out what are the additional incremental stuff that we can include into that, right? Because that will create a good base for us, right? There is going to be UI capability, there is going to be a workflow capability, and there is going to be a component that users can touch and trigger things, right? And see things. So I think it will be a good base for us to start making more things available for our users, right? And then we start incrementally working on this.
-
-Unknown: Thank you.
-
-SPEAKER_03: John, I just want to make a check about the part-and-pay microservices. So are these all applicable or feasible to deploy? Just to make sure that we present it. That's one.
-
-Prabaharan: Yeah, 100%. That's an ideal state, though. But I think most of them can, because we are doing narrative writing, we are doing RFI. We can, I've seen RFI automations. I've seen the missions already automated. Right. It's all on cloud. I mean, there was a go-live last weekend, a technical go-live, though. Yeah, sounds good. Yeah, so, yeah. I don't foresee any challenges.
-
-SPEAKER_03: Yeah, just afraid that in case maybe the business or the management asks for something, then eventually said, oh, we are not able to give you a participant that will be.
-
-Prabaharan: There will always, the point of contention, though, is there is always going to be certain microservices that can't actually implement the present automation, right? Okay. It's okay. It's okay. Right? Like, you can get 80% automation and still it's going to reduce the set costs, right? Yes, yes. For free users. And as you can see, I've kept three blocks of them, because this is just an example of it, right? I've taken only our team as an example. But the more journeys we introduce into the product, the more microservices we're going to find, and we want to see how much of that we can scale. So, you know, Ardnan and Laura as product owners can decide, right, okay, for this product,
-
-SPEAKER_03: the function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function function
-
-SPEAKER_04: got a list of microservices that all the sub teams need. And we asked them to provide their top five microservices so that that document is ready. If you want to see this story and even for presentations and stuff.
-
-Prabaharan: I think that's a service. I've said yes, but now what we can do is we can build that service structure that we were referring to in the morning. That's really speaking, right? How the services will break into sub services, right? And how they will connect to the . So we can build up. That can also be a base for a discovery work. And I don't think that's . End of the day, when we're defining a new orchestrator, we need to clearly define service for that product, right? How the product is going to break down in terms of services. So I think it would be good if we can redefine that and get it approved by the leadership so that we can use that as a base.
-
-Kenny: Yeah.
-
-Prabaharan: Any other thoughts, questions? Are we good with how we want to break down the structure? Yeah, I think if you have everything
-
-SPEAKER_03: .
-
-Prabaharan: OK, I'll take the silence as no concerns, right? Only thing is that I know we only have Daniel as the . Daniel, I'm assuming you don't have any contention on the proposal. Whether you see any challenges, feel free to raise it. Or we can also get into a call later and discuss, right? But just want to make sure that we're building something that we can scale and .
-
-Daniel: Thanks. Yeah, yeah. I'm working on the solution diagram. As mentioned in the team's chat, that I can profile a level one diagram by next Monday. But the details of the sequence, when and where the data is from and to, I think that still needs time to work out. But for Monday, I will work out a level one diagram so that we can at least understand how the system integrated. And I think that's the key to the solution. I think that's the key to the solution. I think that's the key to the solution. I think that's the key to the solution. But when and where they're integrated, I think we still need time to dig deeper into the integration between a system and the use case. I think that is what I'm trying to figure out.
-
-Prabaharan: Makes sense. Makes sense. But I think we'll be guided by you once we have the initial solution design. I think we can from there. I think it's . Just one quick question. So actually, I know that these are the solutions that you're
-
-SPEAKER_03: working on.
-
-SPEAKER_01: But I think that's the key to the solution. So the discovery is still in progress. Do we have the timeline by when we will have the target outcome?
-
-Prabaharan: Are you asking for overall discovery or the
-
-SPEAKER_01: At least for this year. So what we expected for the discovery and the AI use case? We need some other ones. We just do discovery. Yes.
-
-Prabaharan: No, I agree with you. The problem and that is the reason I'm asking for the discovery. The reason I kind of want to break this down as well because today, we are doing discovery, right? But we are doing a very, very extensive discovery, right? Which means my worry is that the discovery is going to run for a very long time, right? Because this is a very complicated space, right? We can't afford to have a six-month discovery. Let me put it that way. Because I'm thinking, right? Imagine I'm building an end-to-end product for a very complicated journey, right? It's going to have more than 200, 300 requirements if I'm envisioning that, right? Because I know complex journeys have that many requirements, right? And for us to get that requirement refined and well-built with the right logics confirmed is going to take a long time, right? So what I think we should try and do now is to figure out what should be our priority for this year. And we should kind of quickly decide that, right? Right. Okay. So we should decide which AI capability we are going to focus on for this year, not the entire AI, because we don't want to do too much of AI in the beginning, right? What we want to push for POC, what we want to deliver this year, right? Because something, some AI capabilities we might have already proven, so we don't need to prove again, right? And which of the microservices, automations we want to deliver this year, right? We just decide what we can control and deliver this year and just focus on that for this year. And continue the respective, the remaining discoveries to continue because it needs its time. I feel we shouldn't rush discovery. Doing discovery well is very important, right? So I think it needs a few more . Yeah, yeah, I understood.
-
-SPEAKER_01: Understood. So, Jenna, so what I ask is just, okay, I would like to understand, so by when we will have at least the prioritization for this year so that the team can move forward. So that the team can move on to the delivery. Yeah, let me do this.
-
-Prabaharan: I think I need to maybe figure out a shorter call with IT, right? And then brainstorm what we will exactly focus this year from a delivery standpoint. Let's choose the right AI capability, the right POC capability that we want to test. And then try to focus discovery on that. Maybe, yeah, I think it's an important question that Lisa is asking. And I think we need to make a decision on that very quickly. So align Lisa. So we'll try and see if you can get that answer to you as quick as possible. If you ask me today, I think today we don't have the answer to that. That's what I would say. I think we're still doing very extensive discovery. But we need to get to that as quick as possible. Sorry, sorry, I'm not listening. No, no.
-
-SPEAKER_04: So, Jana, from an AI point of view, this, for example, I'm just going to get our diagram. Our transaction analysis and there's another one called network analysis somewhere. These are already, right? So we can either see, we can directly reuse those AI components as is. If there is a slight difference in RTM and CRM. Right. And then the narrative writing part. These are some of the things that I generally think that we should be able to do because these are not super complex. Especially if the other things are already done. Sorry, sorry, go ahead.
-
-Kenny: Okay, so, actually, I also requested Alex, Isma, to conduct a demo for us for the transaction analysis and also the network analysis to see whether we can reuse or we can enhance their capability so i think we we don't need to uh go from scratch okay we can invest on their capability to see what we can deliver in this year if we can reuse their capabilities we can also work with those workflow automation then i think there will be a good result we are coming for this year so as uh please please also talk with uh uh uh talk with us okay well when they can come down demo to us so that we can see what we can achieve in this year for a quick win solution i think yeah i agree i think that call will be uh i think help us kind of understand getting aligned yeah yeah yeah so at least i will arrange your mission
-
-Prabaharan: he didn't he didn't mention i'm sorry yeah okay but i think one more thing can you before we close quickly right this innovation piece right that to be delivered for okay you said something that can squeeze in this year as well because i'm sure you can lift and shift this yeah sure sure
-
-Kenny: okay you know okay please yeah he's working for the account so we can we can get him involved to uh what we can uh shift also later use their project your pages super super i i think it's
-
-Prabaharan: yeah maybe i think it's a good idea that there's a reason why it down or put it down as to what people focus on and then what we've been trying to push against uh and then basis that thing
-
-Kenny: sure sure i think we can at this moment we can see uh we can reuse or call it compute some capabilities with uh some kind of inhibitions also obkyc and also cimu to achieve some targets for this year
-
-SPEAKER_04: the only point i would make is i i saw the alex had sent me an email on on the discussion that you guys have had i know crmu wants to build certain new things uh but but what we are trying to do here is the rtmm enhancements yes those might benefit crmu um as a as a like a knock-on effect that's fine but any additional bills for crmu will have to take it separately and then funding and all of that will have to come from a separate part because this rtmm falls on the falcon and crmu is not a part of the falcon funding so so any any funding related matters okay bring it up uh with jana and the team just so that it's aligned sure sure
-
-Kenny: so the function is the function is the function is the function is the function is the function function function function function function function function function function function
-
-SPEAKER_04: function function function function function function function function function function
-
-Unknown: function function function function function function function function function function
-
-Kenny: Because the funding is different.
-
-SPEAKER_04: Yeah, but we can find smart ways to benefit both, right? I mean, for me, I'm on both sides. So I'll benefit either way. But Chana will not be happy if he's not using his funding for RCR and new. Well, I'm normally a very generous guy, so I'm OK.
-
-Prabaharan: But yeah, but I thought, yeah, yeah. We want to be careful about our spending. This is a CTA program, so we have to be careful about what we spend about. OK, sure. Super. I think good discussion. Thank you so much. I know we are slightly over and it's late for the Hong Kong folks. I'll let you all go when we keep connecting. Thank you. Thank you. Thank you. Thank you.
-
-Kenny: Thank you.
-
-Unknown: Thank you.
+When responding:
+1. First provide a short summary of what was inferred from the source materials.
+2. Then list clarification questions, only if needed.
+3. Then provide the structured integration inventory table.
+4. Finally generate the diagram in SVG or Mermaid.
