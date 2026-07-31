@@ -1,156 +1,263 @@
-You are a solution architecture coding agent. Your task is to create a business-readable data integration diagram that shows integration patterns between data producers and data consumers.
+Jana: We're still having people join in. Let's give it a few more minutes.
 
-Primary goal:
-Produce a single-page diagram that clearly shows:
-- Data producers and consumers.
-- Integration paths between them.
-- Protocol used on each integration path, for example HTTPS, SFTP, FTP, MQ, file drop, API, event stream, and so on.
-- Whether each integration path is B2B (machine-to-machine) or S2B (staff-to-machine).
-- Whether the integration is batch, real-time, or both.
-- Relevant platform mediation points such as API Platform and DSP used for AuthN.
-- Grouping of systems by infrastructure or ownership domain, for example HSBC managed cloud, HSBC on-prem, HASE on-prem, Group Solution, vendor-hosted, or external partner.
+Jana: Connie, Laura will be joining, right?
 
-Key behavior:
-1. Before generating the diagram, inspect the available source materials if they exist. These may include a Mermaid diagram, Confluence-style markdown export, markdown file, architecture notes, or existing SVG.
-2. Infer as much as possible from the source content.
-3. If information is missing or uncertain, ask the user focused clarification questions.
-4. If the protocol, pattern type, hosting group, or integration mode cannot be determined from the materials, mark it as "TBC".
-5. Prefer clarity and completeness over artistic layout. The diagram does not need to fit 4:3, 16:10, or other presentation aspect ratios. Expand the canvas as needed so all labels remain readable on one page.
+Connie: Yeah, I think so. Maybe she got overrun or something.
 
-Clarification questions to ask the user before drawing:
-Ask these questions in a concise checklist format if the answers are not already explicit in the source materials:
+Jana: Sure, sure. Because I think one of you might have to take over the requirement. So let's just give it some time. She had accepted it. I think we have... Kenny has joined. Kenny, would you know if Lisa would join today or she's on leave?
 
-A. API platform
-- Should API Platform be shown in the diagram?
-- If yes, should it be shown only for selected flows or as a standard mediation layer for all applicable API-based integrations?
+Kenny: Lisa is in office today. Let me ask her.
 
-B. DSP for authentication
-- Confirm whether DSP is required for S2B authentication flows.
-- Confirm whether DSP is required for B2B authentication flows.
-- If both are used, show them as separate security mediation points unless the user explicitly wants them combined.
+Unknown: Okay. Sure, sure.
 
-C. Swimlanes
-- Do you want swimlanes in this diagram?
-- If yes, choose one swimlane strategy:
-  1. By organization or owner, for example HSBC, HASE, external party.
-  2. By hosting environment, for example managed cloud, on-prem, vendor, group platform.
-  3. By business domain or function, for example channels, integration, core systems, external partners.
-  4. By interaction type, for example producer side, integration layer, consumer side.
-- If the user is unsure, recommend the most suitable swimlane strategy based on the source materials and explain why in one sentence.
+Lisa: Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live
 
-D. Missing flow metadata
-For each unclear integration point, ask only for the missing fields:
-- Producer system.
-- Consumer system.
-- Protocol.
-- B2B or S2B.
-- Batch, real-time, or both.
-- Whether API Platform is involved.
-- Whether DSP is involved.
-- Hosting/infrastructure group for each system.
+Jana: Let me ping Laura and see. Or maybe I'll just invite her in.
 
-Recommended swimlane guidance:
-- Use swimlanes only when they help separate responsibility, ownership, or environment clearly.
-- For cross-organization integrations, suggest swimlanes by organization.
-- For many internal systems across different platforms, suggest swimlanes by hosting environment.
-- For diagrams focused on business journey and handoff, suggest swimlanes by domain or function.
-- Avoid too many lanes. Prefer 3 to 6 lanes maximum because excessive lanes reduce readability.
+Jana: Naveen, you're okay for us to start without QC, right? QC has accepted, but I'm assuming he's on another meeting. Yeah, he'll join in. He's being overrun from the previous. No worries, no worries.
 
-Diagram semantics:
-1. Each node represents one system only.
-2. Each connector represents one integration path between systems.
-3. Each connector must be labeled with:
-- Protocol, or "TBC" if unknown.
-- Pattern type: B2B or S2B, or "TBC" if unknown.
-- Optional short note for purpose, for example customer master sync, trade file upload, payment status query.
-4. Connector color must indicate integration mode:
-- Real-time = one color.
-- Batch = another color.
-- Both = third color.
-- Unknown = neutral gray and label "TBC" if required.
-5. Show legend in the top-left corner so the viewer can immediately interpret connector colors and any line styles.
-6. Group related systems in bounded areas or soft containers based on inferred or provided infrastructure domains.
-7. Keep group labels prominent, for example HSBC Managed Cloud, HSBC On-Prem, HASE On-Prem, Group Solution, External Partner.
-8. If a system belongs to an uncertain hosting domain, mark the group as "TBC" rather than guessing.
+Naveen: Hi, everyone. Sorry for joining late. Anand and I were stuck in another meeting. Realized, realized.
 
-Business readability rules:
-- Use business-friendly system names where possible.
-- Avoid deep infrastructure detail such as ports, pod counts, cluster internals, or firewall hops unless explicitly requested.
-- Keep labels short and readable.
-- Minimize line crossings.
-- Prefer left-to-right flow from producers to consumers unless the source materials imply a better arrangement.
-- Keep consistent node sizes within the same category.
-- Wrap long labels across multiple lines rather than shrinking font too far.
-- Ensure every label remains readable at normal page zoom.
+Jana: No, I think we would need either yourself or Connie to go through the requirements, Laura. But that's fine. I'll just quickly give some context now that we have almost all of us in. Yeah, I think it's just Anand and I think Lillian has accepted. Kenny, would you know if Lillian would be joining as well? Or... Yeah, I think Lillian would be joining as well.
 
-Output format:
-- Default to SVG.
-- If Mermaid is better suited to the source material or explicitly requested, output Mermaid.
-- If Mermaid cannot achieve the required readability, grouping, or connector styling, switch to SVG and say why briefly before generating it.
+Unknown: So we can make a start.
 
-Layout rules:
-- Auto-size canvas to fit all content on one page.
-- Use generous whitespace between groups, nodes, and connectors.
-- Use orthogonal or gently curved connectors.
-- Keep the legend fixed in the top-left corner.
-- Place group containers before placing nodes.
-- Keep lane headers or group headers visually distinct.
-- If there are too many systems for one flat layout, cluster by domain and route cross-cluster links carefully.
+Kenny: May I start first?
 
-Source analysis workflow:
-1. Parse the source material and extract:
-- Systems.
-- Producer/consumer relationships.
-- Protocols.
-- Interaction purpose.
-- Hosting or ownership domains.
-- Evidence of API Platform usage.
-- Evidence of DSP usage.
-- Any indication of batch or real-time behavior.
-2. Build a structured intermediate table with columns:
-- Producer
-- Consumer
-- Purpose
-- Protocol
-- PatternType
-- Mode
-- APIPlatformIncluded
-- DSPIncluded
-- ProducerGroup
-- ConsumerGroup
-- Confidence
-3. For unknown values, populate "TBC".
-4. Ask the user only the minimum set of questions needed to complete the diagram well.
-5. After clarification, generate the final diagram.
+Jana: Sure, sure, sure. I think we wanted to have a quick session to go through the requirements that these are high level again, right? Like I told during our working group, we might have to double click and triple click on these requirements to get into a little bit more detail. But at least we want to understand what we want to achieve, right? And kind of scope out, right, what will be our immediate priorities and see where we want to kind of double click and go in. And as discussed during our working group, we want to keep MVP, you know, focused on the case management capability, building the case management side. And to get limited data integration done, right? Because there's the time crunch and there's a lot of work to be done even to get that completed, right? So we wanted to be very careful about what we are committing on. But... But nothing stops, right? We continue to do our discovery. We continue to fine tune our requirements, right? And we will have further VP releases planned on integrating further requirements and, you know, the data integrations that we want to do. This will allow us to kind of get together as a team and see, you know, what the overall journey looks like. Yeah. And, you know, see if there's any further inclusions that we have to do. Yeah. And, you know, the inclusions that we have to do from a requirement standpoint as well that we missed out on the high level piece. So, yeah, I think keeping that as initial context, I'll probably hand it over to Laura if you want to bring up the... And Connie to bring up the sheet and take us through.
 
-Legend requirements:
-Place a compact legend in the top-left corner with:
-- Connector color for batch.
-- Connector color for real-time.
-- Connector color for both.
-- Optional neutral/TBC connector style.
-- Any node fill coding if used.
-- Short note explaining B2B = machine-to-machine and S2B = staff-to-machine.
+Jana: Yeah.
 
-Validation checklist before final output:
-- All systems are represented as nodes.
-- Every connector has protocol and pattern type shown, or TBC.
-- API Platform inclusion is shown where applicable.
-- DSP for S2B and DSP for B2B are shown separately if both are required.
-- Hosting groups are shown where known.
-- Legend is in the top-left corner.
-- No unreadably small text.
-- Canvas is expanded as needed.
-- Swimlanes are used only if they improve clarity.
-- The final output is suitable for business review.
+Naveen: All right. All right. Sure.
 
-If information is incomplete:
-- Do not invent facts.
-- Mark unknown values as TBC.
-- Ask targeted clarification questions before generating the final diagram.
+Unknown: Let me start.
 
-When responding:
-1. First provide a short summary of what was inferred from the source materials.
-2. Then list clarification questions, only if needed.
-3. Then provide the structured integration inventory table.
-4. Finally generate the diagram in SVG or Mermaid.
+Naveen: Please let me know when you can see my screen. Okay.
+
+Unknown: All right.
+
+Naveen: Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live Live this broken up by stages and maybe we can start at the very beginning and work our way through. So the first stage here would be trigger creation, trigger capture, which is something that has some ongoing work from the DNA side. And I think one of the open actions for us would be, us meaning myself and Adnan, would be to get a bit of clarity about progress there. We are expecting an update in about a week because they are still also in discovery on that side and get an understanding of how to incorporate ACE triggers as well. But the kind of ideal state we're thinking about is that all the different sources for trigger alerts will be consolidated, deduplicated, and put through the DNA side of the process. And so I think that's a good start. So right now, all of this is being done manually. And at least on the AMH side, the efforts by the DNA team are to automate this according to specific rules and logic. And as we continue our discovery, I'm sure we'll find appropriate same steps for HACE side as well. But from the workflow perspective, essentially, the trigger action will be the same as the trigger action. So we have a set of three steps that we have set out for the DNA side.
+
+Unknown: So we have a set of three steps that we have set out for the DNA side.
+
+Naveen: So we have a set of three steps that we have set out for the DNA side. And you'll notice with every stage, I've tried to include an automated action where the system can capture information from start to finish about the journey of a trigger, any kinds of inputs from a data perspective, or any kinds of process. So be that data cleaning that is done or any actions that a user makes. One of the things we were thinking about would be to have steps where the system captures all of that information into a single audit log. This is both to replace the current need for screen capture, but also just to help with documentation and transparency from a governance perspective moving forward. So, thank you.
+
+Unknown: Thank you.
+
+Naveen: Thank you. So, in this case, right, we were thinking about certain metadata linked to the triggers. So that could include where the trigger source is, when it was alerted, information that would be needed to kickstart a case. So customer ID, typology information for each alert. So all of this would be captured as part of the trigger consolidation, stored in an audit log, and then carried forward to the next stage. I've also got a sort of gate in a way where if there are certain fields missing from a metadata perspective that could be flagged for human review, or it could be basically flagged for exception handling by human review. And once all of those triggers are consolidated and you- you take transaction and event level triggers and consolidate them into single customer level case objects, we'll need to introduce a way of orchestrating those cases, right? So that can come from, we can think about those steps first in terms of prioritization. So right now, at least for RTMM and Hayes team, please let me know if there's any difference there for your team. But on the AMH side, the DNA team, I think, already has certain rules or logic that help with the compiling of a priority list for cases. So there is an Excel in the current state with a full list of cases that need to be done, and those get manually assigned. So in speaking with Pallavi, at least one of the ideas that was floated was for there to be a sort of similar prioritization list. So that would be put together and our workflow, so be it through OH or basically the system we're working with, would ingest that priority list and then assign cases to whatever resources are available. So the way we're thinking about this is, I have some comments here. Okay. So the idea would be that basically whoever is available will get the cases auto-assigned to them via the system. But admin users would be able to have a full view of what cases have been assigned to whom so that if there are any changes in resources, such as people taking sick leave, then those cases can be manually reassigned. And of course at every stage, it would be great if we it would be great if we can have a record of all these orchestration outcomes as part of the audit trail. And once those cases are assigned, any kind of case creation record within the case management system that we're working with would be automated as well. I'll stop you first for any questions or comments.
+
+Lisa: Rona, the first question regarding the first row talking about the triggering. Are we expecting the system integration in MVP1 scope or just menu creation? This is part of MVP scope. Part of MVP scope means menu creation?
+
+Naveen: Sorry, Lisa, to understand your question. When we're talking about the trigger data.
+
+Lisa: Coming from a FISA, EDM or PMP, such kind of the system. Right now, as is, this kind of the triggering data will menu capture by the RDMM team and then upload into our existing workflow system to trigger the case create. And in the to be MVP1 scope, I would like to clarify, we expected the system integration from, for example, FISA to OH directly. Or we still need the RDMM team to menu capture those kind of data. So we're not expecting that.
+
+Unknown: So we're not expecting that. So we're not expecting that.
+
+Naveen: So we're not expecting that. Ideally, there should be a connection. So there would be no need for manual uploading of such a list. I understand that there is an open question about where the case list will come from and what that will look like. I think that is because discussions are ongoing in terms of the trigger consolidation efforts by the DNA team. So we've asked about this and we don't have clarity. We don't have clarity yet as to what their consolidated outcome will be. But that's something that we have raised, Adnan and I have raised. And we're hoping for an update in about a week to understand what the plan will be. But the idea is, I think once this priority list is constructed, then that can feed directly into our solution. Adnan, does that matter? Does that match your understanding as well?
+
+Adnan: Yes. So thanks, Laura. I think what I would say, Lisa, is ideally there should be no manual upload. We should find a way to get these triggers either directly from FeedSci or whatever. But I think there is work that's happening that DNA does in the middle in the form of a Qlik Sense dashboard or somewhere that we can pull these alerts from. So I think that's a discussion that we'll need to have at some point with DNA. But we should find a way to pull the cases directly from the dashboards.
+
+Kenny: Yes. So I'm thinking whether there's any timeline for DNA for the automation. Okay. Check the case trigger. So maybe we need to discuss whether this can be included in our MVP1.
+
+Adnan: So September, Kenny. They will do that. Okay. Yeah. They will complete their work in September. But I think we might have to discuss with your team and DNA team to understand what exactly you need for them to expose. Like, for example, do they need to expose some kind of API? What sort of information IT needs so that we can all discuss and re-agree on the timelines?
+
+Kenny: Yeah.
+
+Lisa: Okay. Yeah. And we need a time boss on this action. I would like to highlight that by September. Yeah. So we have to have a target to have the outcome. Okay. What we need from the IT team and what's the system capability between FISA or OH, whether any integration point is there or API is there. Upon that time, we will make a decision whether this to be in our MVP1 or we can accept manually in MVP1.
+
+Adnan: Right? Okay. So Lisa, can I? Sorry. Sorry. Go ahead. Go ahead. I have just a quick question.
+
+Unknown: If this information is available in a BigQuery or a
+
+Adnan: Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay.
+
+Lisa: understand. You mean those kind of the full list available?
+
+Lilian: So I believe that that is, well, if it is a dashboard, maybe it's already in a presentation mode, which I thought if it can be, you know, achieved by the system. Probably, let's see, but what kind of dashboard it is, is it a conference page or? No, no, like a BigQuery. Well, if it is BigQuery, so probably we should be able to get that as soon as we have the access to the view. And, and yeah, that should be pretty more feasible.
+
+Adnan: Okay, let's pick this up at DNA to agree and set concrete timelines.
+
+Jana: I just have a quick question though, like if, because there is a time issue here, right? The DNA team is working on something and we, that can become a dependency tomorrow. And we need to have plan B as well, right? So today, the BPM integration, what's the current source for that? And how is that integration happening? So they don't have, sorry, go ahead.
+
+Naveen: There's no integration for that at the moment. It's just a manual upload. So they have one Excel sheet and then everything, it's not even an upload actually. They have an Excel sheet. Right. And then I think the, there are managers who manually assign cases accordingly. Oh, okay. Okay. I think we have.
+
+Kenny: So I'm thinking apart from the automation trigger, okay. We will still remain, the manual upload or manual case creation feature?
+
+Naveen: Ideally, no.
+
+Lisa: That will be plan B, I would suggest, Rora. Because plan A, we still have the dependency. Yeah.
+
+Kenny: You need to consider this, I believe.
+
+Adnan: Yeah, backup would be good to have. So right now what DNA does is they do this case prioritization and they provide an Excel to the team lead and team lead uploads it to BPM. BPM light. So if you think about it logically that whatever DNA does, they download that Excel from a dashboard already. So we should find a way to connect that dashboard directly into the work that we are doing. But let's have a discussion with the DNA teams so that we are assuming here, let's agree with them.
+
+Jana: I think we have to take an action to have that connect, right. Basically get the IT team also and DNA team together. Yeah.
+
+Adnan: Yeah.
+
+Kenny: Yeah, we also need to know more about what they decide for their, okay, so that we can start earlier to what we've done for the integration. Okay.
+
+Naveen: Thanks. Any other questions or comments in the meantime? Okay. If not, I'll continue. So once the cases are assigned, the next step would be for the reviewer to click into it, right. And in terms of what the reviewer can see, in terms of the cases that have landed in their individual queue, one would be how much time is left for a case because case closure, there are SLA periods. Okay. For case closure. So one of the requirements would be for the remaining time left for a particular case to be clearly viewable, One of the other things that would have to be recorded then would be, you know, once basically the timestamp for when a case lands in an individual reviewer's queue. So basically when the clock starts ticking, right? And also other aspects of case handling. So points of case closure, for example, or as I'll discuss later, if a request for information RFI is launched, then the timestamps for those, those will also have to be system recorded as part of the case handling, which will support performance level monitoring down the line. So now that the case has landed in the case queue, the reviewer will begin work. So one of the... One of the automated things as part of the case creation is that once the case can be reviewed, there should already be trigger metadata, as we talked about before, that will allow the reviewer to have an immediate view of the typology or theme and other information about the alert. So, for example, like what the alert has... What the alert has been about, what is the theme. Right now, I think BPM captures this information for a lot of the sources, but there are certain ones like EDM where reviewers still have to go back to the source to check themselves. So the idea here is that for every trigger source, there should be no need for the reviewer to make that extra step and go back to the source for that information. So in this case, everything is automated. The only thing that's going to happen is that the source will be automatically updated. So in this case, everything is automated. The only thing that's going to happen is that the source will be automatically updated. So the only human action would be to essentially confirm what the case alert is about and whether they have enough information to begin review. And if there are any incomplete steps, I'm wondering if there are any gaps in the trigger specifics. This is something we can discuss further, but maybe especially in the early stages of... I'm wondering if it would be good to have a button that allows the reviewer to mark if information is incomplete before proceeding with next steps. But essentially, at this point, the reviewer has reviewed the alert information. And once they click into that case, in the background, the system will change the status of this case from an open case to work. And once they click into that case, the system will change the status of this case from an open case to work. So this is something that's going to happen in progress. And all of this becomes part of the audit log. The next thing to happen is automating what is currently a manual step. So right now, with case reviews, one of the first steps would be to check something called a CDS code, which is... So there are specific CDS codes that will determine whether a case... So there are specific CDS codes that will determine whether a case... So there are specific CDS codes that will determine whether a case... can be immediately closed. So situations, for example, where a customer is already part of an ongoing but separate financial crime investigation, or if the customer has already been scheduled for exit for other reasons, these are examples where the RTMM reviewer does not have to proceed and can automatically close the case. So all of that checking and decision-making is done manually at the moment. But... But in our 2B state, this will all be automated. And where certain codes dictate specific actions, for example, if a customer has a CDS code that says CMUC or CMUF, that means they've been subject to previous RTMM reviews. So right now, that means that a reviewer will have to manually look up the review history in BPM Lite. But we could set up a list of rules where the system... will know if they see a certain CDS code, then other information will have to be pulled to form part of the case review. Is everything clear for now? Okay. If no questions or comments, I'll continue. So at this stage, we've got a good combination of traditional automation and AI. Everything up to this point has been traditional automation or human review. But this would be the first time AI comes in. What we're thinking about is using AI to provide a summary of the CDS code. And where additional information needs to be extracted based on that code, we could have an AI-generated summary of that information. So in this case, that could be prior investigation history, prior RTMM review history, and an explanation of next steps, right? Okay. So given that these various CDS codes can affect case handling or routing, based on what's extracted, based on the CDS code, there could be an AI-generated recommendation about what to do next. So, for example, this could be a decision to close the case, or if the case is... This is a CDS code DUPC. This means that... I think a customer has various... In a nutshell, they have various profiles in the system. So if there is any information that suggests a case needs to be merged with another one, etc., these are all rules that we can get better clarity at a lower level later. But that would be one of the AI functions here. And of course, we would have a human in the loop here, where if any of these codes... appear, it would be up to the human reviewer to decide whether something needs exceptional handling. And finally, in proceeding to the next step, all of this would be recorded by the system. So far, so clear?
+
+Daniel: Hi, Nora. It's Daniel. Yes. Yes. One thing I wanted to clarify is when you're speaking about merging, right? Merging from one case to another, meaning that we're going to need to provide either the recent or the related case that... or transaction that come with this particular suspicious case. So what to make that happen? Of course, there's several ways to make them happen. But I just want to know, you know, whether the AI or either the OH could receive this case from, because there could be ongoing case and closed case, right? So whether, you know, any of the case that we are looking at, that the AI is looking at right now could be merged to an existing case that hasn't been closed or can only be merged to a, you know, closed case, right? There is something that we're going to need to figure that out in order to find out, you know, where we get the data point. I think the merge one is a little bit... a little bit tricky compared to the, you know, other cases because, you know, merging that could... that could be a bigger range, right? Because, as I said, it could be merged to a previous case or closed case or even the case that happened like two years ago, right? So I think that that's something that I think I need... that there's more method to be to be inject in order to find out, you know, have the AI to propose, you know, this case can be merged with something else. You know, some case in some other area. I think that is what I wanted to highlight.
+
+Naveen: Thanks, Daniel. I think that's a good point. When I put this down, it was more from like a high level ideation. And well, you know, part of the purpose of this call, right, is also to get feedback from both business and tech. So good point on merging, whether that's from a case handling perspective or from like a historical context perspective. So in terms of case handling, let me let me do a little bit more fact finding on that. But to your point, Daniel, about previous case history. So, for example, if a customer has been subject to previous review and that was closed with, say, no financial crime concern found at the time, you know, one of the things that... one of the reasons why a case reviewer would need to look at investigation history right now would be that if a customer keeps getting alerted for similar behavior, what could be discounted in the first instance may form a broader pattern that with additional information now is suggestive of higher risk. Right. So we'll discuss this a little bit further later from a case review as we talk more about case review. But I think the data points for that we've included in our data points list right now, but at a high level, right, that would include things like UCM information on past past investigations and it would include information from from what currently BPM about past reviews. So maybe one of the things we'll have to think about when when migrating things from BPM to OH and my workspace would be how we would also how we would allow you to be able to use the data points that we've included in our data points list right now. So we could allow users of the new interface to access archived histories of closed cases logged on BPM.
+
+Daniel: Yeah. Yeah. Thank you. Because, you know, AI doesn't have any stage, right? It doesn't have any memory, right? So in order for us to look for additional or existing case or past case, right, then then we could enable it to access to, you know, a database when needed. But that is... At the current moment that to have AI to directly access to a database is forbidden right now. It cannot be done right now because of the concern of whether AI could, you know, receive more case than we need, right? So that's why if we're going to need to have AI to explore or to, you know, to find case that is enclosed or in the other source, then we have to, you know, make sure that we get the right data, but not, you know, the data that is not in the database. So that's why if we're going to need to have AI to explore or to find case that is enclosed or in the other source, then we have to make sure that we get the right data, but not, you know, the data that is not in the database. Basically, we don't allow it to explore many, many cases, many, many data points. So I think I think that's something that we have to put into data design. But Daniel, can we reverse engineer?
+
+Jana: I mean, this point, I see it in two parts, right? One is and keep me corrected here, Laura, right? One is you want to merge the case based on past history so that there is... So that's one step, right? Step one is just to merge it, right? We don't want to use any information or anything like that. Part two is because there's history, we want to see if we can leverage that history and make anything meaningful out of that, right? That's part two, right? And when it comes to part two is where I think we are having concerns here, right? Again, keep me corrected here if I'm following quite well. Now, Daniel, you're saying that if we are going to go and retrieve data, right, then it's a problem because we might retrieve more than what we need, right? But what can't... Why can't we just... Why can't we just make data available based on the past history and then that way you're reinforcing the data that's available to the AI, right? Like you just give all this much of information. Yeah, I mean, I think in general with these AI solutions, we're just sending data to the AI.
+
+Kari: We're not asking the AI to browse through databases, right?
+
+Jana: Like someone needs to make the decision what is relevant data and then send that to the AI.
+
+Kari: Correct.
+
+Kenny: Yeah, I'm thinking that AI can make data. Yeah, I'm thinking that AI can make data. So, we can make a decision to see whether you need to retrieve data. And maybe we will have some API or tools for the AI, for the agent to retrieve the relevant data. Yeah, that's... No, no, no, no, no. Kenny, Kenny, no, no, no, not agent to retrieve data.
+
+Lilian: So, based on developing on Daniel's point, so probably we got to have two kinds of automation. One is agent, which, you know, generates things, new things. Yeah. The other thing is rule-based kind of actions. Yeah.
+
+Kenny: And so, that is why we want to separate the two.
+
+Lilian: And to mitigate the risk, yeah, that Daniel has mentioned.
+
+Kenny: Yes, I mean that we can add some tools or MCB services, etc. So that we can reuse to for retrieve the data. This is not... AI cannot access the database directly, I believe.
+
+Jana: Yeah, that's true. That's... Not our intention as well, right? So, yeah. But I think point one also we can deliver, right? Because merging the cases, we might find common data points of a customer. And we should be able to use that to... I don't think we need AI to that, right? That's a straightforward rule-based mapping. Yeah, exactly.
+
+Lilian: Yeah, exactly. Not everything AI. So, yeah, because it's not very imaginative kind of action. I'm not sure.
+
+Kenny: Yeah. Yeah, I'm thinking for some steps that is AI. Okay. If we can do it in rule-based, then I'm thinking we don't need to use AI. If some rules can see, okay, from specific condition, then we can do some follow-up actions, then I don't think that we need to leverage AI capabilities. So, we need to... I think we need to do a check for the details for these requirements to see whether we need to use AI or use the rule-based can solve the problem.
+
+Naveen: I have a quick question for Steffi and Kelvin, just to make sure my understanding is correct. So, right now, right, we've talked about cases that should either be auto-closed, escalated for further review or potentially merged. Are there situations at this stage where in... Like, are there... Are there... Are there... Are there... Are there... Sample cases need to be clubbed together at this stage after checking CDS code or looking through triggers?
+
+Kelvin: Yeah, I'm sorry, Laura. There is some interaction between your... Just now. Some breakups.
+
+Naveen: Sorry, can you hear me now?
+
+Kelvin: Yeah, yes, yes. Okay.
+
+Naveen: So, at the beginning of a case, when the reviewer is looking through CDS codes and other trigger-related information... Are there instances where cases will get clubbed together at this stage? Customer-level cases.
+
+Kelvin: I don't think so. Because if, like, for example, like three sizes, it will appears like a transactional base. Then we will combine all together as one case on the customer level. Normally, it is quite weird cases that there will be two triggers for different customer level cases. Maybe kind of like see if Steffi will have any supplement from the image side.
+
+Connie: I'm thinking maybe Laura is to want to clarify like a duplicate alert, like the customer alert from FISA and also from EMP or EDM.
+
+Unknown: Right?
+
+Connie: Now, we will consider the risk to see if the duplication is necessary. If yes, we will combine into one case for review. Yeah. So but I'm... Okay. Okay. I think I'm just I'm thinking in under some situation, maybe, for example, the customer last week alert from FISA and then maybe already complete review as to escalate to II, etc. All still under review, work in progress. And then this week, a new review for P&D. Then in those situations, does that currently become manually grouped together in one case?
+
+Naveen: Yeah.
+
+Connie: Yes.
+
+Unknown: Okay.
+
+Naveen: So maybe that will be an example of something to think about where if a new alert gets created, then the system will need to know how to feed that new alert into an existing case rather than treating it as a new case.
+
+Unknown: Yes.
+
+Naveen: And that's the thing. I think that's the key. Yeah.
+
+Unknown: Yeah.
+
+Naveen: Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah.
+
+Connie: Yeah. to decide to take the priority for the review which alert. I think this is we need to maybe considering more about the alert.
+
+Kenny: So is there any rule base can determine whether it's a new alert or a duplicate alert? If for such case, I believe there are any rules. Because you see the same customer or I'm not sure.
+
+Connie: But Laura, I think we can offline discuss this for more between for HACE and also AMH. I think the handling may be different. I'm not sure.
+
+Naveen: Okay, understand. But right now, Steffi, when you were mentioning that with a new alert, prioritization would need to be considered. But if the customer is already under review, would there still be prioritization considerations or for the at the alert level or the trigger level or will it be automatically combined?
+
+Connie: I think will be combined.
+
+Naveen: Okay. So we can I guess we can chat offline just to understand the logic a little better. I've made a note here. Okay, thank you. Any other questions at this at this point? Or comments for this stage? Okay. If not, then we can move on to the meat of case review. So one of the things we'd like to happen is that once a case is created, the system will already pull all of the relevant. Data points together. So right now, case reviewers have to manually go into all of these different systems and look up relevant information system by system for customer profile data, transaction data, network analysis, etc. But as part of our data integration efforts, ideally in this to be state, as soon as the case is opened, all of that information will be extracted in the data. So we can do that. Okay. So that's one reason that we're thinking about that. So one reason is that one reason is that one reason is that one reason is that one reason So this row here describes that background step where the information will be gathered and presented in a format that we can discuss further at a more low level. But that's the idea. And sorry, this is inaccurate. So this will all be traditional automation. Then the data will also be via automation standardized or cleaned. So, for example, transaction data currently gets fed through a macro to produce pivot tables or so that certain columns that aren't usually looked at get deleted, etc. So I'm sure. We can come up with a set of rules just to indicate how the data should be handled or presented. But all of this should be happening in the background so that it's already by the time the case review begins. Then the next few sections I'm thinking of as sections of a report, essentially. So the first part would be an executive summary that would include. Initially a provisional outcome recommendation and rationale for that recommendation with a summary of supporting evidence across the different categories of customer profile, transaction analysis, network analysis, etc. So the feedback we've received from Alavi is that there is appetite for outcome recommendations. If we if you know, as long as they're presented. If we're thinking about outcomes that are not yet yet considered. If we're thinking about outcomes that are not yet yet considered. decision, but if it's presented as like a recommendation for consideration, that is okay. So at this point, right, this would sort of be like an initial view or initial analysis by the AI presented in the form of an executive summary. So this would allow the reviewer from the start to kind of get a sense of what they're looking at. And the kind of human of the loop here is just to read that and get a sense of what's to come. Then we would have separate sections based on the category of information, right? So there would be one section on customer profile information, one section on transaction information, one on prior and one network analysis. And where appropriate, so this goes back to the CDS code. So this is a separate section in the report. And the idea is that this will all be a combination of traditional automation, AI and human review. So this would be a separate section in the report. So traditional automation would be to, at a system level in the background, collect all the input data, any kind of processing that's happened to that data and any reviewer interaction with the information. And the job of AI here would be to generate summaries of the data, as well as provide a risk analysis. So that is a separate section. subjective reasoning because that's currently how case reviewers look at information to begin with. So just taking the CRMU solution as an example, and Kari please correct me if I'm wrong, it seems like their solution is very heavily rules-based but in the case of RTMM there's more appetite for the AI to provide maybe like a subjective analysis rather than everything being deterministic and rule-driven. I think that depends a little bit on which part it is.
+
+Kari: It's quite deterministic for the network analysis for sure, but I also think that's going to be a part that's going to be quite difficult for the AI to work with because the data is massive, right? And there's a limit of how much data you can get. So you can give to the AI in a way. A transactional analysis is more directly done by the AI, but you're right, there is a guidance where they're saying these are the patterns in general that we want to look for. I think that's in general quite helpful for us if you want to do an AI solution. I think it's going to be difficult if the request is just give the data to AI and ask it to come up with a suggestion. Generally what we want to do is distill kind of-
+
+Unknown: D-
+
+Kari: ways of working today into the ai so that so that we're not trying to come up with some new way of it of it doing the analysis but rather having it do what's already being done today in a way but just making it scalable so that it's it's it's done faster and it can be done at scale as opposed to having to you know have a human do it every single time so so i i just want to highlight that is that i i do think we need if not rules we need guidance like i i i don't think we want to have the requirement be have ai look at it and tell us if it's good or not in a way like it needs to be kind of detailed in the sense that we need to understand what we're looking for we need to understand like what are the patterns what are the behaviors what's good what's bad what is what is the ai supposed to look for and and crmu has a lot of those risk patterns where they're telling us you know this is this general behavior would be indicative of some specific potential financial crime or some potential um concerning behavior or the opposite they also have examples of behavior that would indicate that everything is actually okay with this customer that this is like a discounting discounting pattern in a way so they have a little bit of both and we ask the ai to kind of look for those in uh in a way that would be difficult for a human to look through like you know 2 000 transactions the ai could look through that quite easily and find those patterns but we still have that kind of guidance so so that that all makes sense um and and i think they've done a like a really incredible
+
+Naveen: job with um determining what risk scenarios like what risk scenarios what um what's the word uh like essentially like negating factors could also look like but um just from from my layman view i it would be helpful to understand um how those can help inform an ai to make its own judgment right
+
+Daniel: like my concern would be for example yes yeah i think that's right daniel yeah i think that's part of the poc work right my idea is that uh we could uh give the air some kind of guy boat or you know you know all the procedures that what we have been doing right now manually and then kind of outright i would then transform into some kind of problem or you know in my term is agent skills for for it to understand you know how things are getting done right now where to get the the data and what's expected outcome what's the considered point and things like that and then and then any other reference artifacts that are involved in that case that's what i think is a consider point and things like that and then any other reference artifact or other things that the agents or you know the ai needs to look right i think that is the part of the poc uh work that we will prepare and so that when when you know when when with the use with the user ai with the data along with you know the guidebook then then we can kind of understand how the ai will work and how we can adjust you know the the problem or the data in order for is to you know come up with a better result i think that is what we will do in the poc phase
+
+Kari: that's fair but the poc needs to have like a clear goal right like like what what is it that we want to test in the poc so so it i don't think we can say we want to see if the ai can tell us if it's if it's a mule account or not it needs to be more specific than that um so carrie the the question i
+
+Naveen: was going to ask was um right so currently a case reviewer wouldn't necessarily have a hard and fast set of rules and certainly no checklist in terms of determining what is or isn't risky right or what what is or isn't suspicious and often high risk we have a list of high risk indicators that i know is common with crmu as well but that is definitely just a guidance not a checklist right so for example you know a customer being unemployed could be indicative of um meal risk but that doesn't mean that everyone who is unemployed is a money mule it's usually you know like unemployment plus a number of other factors. But that combination of factors, like there is no rule for that. There is no checklist. That comes down to human decision. So my question is, would an AI solution be able to take multiple variables like that into consideration and come up with a recommendation that makes sense? And if so, what kind of input would we need? What would the form factor be?
+
+Kari: I would be hesitant to say that just give it the input and give it the expected outcome and ask it to figure it out. Sorry, input in terms of what kind of guidelines
+
+Naveen: or frameworks or rules or whatever would we need to give for any kind of prompt to be effective or any kind of analysis to be effective? Usually what we would do is
+
+Kari: we kind of do this kind of distilling work. It's like we're kind of trying to figure out how it does, because I agree with you. It's probably not set rules, right? But I would expect if you look at how the case managers work, there is a pattern to it. There are specific things that they look for. There is behaviors they look for. And of course, that can differ from case to case. And there might be something unique about some cases that they might not capture before. But I would assume that there is specific patterns that they're looking for. And like their experience tells them what is and isn't suspicious, right? And what is and isn't, you know, like a completely fine looking customer. And I think that knowledge kind of needs to be distilled into the prompt and into the instructions that we give to the AI. And it's of course, in an ideal world, you know, it is just all in an Excel and we have all this information. But realistically, that's usually never the case, right? And so it's difficult, right? Like, it means we need to talk to the case managers and understand how they clear these cases. How do they determine, you know, if we look at 10, 15, 20 examples and walk through them, what are like the common things that they look for? What are the type of patterns that they look for? What are the type of behaviors they look for? And I think those types of things can be then helpful to like once, like maybe you have 10, 15, 20 different patterns to look for, you aggregate all of those. And then you give those as final input to it and ask, you know, given all this information and the customer's profile, what do you think is a reasonable outcome here? So Laura, I think we discussed about this earlier also, right?
+
+SPEAKER_09: I mean, unless and until we keep guidelines, the AI will hallucinate. So if there is no guidelines, we just give a piece of text and ask the AI to say whether this is mule or not mule, it will give you 100 times 100 different answers. Mm-hmm.
+
+Naveen: Okay, that makes sense.
+
+Kari: But there's also the risk because like if you ask AI to do something, it will usually do it, even if it's wrong. So if you, we have to be careful, you know, what we ask it to do. We were saying, you know, do you think this, give me risk signals from this customer's transactions to confirm it's a mule or not. They will probably find something that kind of makes it sound muley. So it's easier to kind of, you have to like give it, give it examples and give it options to go both ways, right? To say this is a non, this is a very normal looking thing. This is not so normal looking. I think we just have to be careful with that, right?
+
+Kelvin: May I add on this point? Because like, you know, like, you know, like, you know, like, you know, I think AMH and Hazel both have our normal reflex signals that of the case that how we identify on the suspect mule cases. So I think this is one, I think that can help out as a database or knowledge base on how we can build up the AI. So the other thing is that I think as I think also can supplement in a training perspective, we also have some ready cases that we can utilize as a, how was the typical, as a technical cases that show that we can also fit in as a database for AI as well. So, and not mentioning that we also have like plenty of cases, thousands of cases in the BPM. I'm not sure this is also could be a one of their source so that we can kind of do that kind of thing.
+
+Kari: Just my, one of my pieces of opinion. Yeah. I mean, we, we, we probably can't like give it the examples and then just ask it to fit like, because we're not, because we're not training the models, right? So we can't just give it the examples. because we're not training the models, right? So we can't just give it the examples. We can't just give it like 2000 cases and ask the AI to figure out what the combination of factors is. But ideally, you know, we would get those cases and we would read through them. We would try to figure out what the red thread is and try to figure out what might be, what might be something to work on towards that. But yeah, I'm just saying that like, I think we can definitely get something here. Like we should be able to build something that can look through, you know, transaction history in the profile and compare those and try to figure out what is, what is and isn't risky here and give, give some kind of conclusion. I'm just saying that we kind of need, you know, to be careful to not think of AI as some kind of super-tool that we can just give it the data and tell it what we want. And they will look at everything automatically and figure out the figure out the results. You know, the, a lot of this work is kind of distilling the information from the current experts that we have to understand what are the patterns they look for and kind of extract that information into some kind of skill a prompt to the ai to ask it to kind of guide it in what to look for
+
+Naveen: okay i'm just conscious of time and it sounds like this this is an area where we'll need a little bit more discovery um and and we'll pick it up um but just be in the five minutes we have left just to highlight um so with tnaa uh transaction analysis and network analysis are currently covered but uh the remaining aspects of you know customer information that we'd like to include in a holistic review would be the customer profile information currently housed uh in crms and obs or my workspace obs um and external web searches which are currently done on a case-by-case basis so as mentioned on wednesday one of the ideas we have right now or one of the things we'd like to achieve would be a poc within uh 2026 that covers um assessment of uh customer profile information uh as well as these external web searches so from the customer profile information that would be you know a summarization of the available information and any kind of risk assessment around that profile but carrie just from this conversation we're having now it sounds like if we're looking at risk from an overall perspective does it make sense for the poc to focus on customer profile information in isolation or would it be something that we could do in a more holistic way so i think it's something that we would need to take you know like transaction patterns and and
+
+Kari: network analysis what what do we mean by customer pro is because the the texture doesn't doesn't really discuss transactional history so is this more just
+
+Naveen: like the overall customer profile or is it is this also transactional history like overall transaction
+
+Kari: analysis uh so so profile profile would really just be like their kyc information so you know
+
+Naveen: okay name gender employment uh income that sort of thing um we've left out prior investigations and review history because the nature of that data is very different so with customer profile information um there are very clear fields about that in in the source systems whereas investigation history often is in the form of attachments so we were thinking from a poc standpoint um it might be simpler to start with customer profile but if we want as part of the POC right or as part of our overall like end state AI solution if the goal is for AI to provide insights and ultimately an assessment of risk is holistic and not just based on profile information I'm now wondering what makes sense to include in that POC would it just be like narrative generation or does it make sense for us to to like focus on risk assessment for using customer profile information alone I
+
+Kari: mean I don't think the customer profile would be too difficult to do to be honest but my question would be like how how useful that is because I mean it's it's limited information that we have there right like
+
+Unknown: you know it's it's it's it's it's it's it's it's it's it's it's it's it's it's it's
+
+Kari: it's it's it's it's it's it's it's it's it's it's it's it's it's it's it's it's what is the expectation of the summary like what is it what is it stating like if it has like the name and the residents and those things you know what compared to just listening that out in a tabular format to say this is the name residency blah blah is it just expecting a sentence to basically say those same things but like enough more flowing format or is there like what type of kind of so so what type of add-on is it that we're expecting the AI to give in these cases just to understand what the expectation is yeah
+
+Naveen: The narrative format would be one. I know that's a very basic function, but another one would be providing potential observations around that. Some of it might be very simple ways of looking at the data that's available and saying, okay, this customer has changed their phone number three times in the last months, but then having that extra step of being, oh, this is a potential indicator of risk. One is just a summary of information, and then the second would be taking different risk signals and saying, this builds towards a picture that looks a little
+
+Kari: fishy. Okay. But the signal, like you said, is more on overall profile level. It's not going into individual transaction patterns. It's more just demographic data fields when they're updated, how frequently they're updated. Yeah. I think that's quite reasonable. I would assume that something like that is not going to require too much of this distilling work. I think this distilling work is more on the transactional side. We talked about earlier, I feel like something like this would probably be easier to achieve for sure than the transactional stuff. Okay.
+
+Naveen: Sounds good. Okay. But so you were saying this one and what else for the external search?
+
+Kari: Was that what you're talking about? External web search, which is something, and Jonna, I think you
+
+Naveen: might be able to speak more on this than me, but this is something that is currently being done for OB-KYC already, where they've got a functionality that allows for external web searching. I think in this case, I don't know about the- It's much more straightforward, right? I mean, in this case, I think it was just an
+
+Jana: email address and a phone number check on Google, Carrie, but I think the OB-KYC one was much more complicated because I think they're doing an employment data check and all of that. But I do remember when we did the initial solution, I mean, when there was a pilot that was done for OB-KYC, there was a concern raised that we can't do generic searches in Google using AI or something like that. I don't know if it still
+
+Kari: applies, but yeah. I'm not too sure. Like we've not ourselves done a POSC with this. There are a lot of cases, we have quite a few use cases that want to do external search at the popular request. We've recently, I think we should hopefully be able to do this as a POSC soon. Okay. It just wasn't a functionality that was available before, but it has recently become available. Maybe they did it on their own solution or something, but there was a solution done by
+
+Jana: Kenny's team last year, Gary, on some Google AI capability. I know the D-Quest team has some of
+
+Kari: those capabilities with some of the Google models, and they're- They have since become also available in the Group AI platform. There are some limitations to it currently. I think they're only available for UK use cases right now, but I think we still should be able to get access to it. I haven't dove too much into it myself, so I'm not 100% sure about what capabilities would be realistic to do with that. But I think for sure there's something we can do here. But so what, I mean, maybe we're over time.
+
+Jana: Yeah, we're over time, man.
+
+Kari: What is this for? Yeah, we're over time. Like adverse news search? What is it that we're looking for? Yeah, if there's any adverse news search on the customer, but we just do a basic email,
+
+Jana: phone number and contact detail on the Google and just see if there's any hits. Okay.
+
+Adnan: But I think we have another call to go through the remaining. Maybe, Laura,
+
+Jana: if you can set it up because I'll be on leave next week.
+
+Naveen: Yeah, sounds good. We'll set up a second session. All right. I think, thank you so much, everyone, for your time. Good call. I think
+
+Jana: we'll continue doing this and closing off our questions. Yeah, thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you.
+
+Naveen: Yeah, sounds good.
+
+Kari: Thank you.
+
+Naveen: Thanks, everyone. Thank you. Thank you. Bye.
+
+Kari: Bye.
