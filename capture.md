@@ -1,111 +1,213 @@
-SPEAKER_02: 我看到Raymond 和 Tiffany 都在这里我们可以看看这个 workflow 是否需要在这里就是Business Funding Dashboard只是会需要在他处于 MI 的位置刚刚召唤了Johnny 所以这个performance dashboard是指我们日中平时的leads可以去monitor整个case的allocation或者是一些daily MI的情况是 没错所以我们就在看究竟这个放在case creation这里还是应该放在MI那里 那我想問一下MI這個是不是其實如果當我們需要Generate或者去看一些Dashboard就是一些MI的情況的話無論是Daily、Weekly還是Monthly就是不同的Frequency其實是不是都是去回同一個Dashboard的位置只不過那個操作那個人就根據他當時的不同的需求然後去在Dashboard裏面選擇他需要的一些Details是 沒錯 所以其實MIE這個部分我們還要去定義的因為我們上個星期還沒有觸碰那裡的基礎當時這個Performance dashboard for case allocation是否打算給一些團隊可以更加清楚每一位reviewer現在手頭上有多少case在保持著或者是怎樣所以在做case allocation的時候更加方便 是,没错,并且它可以去re-assign一些case和loaded by你的reviewer其实这个是有的,但是呢,基于我们想要的东西例如我们想要一个touch base,就是这个performance dashboard我们想要一个那个叫losser 然後它就可以根據每一個staff的一個time sheet這樣它可以去做一個case allocation然後和re-assign這樣但是這個暫時現在是沒有
+SPEAKER_00: Is this okay now? Make this request. The baby has gone to grab another minute. Sorry.
 
-SPEAKER_03: 或者reface一個問題不一定說現在一定要大家糾結這個問題說dashboard應該要放在哪裡 應該放在ny那應該引出這個就是說我們從那個autosign這個步驟去到開始rechecking中間我們現在是看不到他們這個兩個步驟之間是怎樣關聯的所以想問一下 就好像斷了一樣就不知道應該怎麼綁我們自己的想法是不是這樣綁呢?有可能不是的你們可能留言一下怎麼綁或者你可以先專注這個你不用這麼費心了先專注整個流程那個基石教訓了教訓了之後那怎麼去踢了Pretaking?
+SPEAKER_03: all right that's where we join it in a few minutes so we can perhaps start first um i mean so we can start our actually yeah yeah yeah actually okay uh so maybe let me start for a minute and we can see together uh so i'm from the haze transmission team and we also have any uh eight conservation team um today's session is to reveal uh and align on the image to case AI enables us and the use cases and to agree even on which one is suitable for the code build and which one not. And we will focus on the business capabilities in this weekend while the technical and the architecture details can be taken offline at this time of the session.
 
-SPEAKER_01: 我沒有說到這位,不知道怎樣Maria,Lillian,我前一陣子做了一件事很肯定是在auditorium找到的資訊阿珊的TV,我就開了阿珊的日報所以小蕭是第一個,她做了一個pool那個人就要lock in,我是一個maker我就要lock in之後,我就要去maker的QA裏自己去拿東西出來 那你之後就做那些 或者如果那些案子是收到在Lillian手上但Lillian收到在其他人手上那可能我Manager就在Lillian那裡 它自己的Bucket 裏面就拿回Case出來阿塞給Case做 只能說是這樣的但是就是自動派的 沒有自動派的你覺得對嗎?就算阿塞賭 雖然行不行?那接著怎麼發生結局?這個第一點我們之前都在問的就是這個邏輯上它發生了什麼樣的就是這個Technology的關係是的
+Unknown: Okay.
 
-SPEAKER_03: 但是這些人都更新了一些你來之前我們就在這裡講回那個流程的現在都是想看那個流程那Cony現在在分享那個要求我們都是想先講一下那個流程講清楚每個補充的方式Cony 你有沒有我們上次問過有一個流程你是不是有其它Diagram去展示那個流程因為你這個table我們上次講過你是會Discrete 講每一個Action
+SPEAKER_03: And for this item, we will ask the owners to give a quick overview of the capabilities to support our discussion. And today we have one document. Okay. So maybe we can start first for the first initial items.
 
-SPEAKER_02: 其實我們都有一個流程跟着 Mary 也根據了我上星期和 Apps Team我們一起 come up with 那個 diagram然後再 refine further 這樣所以現在整個流程是一樣的例如它會分 System AutomationAI Team LeaderReviewerDownstream Team QC QAMI 這樣
+SPEAKER_06: Yeah. So I just want to add, in this meeting, what we have done is we've gone through the backlog for elimination. We've gone through the backlog for case. And then whatever problem capabilities were there which had potential for COBIL, we put it side by side so that it's easy for us to discuss. We have also had a smaller group discussion where we aligned whether it is possible to COBIL from the AI elements or not. And we have that paid out in column K. Also, I want to highlight that all of these initiatives are also being discussed in their respective product teams. And some of those product team discussions have already happened and they have to Agree to co build which second populated in column K so as we go through all of them, we can discuss formula and the conform on this, we have 13 capabilities and first one is around campaign. We have AI capabilities for AVEC and SML. And is it a complete list for you? There are no exceptions to this. We don't have a detailed welcome list and we don't have BRNs on. We don't have what? VELT and BRNC. Why? Because they are being discussed in their respective product SVs.
 
-SPEAKER_01: 不是MI不是一個flow來的MI不是一個flow裏面的東西不是一個flow來的,那個不是flow來的所以你剛才說AI,AI也不是一個flow來的它是一個其實的...不是不是,Edian因為我們為了...我這裡呢我看回Connie那個,她是沒有分的但是我們就是為了看清楚哪些東西是哪個party做的或者哪個role做的
+SPEAKER_04: Well, AI is discussed with VELT and BRNC is in the BRC discussion. Yes. Apart from that, this is a full comprehensive list for all.
 
-SPEAKER_03: 那就是看得特別好那個復仇之餘就知道是哪個人而已那你說他不應該在那裡那他應該納入那個系統那裡那我可以的但是現在有兩派理事員我就很想搞清楚這個implementation那裡哪一派在哪個組織是這樣的那我看看我們先說一說好不好?就是看看怎麼喘得起來先那些refinement那些我們可以再整理
+SPEAKER_06: yes and totally we have 13 unique items because we could map a lot of them together okay that's right nothing is missing obviously right yes our first one we have is around campaign automation this will be a carry forward from this we're building uh much more than what we really prefer uh please let me know how many details we should get into because i think a lot of people in this book they already know so for campaign ideation the idea behind this is using ai to create more campaign ideas for the business teams to utilize and also automate the process forward from there to make sure that the messages are reaching to the customers at the right time to the right channels. So this is the capability essentially on campaign and I think has a similar capability. And from our initial discussions, we think that there are a lot of common AIMs that can be involved with it. And even messaging team has agreed that this could be open. So right now, we're monitoring that.
 
-SPEAKER_01: 但是我始終覺得那些是不是用AI出來的那些是不是用AI的那些技術跟著想增強那個流動的這個軌道出來的不是流動的所以我想重申一下這個流動都是從Idea的角度我們去understandBusiness的requirement我們都要明白它寫的東西或者它講的東西我們才做得出來
+SPEAKER_00: That's not new. It's a new thing. I mean, I had a phone with Will yesterday. I will do that as well. But I think one of the next action is we need to line up the CRM team on both sides to map out the business processes. Because this group is just part of the entire process. And there is another initiative called Content 2.0 Razor by Pace that might also, on the other way round, benefit from our side as well. So I think it's an end-to-end discussion about how we have to put all these capabilities together.
 
-SPEAKER_03: 如果我們不明白 那就做不出來所以是在基於這個形式去畫出來的那你說不可以這樣畫 那你可以改嘛這個大家可以edit的 只可以改的但是可以串串的 串串是怎樣走的那起碼走到那個流程了那這些四個位置是不是可以收拾的可以offline收拾的
+SPEAKER_05: I think that the opportunity for co-build is quite a complex end-to-end procedure. I think for that step, we need to have two side CRMs together, aligned with business workflow, and we can see each component, how we can co-build. But there's definitely opportunity for co-build.
 
-SPEAKER_01: 我暫時看到有幾個位置
+SPEAKER_03: Very good. Okay, then we go to the next one.
 
-SPEAKER_04: 我想看一看好像是現在的MVP1那裡有一個Trigger有一個Duplication然後接著我們在Pre-Check那裡看到AC1那裡有一個DuplicateTracking那麼這兩個位置是不是有一個Duplication在發生?後面那個應該是Trigger的Duplicate這個是CDX4的Tracking然後這個是Trigger的Tracking好的是接著
+SPEAKER_06: Yes. So next two capabilities are riding on the same campaign foundation build that we created in the first one. The second one is to enable for unsecured lending products. This is more on utilizing the foundational capabilities that will be built through the first project and also make sure that the automation and fulfillment can happen seamlessly. So it will involve a lot more automation of the unsecured lending processes. so that it can go all the way through fulfillment. This, we discussed again with Leo and Tim yesterday. From AI common elements, we feel it is forgivable, but this is yet to be discussed by the unsecured lending product field, whether they would want to hold it or not.
 
-SPEAKER_02: 所以我不知道從你的角度是想要看到怎樣的流動這個就是我們出來的一個大概從商務角度看就是做事的一個流動就是這樣的例如它會有分 不同的team,之後是一個,例如它之後是一個future platform,然後,所以,例如人做事的話,upstream team是誰呢?upstream team就是指,for example,它會有DNA trigger的一些platform,還有它有others,它是email的一個形式,所以它其實呢,如果to be的話,它就會有分兩種,一個就是DNA,所以你 label 不到什麼叫upstream team,因為就是, 應該可以很具體地說是哪個派對哪個派對?那哪個派對?我覺得應該可以看回這裡例如它是從不同的系統去錄製最好就是你一個Diagram如果要跳下去就這樣那就有些可能會錯過一些但是因為它DNA的話沒關係,我不騙你不如你高尺寫上高尺寫下看看真的有很多的好不好? 我有一個問題就是如果我們在這個to-be的一個case creation的時候那for AMH和for Hays的話那是不是好像現在這樣就是BPM-like那樣AMH就是可以看到AMH然後Hays就是可以看到Hays的ticket 只會在OH或者在My Workspace上就可以有一個view跟著去選擇其實我們剛剛不是想了解一下任何做法都可以,不如你講一下ok,其實這個requirement就是想要好像現在這個BPM的一個system這樣就是可以是 可以看到AMH自己的案例,Haze可以看到Haze的案例,但沒有分為一個特定的項目。
+SPEAKER_04: I think in the AMH side, it was more about having always-on campaigns for article-level, right? You know, you actually don't need to run main cycles that we had before. Yes. Which is actually making much simpler horizontal AI enabled execution. Exactly that. Is this the same rule of excitement? As you referred to this Second item, and then unsecured lending. Yes, second item.
 
-SPEAKER_03: 那個Pre-checking的話你幫我做一個步驟講一下你整個步驟從一開始是怎樣的?我可以講一下嗎?因為這個是妥協的我講一下我的理解吧讓這些人看看有什麼見解我們看看怎樣收拾好嗎?因為有些位置我都剛好問一問的我講一講有些位置我們讀完那個requirement那裡可能有些位置不夠大家幫忙看看怎麼樣 解決一下這個圖是W你給意見我們後面 看看怎樣改再改一開始就是重複的Jigger Source 這裡Jigger Source 這裡沒有寫得清楚是誰的這個也是我想了解一下我最近的想法在Business的角度 或者在Transmission的角度 這裡有寫DNA Trigger和Other Trigger就是原生的過滅可能有的那麼這個位置是不是想說就是分別有系統上的安靜微感Trigger還有一些是人手的Trigger會不會講一講那個流程的入口還有那個邊界是怎樣的我們會清楚一點那麼這裡也回答得到一些問題是的 一個個來這個Trigger case的話
+SPEAKER_02: Okay, so there are other people editing that. That's why the highlight shifted a little bit. I was like, which row are we looking at?
 
-SPEAKER_02: 我理解它現在就是有分例如五種不同的情況的那對AMH來說它第一個就會是一些ad hoc via email的一個情況就是它會從branch referral和front的ops去拿到一個referral然後它就會send email去到給RTMM team然後RTMM team就根據那個email然後去consolidate 一些 Trigger 这样你刚才说的这些说话就是应该在标题里面写出来DNA 收 E-mailE-mail Forward Day About E-mail其实这个就是过程的标题但是我不知道在刚才哪个地方有没有画过呢?我刚才那个地方因为我不理解这些人所以我就画不出来不好意思 让我画一下我画不出来因为这样我们才会看到想画出来
+SPEAKER_01: Okay, we're talking about the dynamic pricing. We have just gone through the unsecured lending one. And within the unsecured lending SVS, we have aligned that this is something that we will co-build on.
 
-SPEAKER_01: 另外或者要找什麼系統出來考慮做integration那些位置就會discomfortable這個位置改吧這個就是RTMN team的同事有沒有一個什麼 role 這樣的我叫他在這裡還是我在這裡改吧不要緊
+SPEAKER_00: Okay, that's great. Thank you, Kendrick, for filling us in on that one.
 
-SPEAKER_03: 你現在是用一個flow來講的那你就用一個flow來講你就在這裡給一個圖寫上去接著因為我們先go through這個trigger source應該是有一個
+SPEAKER_01: Same case as the first one as well. because we see the first one as the foundational layer, the dynamic pricing will be the one that will enable, hopefully, POC appending would be the one that will eliminate the need for us to invest into BAU campaigns for unsecured lending.
 
-SPEAKER_02: 由一個ad hoc的一個形式和finance和ADCC的話就是通過一個即是Government的一個website去receive到的一個trigger跟著其他的話就是都是DNA去manage的一個trigger跟著之後就可以put into a single source for automation跟著Haze的話我理解都是這樣即是它會有更加多不同的一個trigger的一個分類跟著但是它automatically
+SPEAKER_02: Sorry, in terms of dynamic pricing, so basically, this is specifically for average type, this is specifically building for unsecured lending.
 
-SPEAKER_04: 它都是分成兩種,一個就是DNA、CDK去Manage的,然後第二種的話就是Ad Hoc,然後Referral via Email的一個形式。或者可以補充一下,因為除了剛才跟AMH有類似的一些意外,我們都會有一些Branch或者Management Team會給我們一些Ad Hoc的enquiry, 所以那裡其實會出現的就是一個Manager或者Email有收到當然有一部份就是Manager或CNK或Facebook從一些WinSCP類似這些人的SharePath去用一些東西去觸發這些就是In general會有的情況這個問多次它出現的就是敗人 通知到沒有 給這個系統去到收到?是啊,因為現在基本上我們現在除了ETM的一個模式之外其他它們都會在一個ChairPath然後接著去CloudBase的一個ChairPath然後接著收到然後我們再下載下去接著再去做一些剛才所說的Datification然後再去Assign Case 問多次,通常是,譬如郵件外,怎樣通知?會用,很少用email,除非是一些branch,或者某一些FO,或者某一些incident,或者project-based的referral,而其他的基本上,就像剛才所說,都是在share path, 即是用CSV的形式去收到那我看看Trainer用了多少時間看來都應該上次除了我還有INTS除了還有FISA那些但現在我們都是在FISA下載到CSV去做一個case的assign那條share path即是即是你知道管理人員在那裏找的或者他有時就叫你上去那條share path去看 我們會有同意的時間線和相對應每一個項目相對應的共同項目我們就進去看都是入手,自己想去看就把個案放進去做,對不對?是的明白但是這些在共同項目拿到的東西不放進這個融合項目裡面
+SPEAKER_01: I think Laura, I was in that previous session just now. So I think when AMH raises, it's more under the lending SPS and obviously they are eyeing on lending, but then costs and months originations. But then when it comes to Amy's team, we also have some ideas about payment. So I think in brief, maybe we can look at how tech is built in a way that whether there will be even more than products that can benefit because there are a lot of manual work in updating the pricing and checking the list, etc. Yeah.
 
-SPEAKER_02: 那個consolidation裏面謝謝嗯? sorry剛才我去sharepath拿的trigger包入去CDK做wall data的consolidation裏面包啊包啊,是啊,我都包那就不用了總之有兩種方法一種就是既然你和CDK他們會consolidate一條trigger list 他們自己會在背後拿到資料但是到我們收信的時候就是一個跟所有人的出近的案例另一種就是可能是通過電郵收到的案例一兩種的情況那剛開始就是在SharePoint那裡你知道在哪裡可能就有問題嗎?是的 是的那你什麼時候知道去看呢?還是每天都去看?
+SPEAKER_02: Okay. Yeah, because that's why I got confused with whether this is similar to our ULTT, you know, where we actually have certain pricing. But okay, good. But Anita, if you are across this, that's good.
 
-SPEAKER_03: 我明白了 每天都要看就是不同的時間 是不是要看在這裏?我都順便看我的問題 這些人你們都可以留言因為我這個是我們從Auntie那裏交付的我們有些問題想了解一下的做個步驟 當然你這樣做我們可以看成功 這樣做什麼都可以 你好 这里有几个问题刚才两位同事已经回答了我了其实这些字卷根本就不需要最深刻的因为你刚才说了因为就是按照时间走到那条share path那里看那些CSV里面有哪些就开始这个我们改一下到时改一个图继续 這個例如讀這個 每一個Tracker的字段這個Galaxy daily他剛剛說了他按照時間去當然他應該看幾次N字畫紙具體我們是否在這裏看 起碼知道大概是這樣這些應該是低層次的要求當時再討論比如說我要出幾次,我要看哪些表格我要怎麼排解那些,我們就可以排一堂現在才搞到大幅度,就是我的想法,謝謝大家OK,接著就到Tracker Data Receive對,Tracker Data Receive這裡現在我聽上去 有了這個data之後 他們就有機會看到這個share那應該是人去考驗它們的東西齊不齊或者它裡面給的東西有沒有什麼issue少給了東西 或者給了東西不對這個我理解 是不是?我理解 是的
+SPEAKER_01: Maybe under capability, we should not specify that this is unsecured lending specifically, because to Anita's point, when we talk about the solution, which I know we're not focusing right now, it should not be constrained with unsecured lending. Yes, I agree. If the capability is similar to other products, we should explore more signature.
 
-SPEAKER_02: 接着就会去到这个Trigger的De-duplicationTrigger De-duplication就分两种就好像刚刚说的如果是DNA的话就会根据已经有一个逻辑就会做了De-duplication接着如果不是的话就是Menu的话就是需要人手去做一个De-duplication这样所以那些前三步的是不是通常都是那个team leader会做什么的
+SPEAKER_07: and and then under go field if it's a really good view but we should probably say we need to do a product alignment across different lines okay i think next one is again similar which is fx utilizing the same campaign automation capabilities uh always on campaign for effects
 
-SPEAKER_03: SME或是添加SME或是添加即是在這裏我稍後再研究一下現在可能時間有限,可能寫得沒那麼漂亮但稍後再看看額外然後就到case creation
+SPEAKER_04: just a different product yeah yeah yeah it they all look quite similar if you ask me yes yes yeah you also look at i see yeah powered by science and branch profile execution it's got your steps i think it's probably the same i think right yeah yeah yeah i think so but uh yes so uh where do we i think
 
-SPEAKER_02: Case creation 的話就是當那個系統收到它已經 deduplicate 了的 trigger 的時候就會需要去 create 那個 case然後需要去 convert因為它的 trigger 當時其實是一個 transaction level它去到那個 case management system 之後它會需要在一個 by customer level然後可以 based on 這個 customer 的 document id去 create 一個 case 的 所以這個其實我覺得是連接OH migration的e-form field所以這個其實就是已經consolidate了在這邊但是需要case team再去看是不是ok的就是column2的話case creation一般都是SMU的team leader做的sorry 你可以做casecase creation一般是 SME 或是 Team Leader 之中?是的接着...Conia 妳剛才清楚說 哪個位置會有問題?在 Column 2因為這個其實是已經對了 AMH 那邊但是 需要看是否要跟進例如 如果有一些 Field 是不需要或者是需要 Add 的 或者是需要 Remove 的或者是需要 Change 的 是不是都是跟隨同樣的一個報告這個是上個禮拜的?是 上個禮拜的一個Pending Action Items來的我再看看一下好 這個我可以等一下再分享給你接著 接著回來這裡的話就是系統就需要系統需要提供一個案例 如果他假如是share做一个samecustomer document id的跟着他同时需要去set那个case status as case created这个case created就是新的一个drop down list来的for 这个case status的一个选项 然後這個Automated Case Assignment TrackingBased on this feedbackSeems like其實是做不到根據這個Staff Capability或者Capacity或者這個Trigger Type Priority去做一個Individual的Assigning所以這一個就要follow我們現在的一個 就是在一個individual pool裏面然後需要team leader或者SME去assign給reviewer的意思如果大家有什麼feedback?剛才說去不到individual的level 抱歉,我想問一下,是否可以使用一般的程序,是指我只可以...那是怎樣通知的同事去取得案件?是他自己去庫裡面取得的,還是...不是,要去庫裡面取得的,去鎖定之後,去那條Q的那裡,那麼他會看得出應該有很多案件,他就要自己清除其中一種,當然輸出來的案件應該是根據那個優先項目,即是你應該那個
+SPEAKER_03: We can consider whether they can co-build or we need to wait for tomorrow's sessions. Tomorrow, then we can put the sessions on the ethics and they will cover indeed the design as well. Then we can wait for the result. But I think for now, it's formidable. And if they confirm to co-build, I will update this.
 
-SPEAKER_01: 那條Q的Priority 都應該要設定除了Priority 還有什麼Date Field 下一個Priority應該有幾個Field來控制著展示出來的次序那變成令到同事一claim的第一個應該就是我們大家想他應該第一時間處理的 譬如除了拍一些Data或者有些是SLA Exceed那些的scenario我們可以將它推上去讓人們會Alert 了解嗎?好的,明白,謝謝OK我當時回到家裡的步驟對於Auto-Enzyme 的步驟Aline 也說得很清楚Auto-Enzyme 是做不到
+SPEAKER_00: I see the Signal Factory and i21 are very similar, right? Because all the signals are supposed to come from the foundational layer, which is from the first line.
 
-SPEAKER_03: 我們就要用現在的方式方法按照我們決定的規則去說應該要同事去執行這個案件好 剛才說到這個莊職撤出之前是怎麼樣的?就是Simon和撤出之間這個中間這個位置就是需要Connie自己幫忙這個就不太明白 不太明白就是
+SPEAKER_02: So I think it might be, I mean, of course, we're talking about previewed, not previewed, so binary decision right now. But in the actual solution design, we will need to think about what capability goes into the foundation layer. And then what are the features that you would need to, so for example, if the intake of the different signals or event and the dynamic setup, I mean pricing is one of the dimension of the dynamic setup, it can be other product features. And then so we can design that way. Because right now if you're looking at item one, item one, two, three, they carry some similarities across them.
 
-SPEAKER_02: Assigned 了這個Pre-checking是怎樣去做的Assigned 了之後它在個 Case 裏它就會需要去做這個Pre-checking的這個步驟我理解就是是個同事自己去擊完 Case然後它要去第二個系統裏做這個Tracking的作用的意思但是在系統上它們應該是沒有關係的即如果在現在未有 System Integration 的情況下 這是他同事額外要做的這是他在這個 workflow 裏面他需要做的動作但他不是在 OWH 裏面做的但是之後就會想要這個設定可以做這個 pre-checking 這樣如果在一兩種情況在 SES 的情況我們是剛才 Mary 你問的問題我們還需要提供什麼因為他其實在另一個系統做他不會在 OWH 裏面做什麼
+SPEAKER_05: I think there are some common layer with that.
 
-SPEAKER_03: 這裏我就把它拆開了這裏我有一點問題的譬如說我想了解一下這四個地方有四個地方要被檢查的有DUPC、DAUT、CSEP還有Open Case Checking、Open Case Merging這些它檢查的標準是什麼?我想了解一下現在的人檢查的是什麼?我就可以理解一下
+SPEAKER_02: Exactly, you want to modulize the design, and then say, okay, here's a module for targeting, here's a module for response signal dating, this is a module for content generation, and then it is, I mean, it looks quite similar to each other. It's not like they're repeating themselves on the signals, they're dynamicizing, and
 
-SPEAKER_04: 幫你去檢查的時候 我要做什麼檢查比如我用什麼indicator或者去哪個系統檢查一些什麼的資訊那裡有什麼data point其實就是我們在RDM輸入的data pointcustomer profile那些我們賠償的事其實是賠償customer profile 我覺得不如 你們都講到這些我覺得可以多加一些可能是什麼可以在這裡 比如說我們將RTM的這個index這個index這個stake是講這個index的比如說第一、第二、第三、第四這個步驟是要有這些point的所以最好就是在這裡我們在做那些onboarding的時候就可以 知道在到這個步驟的時候那些Dapp是不是Revel的是不是Realtion了的因為如果在今年MVP還不Realtion的話可能這些Dapp可能就要人手排開不知道是否都是用Spring玩回來之後排他才會怎樣所以在這裡我建議將那些Index集合起來大家就可以拿回我們報告的信息 但是如果假如它是一个scope放在下面的话,那暂时我觉得不重要的,因为我们谈的时候,就把那个index,什么分,什么分,什么分,那我们大家在这里的某一个地方,对着,对着点,我们这个字典的index,这一行,这一颗,这一颗,你们在谈,在谈,这一颗,比较这个标的,你们就叠分出来,那我们就可以知道,你们要什么data point,ok,
+SPEAKER_04: I think you're right, because when we looked at the first one, and we went through, we actually covered stages, all the kind of insights, generation, then there is content generation, general coding, assist, and then the third is kind of a learning group that always improves. And then, but then the different insights that go into the phase one would come from different systems as they would be for image and exec, they could be different, they could be stored in different places, but the architectural design of that should be similar in the way yeah where are the signals come from we take them into the content generation and the coding for pilot that i think you have filed that we are actually running there as well and then you know when we want to have a dynamic pricing it's just an element of it and then you just layer different passive classes you know unsecured effects whatever you want to do but i think that we need to tell the story about the CRM I feel, you know, with the story needs to be, you know, certain things that have to have a generation of insights for pilot and feedback loop. And then, you know, there will be models of pricing, there will be models of maybe other elements of data that you want to show clients. I'm just going to paint that that way, I think.
 
-SPEAKER_02: 那這個我們就先不細看了你可以之後的,之後再可以回頭好,沒關係,我看到會出現2023的那些就寫著我們可以做,但是不用等現在馬上回來了,放心那我看...對不起,所以以後講有新的進步的時候這個功課是要重新改過,還是要怎樣?
+SPEAKER_05: I think the important point is to decouple the signal and generation and the use. The signal can be used on multiple channels. It can even be used on the chat, can be used on campaign, can be used by RMs. And here, the usage in the campaign ideation is what is described on the first row. That's why it has been decoupled by these effect-specific signals versus like how you use the signals to create a campaign idea.
 
-SPEAKER_03: 還是說現在起的時候就已經要考慮這件事?其實我覺得今年可能是一個合適的方式去回答這個問題但其實我覺得沒有問題的原因是現在你們班還沒有接觸過這個問題 我解釋一下 阿Gina的問題是這樣的因為我們談到Protecting的問題因為它不給我們這個scope阿Gina有個推薦說如果我們現在還未定下來會不會影響我們的系統?即現在的設計後面會不會變得很難繼續發展?是這樣的就是你說你剛開始MVP做Protect
+SPEAKER_06: But then that covers for all of the campaign related projects. We move on to the next one. That's on coaching and training. I think this has already been aligned with channel's team that it will be a co-build. We're already doing a lot of this together this year.
 
-SPEAKER_01: 但是沒有了 它的NPT才加起來那你一定有東西要改的你有沒有覺得這個做得到?沒有問題的做得到 但是你有東西要改要試一試就是你原本今天做的一二三四才做完的那你現在不做一段我們只是在新的數字上做一段你不覺得二三四那你接著可以出一階 出一階之後然後幫我改一個 兩個月那你再補回去一上去 那個問題是改到的但是你也要從頭1、2、3、4這樣要試過全部那你就不可以只是試1、2這樣就合得來的那你要試1、2、3、4的就是測試那裡要整個處理生的確診是沒有問題的對的所以你要付錢做一補派一下去也要從頭試過1、2、3、4、4、5、6、7、8但是做到的不用擔心的
+SPEAKER_04: I think this is together with we've got the same vendor, I think, with the HIPPO, right? HIPPO, yeah, yeah, yeah. Human potential. Yeah.
 
-SPEAKER_02: 麻烦你我们继续继续然后呢就是到这个这里呢这个其实我当然不明白除了它继续继续之后这个新闻里面就说过了要跟我们一起检查结果
+SPEAKER_06: It has three elements actually. It also includes KMS which again we're co-building already with Hank Singh and web license training which is I think a convergence and Hank Singh is also now using the same vendor as Inftech. So this is a complete co-build.
 
-SPEAKER_03: 然後team lead那裡有可能會有些merge或是exception的一些目標但我不知道這兩個位置之間是怎樣協作的可能我都寫不清楚,因為它是純粹的我又想到會不會是team lead先取消了這個你們可以解釋一下我理解就是它其實應該在team lead這裡的包括剛剛case creation
+SPEAKER_03: That's very true. Yes. Okay. Let me go to the next one. This one will be more on A-measure.
 
-SPEAKER_02: 總之就是收到的開始應該都是在這個scope裡面接著,例如他檢測到他會有一個同樣的open case是他需要merge的情況下他就會在那個系統上面去做一個case merging的一個情況接著讓我看看在這個pre-checking
+SPEAKER_06: Yeah. So this is on our agentic offer discoverability for next year. Right now, I don't think there was a capability which was matching with Hang Seng, but then after a few discussions, we do feel that the common capabilities, again, which are required foundation for offer discoverability, know your agent, consent management, all of the gardens around it can be co-built with Hang Seng. However, I don't know whether this has been agreed by the product team yet or not, rewards in unsecured lending. Kendrick, if you have a view, please let us know if this has already been discussed.
 
-SPEAKER_03: 他这个说merge single case object和same customer identifier这个是指说,比如说我开了个case,然后protect,搜索好了没有,总之reviewer做了那些protect了,这个时候,他要开始,那个reviewer要confirmprotect完了,去下一步,是指这个时候那个team leader,他会逐个case再看一下有没有一些国家的其他case想合文下去,
+SPEAKER_04: I think they did. They are live before this meeting.
 
-SPEAKER_02: 如果這個客戶前一天確認了這個報告他已經上了系統,他已經確認了這個個案然後今天同一個客戶因為他確認了這個報告,他是在交易階段我覺得他這個客戶又因為其他個案又確認了這個報告那我怎樣將這兩個個案放在一起呢?即他在不同的日子可能會確認同一個客戶的這個報告
+SPEAKER_00: Is it confirmed to be COVID? Yes. Was it agreed in the meeting just before? Yes. That is the conversation that we have been having.
 
-SPEAKER_03: 我想將它在資訊上面包含成同一個Case那我同事就只需要去 rebuild同一個Case file就可以了那這個可能要抽出來那個流程上可能就不對了因為你那個發言時可能是懶於它開一個Case去跟或者甚至它引起你做所有的checking那你才可能可以做你整個想到它要合得來這個時差有一個gap
+SPEAKER_04: Can I just clarify? I think the agent e-commerce, we're thinking about PayMe and RewardsPlus. So when we're talking about discovery of offers, I thought that it would be on RewardsPlus. So when you say copy of, what do you mean?
 
-SPEAKER_01: 這個可能是出事的 還是還沒出呢?我明白了 Mary 說的上一陣子我們都沒有人去的時候要用因為你們的歷程都有一些時間才走到尾你一路中間就收到那些Trigger而那些Trigger已經有一個歷史的記錄在這裡還沒做完我們想整合在一起 因為不用浪費時間 他可能已經skip了頭幾步因為你一個case已經去到就是剛才說的1234去到第三你才有一個新Tracker那他一加下來的時候就會是那個case已經在第三步了那一加下來這個Tracker其實沒有經歷一二的嘛那你是不是 就是所以Mary想提醒我們你這樣是不是都會接納這種情況那如果當有十步的時候我走到已經七八那你是不是繼續讓他一直merge Tracker下來這個case 就是要怎麼補償呢?因為補償一二三四五五因為案件已經到七八年了是不是?你不能說我看著你你不要出來補償一二三四五五五你無法解決的因為案件已經走到流程的那個位置所以為什麼我經常問流程的問題就不解了OK吧?我明白了是 謝謝
+SPEAKER_01: I wasn't on the RewardsPlus one, but for unsecured lending, we did cover this. We did it covered. We did.
 
-SPEAKER_03: 如果他有良心的觸覺他再重新走一次前面的路就是說你有加害的時候就從頭走一次是那從頭走一次就好像是一個新的機制就是你追不上那一步就是可能你說的那種情況可能他剛開始那你說的那當然是問題了是不是?如果他走到後面
+SPEAKER_04: The RewardsOne, I wasn't in that conversation. And then... if you're basically saying that offer discoverability could be there.
 
-SPEAKER_05: 就是習法都會越來越不夠這樣就好像很生氣似的就好像這樣就出現了沒有了公開了的意義Trina或者Kelvin我只是暫時講一下就是我在想通常你們現在的手勢是做到哪個才不容許就是是不是做了Taggraph和Sparkler呢?寫了報告了然後又彈條新創有新Figure那你會怎樣做呢?
+SPEAKER_06: And the backend capabilities. Yes, the backend capabilities and the platform to showcase that.
 
-SPEAKER_02: 現在是會有Deplication的在Tripper的Level但是去到後面查寫到你了,那才大不了新的那都是在Deplication的範圍裏面所以就會不賣新case?是的那你就不Create新case了?不Create的,是的但是以後的Deplication都不是Manual做的就是System已經Inject了進去
+SPEAKER_04: What we do is, as a common platform, but that's basically writing on Sierra, right?
 
-SPEAKER_01: 但是新transaction引致的trigger相比起个case留一条痕迹我们原来是新case但是是否要留痕迹是呀,它时候有date有第二条新的我就这样纯粹写回痕迹它会有痕迹的,因为是virtual但是个point是那个case已经是它的后期了就是大家要明显你只会attain了一个trigger上一个case那个case已经去到一个latest stage 大家接納這件事 因為你不會回頭究竟在這個階段到底在做什麼為什麼會有人reference 使用reference 呢?你純粹是擺一個記錄上去的那你沒問題 你沒有action的 沒問題但是如果你expect有action你想想你的flow怎麼樣所以我經常問你的流程其實你應該真的要怎麼做
+SPEAKER_06: And then, yeah, if you use the chatbot, then it would be writing on Sierra.
 
-SPEAKER_03: 要不然你漏洞的時候 會遲些會越來越多的了好 或者這裡我們先放一個問號好嗎?就是還沒有講清楚的集結我們是不是要趕快一點時間講一下Daniel在這個check那裡問大家是不是有什麼
+SPEAKER_04: Chatbot would be mobile app, which I would assume that on Sierra, you would be able to query, give me the best words I can actually type into that should definitely be a common capability. So I think it's a candidate for a copy. But there will be elements where we want to bring in rewards plus and pay me, which then might be specific to a major payment, right?
 
-SPEAKER_00: AI想做哪個位置是想做一些AI的東西而要做PoC所以想做一些瓊瓊的東西因為我記得大家那個PoC其實都PoC因為之前就講過的就是在哪些位置我們整個flow想要用AI因為上次就應該說MGT-1就雖然沒有AI但是PoC會想做一些AI的東西我想早一點說一些東西 因為你要選擇flow,可能flow和AI暫時沒有關係,遲些可能有關係我想看看AI的部份,大家計劃在BOC這段時間想試因為你要試都不是立即有的,你有些東西都要去申請 我們有什麼位置已經有proposal?有說想從business的角度想要用AI去做技術因為剛剛那個external search其實也是一個很好的case因為我看到其他的use case其實他們都開始想用我忘了KYC也有另外還有其他譬如 因为Excel Web Search在群组世界都是比较新的,群组AI 提供的提示都是比较新的,大家一直都在追求更快的提供。如果我们真的想要VLC的话,想enable Excel Web Search,用AI去做analysis,
+SPEAKER_01: I think when we go through the rewards plus with Terry yesterday, and also Hayes has a very similar idea on credit cards. We are saying exactly to Cass' point that there are several layers. So for the chatbot and the LLM whatsoever, the very back-end version of that part capability is co-built. But then where should we put this on? We want to test a Haze app or whatever app or chat. That part is not co-buildable, probably. And then the servicing layer and how we treat is probably just like a human, isn't it? And then, so we are seeing there are several layers and the only part that is commutable is just the chat capability or the AI, the back, how we train them, what characters we want to influence that AI and then the culture and so as a character, those are not commutable.
 
-SPEAKER_02: 這個就是我們暫時想要做銷售的一個,就是External Web Search好,如果是這樣,我們就要開始做一些外播來跟他說這段時間我就會幫忙 其實這個AI已經進入到一個UAT的stage這個AI solution包含了Investigation、Investigation包含了Transaction我忘了它有沒有包含External Research沒有包含External Research我想問那個其實是否已經可以Enable進入我們Review的步驟裏面同樣的 因為它是沒有包含所以其實它也沒有Enable這個External Web Search by AI
+SPEAKER_02: Yeah. Yeah. I think again, if I go back to. early on, I mean, the tech, you know, the stack of technology is co-buildable. So we operate on the same platform. However, the actual journey, like which journey we want to build on that. And the tone and manners, the cultural aspects, those commercial elements will become configurable. And those configuration needs to sit with each bangs. And also, how is the back-end tech stack interface with the different outward customer-facing systems? That also is another non-computable, because we may have different interface with the customer. So basically, the foundation can be co-buildable.
 
-SPEAKER_00: 那我想問一下調查的角度是否已經可以將一個存在的AI合作進去?但問題是要跟他合作因為我不知道我們的BOC是否可以進入TNAA的項目去合作如果可以聯繫的當然沒問題因為他本身已經在旅行中做編輯但問題是你要跟他合作如果我們做BOC
+SPEAKER_05: The journey is the journey. Yeah, the business journey will be separate. And I know from this item, I think from Amy's side, there is also one item is to how to integrate the third party agents from previous discussions. I think that part can be, I mean, for the foundation, for security, this part should be co-buildable. we would like to include, like, retail, I think that could be discussed.
 
-SPEAKER_02: 还是说在我们的用户这一部分其实我们是需要做什么的行动因为我看到现在的工作正在建立然后我希望在第一阶段将一些已经存在的AI solution
+SPEAKER_04: Yeah, that's exactly what we are thinking too, but most likely going to be through the other apps rather than the core banking app. That's why we're looking at the Know Your Agent kind of framework so that, you know, you can integrate into rewards or maybe as a party, which is always much easier than mobile apps. Great. Thank you.
 
-SPEAKER_00: 我建议就同步因为我不知道项目那边跟那边合得多久但是做POC很简单我从零开始我甚至什么英文都没有做 我覺得可以並行的,因為我也擔心其實跟那邊談不清楚,因為上次我的印象是要 Engage 他們那邊,也不是今年的事,所以我覺得 POC 我們可以分部去做。那我想問一下 Connie 是否會幫忙去做這個 Budget 呢?
+SPEAKER_03: Just give me okay next two are from hank yeah you can take one yeah sure sure let me let me start first with maybe the only test equipment uh the first that these two are related to channel or the branch okay the first one will be to expand the ans cap to the sales quality improvement so i think uh there are two major features the first one is the the special test so as to automate sales quality monitoring and tracking. And then there will be to support other system issue detections and multiple role detections. So I think we have discussed this discussion that Amish and Hayes can co-build on this one, right? Let me just ask this.
 
-SPEAKER_02: 這個我之前有看跟Anna和Laura在那邊就是一個Feedback就是他們今年那個TNAA是還在做UAT的可能要下一年年初的時候才會進到製作所以這個就是我暫時得到的一個Feedback BrainStorm的Phrase 2, 例如現在他們 workflow了一些network的scenario和transaction的scenario會不會是已經可以fulfill到RTMM的一個workflow 明白 其實他go into production如果是for CRMU 呢他早上九月份就production 對啦那我不知道即是如果將那個user extend 給RTN 呢其實是否有機會可以在十月十一月這樣其實就已經ok 这个其实就是我刚刚说的他们在UAT的阶段是没有打算可以去add new的一个user所以他们需要等到他们的production结束了之后他们才可以去做这些事情那我去问一下UAT好吗?ok 没问题那我再继续这里我们还剩下5分 review or confirm pre-check resultreview required
+SPEAKER_04: So we have, this is a sales quality, so So we had the AQM already, right, launched. AQM I think 2.0 as well, right? And then quality monitoring of CCT.
 
-SPEAKER_03: 去到那个review complete这个位去到7.1后面虚线7.1review complete按照流程review complete还要走qc sample如果这种程序是否照这样走下去就照落qc sample来这是第一个人需要currify的
+SPEAKER_05: So that launch is part of CCT next year, I think. So it's that and similar to this one. The AQM has already implemented since 2.2.3, so we have to support multiple teams on both the sales quality track with transcripts just a little bit.
 
-SPEAKER_02: 我的理解就是如果它是review not required之后呢它之后呢都是同样会去到一个QC checking 接着数yes的话就是require yes接着就是require preparation4.1 这是一个Data Consolidation Display关于Customer Profile的Account Information 他下一步就会去到个case里面但是个case会需要可以有个位置可以看到这个customer over account information但是至于这140 之后就会用AI去提供一个summary然后就会提供客户图表还有这个transaction还有network然后去提供一个summary同时去基于他们的high risk indicator例如他们的high risk scenario这样因为呢因为GNA那边其实它已经有三
+SPEAKER_04: So then if you have the sales quality already, what you're doing here is what you're expanding it with some AI summarization or what is going to be here an extension to the
 
-SPEAKER_00: 問了他們那邊,他們是怎樣上傳的?他們現在不是瀏覽了,第三,他們已經有了所以其實他們現在的Summarizer其實是拿著人手上傳的程式加上瀏覽了SmartnetSmartnet那邊就拿了一些,然後就丟進去現在其實這個就是他們最主要的功能
+SPEAKER_07: Paul, are we talking about Rn?
 
-SPEAKER_02: 其实应该是用它们的企业来做反而刚刚提到的External Web就是这样但是其实它这个Network它当时只是包括了Smart Web其实它有TitleGraph的一些Haze的一些Data Point或者它有些Rules这个其实就是那个TNAA Team它在Weekly去Post那个Meeting就是想看回例如它们现在Existing 用AI的解决方法是否能够包括RTMM的团队去看这个团队在交易方面,我看也是大差不差的但是在团队方面,他们会有一些CRM具体的规则但是这些我们就要看看是否适合RTMMRaymond,你知不知道TigerGraph那些数据有没有
+SPEAKER_05: Yes. For Geisma, I think we focus on Rn side. Not so much Rn, but I like that you have it.
 
-SPEAKER_04: 那至少沒有大約呢?
+SPEAKER_04: If it is more positive, I'm not sure if it's already also covered Rn. It may be that it isn't actually a font, let's say the more I can hate the branch agent only. It's a branch. Rn, same, right?
 
-SPEAKER_00: 不,不,OK的,因为时间都不够了,因为其实,最后一句,就是因为其实现在Smart,现在所谓的DNA的application,它铺着Smart来,其实都是经Ihub的,所以其实如果我们之后,所以我们为什么要find out,究竟Chiagraph是不是Data都放了OmiBase,如果是的话,其实DNA铺Ihub,其实之后它都可以铺OmiBase或者经DataFabric,就可以拿回一些Narrow的Data,都可以同步,都可以给DNA做一些
+SPEAKER_05: Branch Rn. Branch Rn. Oh, yeah, I understand. There's generally three population in this case. There's the conduct, there's like branch, and there's contact center.
 
-SPEAKER_02: 因為有些問題我覺得可能不能一個一個問一問 蕭薇娟議員 谢谢大家
+SPEAKER_03: This is where it's branch, which I think we should put that together. I think that makes sense. Yes, yes. And one thing to supplement is that actually in yesterday, the channel meeting, this item, this one, and this one, from the product perspective, they already are not to co-build. Okay, yeah, cool. And then the next one will be the sales capability enhancement for the sales co-pilot. So the sales co-pilot actually is in place in Haze already and will expand the service, including expand the customer and the customer data coverage for more opportunity discovery. And then a script to give many insights. And then we also to support the actionable sales compiler template to support the extended audience to show us the GBO. So I think this one we can copy as well. Is there any objections? I think that sounds pretty good. And then we'll go to the next one. Oh, the next one is still... I think Hayes initiatives, but we have discussed this before, is about for the future-ready agentic AI infrastructure. So, Neil, do you have any supplement on this one?
+
+SPEAKER_02: One thing, Paul, I want to say, on the sales co-pilot, again, the tech stack is absolutely computable, but the actual, you know, the RM skills that's distilled into the AI tool can be different. Because like I said, you use the same technology components, but then we'll base on each side's RM's wisdom to teach AI which data points to look for to link to what commercial opportunities and then to turn into what kind of scripting, that is actually RM wisdom. I'm not sure that is something I can put RMT from AMH and RMT from Hays together to exchange their practices.
+
+SPEAKER_04: Yeah.
+
+SPEAKER_05: Yeah. I think we expect it is different because for the tone of voice for the Asians, it should be conflictable in different bands. So basically, the infrastructure is aligned the same and we should have different parameters so that they can have different results for the tone of voice, etc.
+
+SPEAKER_02: it's not only it's not only tone of voice alex it's more more than that right so for example how the rms typically link the transactions together in order to identify a sales opportunity a lot of those are actually the sales wisdom that um you know we try to turn that into a proper um ai prompting and into the system to teach the AI how to actually view the data and make recommendations. So those things cannot be shared.
+
+SPEAKER_05: Yeah, it's more on the local journey. We need to define for different banks.
+
+SPEAKER_04: Yeah. Yeah, yeah, yeah. I think that would be good to understand how this works now in Haze. If you say you've got the logic that is now specific to RMS based on their practice. Yeah. How is that, is that logic coded at the moment or is it, how does this work? Because then we need to segregate the foundation from that specific brand, specific operations, right?
+
+SPEAKER_02: Foundation-wise, I think data component can be similar. Like we use OmniBase, you guys can use iHub, but of course you need to build your C360 on top of OmniBase or iHub, right? And then you can use this thing on large language model will use Gemini and so far serves us pretty good. And then all the knowledge base that we put in on, you know, the, the, the menus, the sales practices, um, CIO insights, and all these, all these are. Okay. Now the actual, how the output is actually going to show. So for example, we. specifically instruct the AI to look for certain attributes in order for the RM to find the opportunities that is not. What can I say? For example, you need to look for specific for this transaction. And based on this transaction is not related. If we know this customer has a kid in what age or school, and therefore they may have certain opportunities, all these things are things that we will actually work with RM and then instruct the AI to do. So that's something which is brand specific. That will become very brand specific. And also, that is entirely co-work with the RM team. Exactly. So we'll not build that part because that part will need to be stayed in those teams to do that.
+
+SPEAKER_07: I think it's a bit similar to that. Yeah. Go ahead. Oh, I'm just trying to echo both of you, Laura and Kaz. I think, for example, AMH customer base is very big, much bigger. And then the customer pattern, the intelligence you could extract from there could be different from what we've got from the customer base. Similarly, for our own population, because you have to go in that direction. So I think, however, I would say that it is still a cool build item. We have the foundational common. Obviously, we want to make the common thought bigger and bigger. and then there will be AMX-specific and HACE-specific use cases or implementation. I think if we agree on the principle, we just label this a code build item and then work out the brand-specific stuff when we go through the next level of the drawdown.
+
+SPEAKER_00: Yeah, I agree.
+
+SPEAKER_03: Perfect.
+
+SPEAKER_07: Thank you.
+
+SPEAKER_03: Perfect. Okay. Then we continue for this one about the Argent AI infrastructure. This one, Neil, do you want to briefly describe the content?
+
+SPEAKER_04: I think in pre-medium, I already mentioned that.
+
+SPEAKER_05: So basically, what we would like to do on Ruby app platform, there is already a high code mode. So I think what we learn from different use case, right, this year, we do like to have a local mode as well as what the AI integration layer that we help us to accelerate the agenting AI work, right? So everything that can be MCD, right, the all this. So basically we would like to have a basic pool that's for Hong Kong pillar and for choice can attach for space of the use case. And this use case we can, with this funding we can co-work with group AIT, with the group AIT to accelerate what Hong Kong Pillar wants on the agency figures on the group AI platform. So basically, like, yeah. And we had some discussion yesterday, we think that's going to be also too beautiful if they combine from both sides, from the Hong Kong Pillar perspective. What else? through to accelerate the readiness of features that will be useful to self-serve like our colleagues with virtual assistants with knowledge that they can upload themselves. Because at this moment, you cannot load with your own knowledge. Whether it's SharePoint, you do have some MCP like Tango France, but it's still very limited. So it's a bit useless to have an assistant that cannot answer with grounded knowledge. So having the ability to potentially provide a bit of investment, co-work with and co-build with a group AI and have the model in place like that will allow us to unlock a lot of productivity with multiple use cases will be super useful.
+
+SPEAKER_04: Now I think that makes a lot of sense. Actually, to be honest, I do believe that we as an open pillar, we should be actually shaping the group AI platform. if I'm really honest, because we've got such a legal leverage, we are so close, you know, we should actually be influencing a lot of the features built. I think one of the priorities for this year should be for us to really push for that. Okay.
+
+SPEAKER_03: Okay. Okay, and then this one will be the content 2.0, I mean, YouTube. And for this one, actually, we have been allowed to go build in the CRM session already. And we also discussed it in our peer meetings, and we also agreed to go build. So anything anyone want to raise or to ask the questions?
+
+SPEAKER_04: Does this also include the public website type of content or whatever content we got here? or is it messaging compared to customer outreach?
+
+SPEAKER_02: This is more on messaging. And this is more on a workflow perspective. Because right now, the content management is very messy because you need multiple parties. You need the BU to create a copy. They can use AI to create a copy. But then you need to pass the copy over to RC based on the RC comment. You come back, edit the copy. Several rounds of change hands. And then you need to deploy to your messaging systems. um and connect your targeting to the contents and then deploy that so that whole process requires multiple change of hand and the content 2.0 you know one one part is to automate the whole workflow create the platform um and then second part is um you know we we integrate ai into um you know entire content generation and So make the whole process much faster. So that's kind of like what Content 2.0 is about. Because any campaign, right, there are three parts. Targeting part, which is ideation, signaling, and then you know who to get what. And then second part is the messaging triage, right? And which channel to go to. If customer qualified for, say, 10, 12 offers, which one we want to push first. So that's the triage part. The third part is the content. content management so that you can tell the customer about the offer in the right channel. So the content 2.0 address the last part. Yeah. Yes.
+
+SPEAKER_04: So, it's okay? Yeah, 100%.
+
+SPEAKER_00: Yes. Yeah.
+
+SPEAKER_04: Then we looked at... Also think about, you know, around the work as well, the website customer generation as well. That's a little bit of something else.
+
+SPEAKER_06: I think the next four items are also from digital platforms, as we discussed earlier. The first one is what was formerly known as AI-assisted form conversion, which is now called conversational customer servicing and fulfillment. I don't think this is the final name. How many names we have for each?
+
+SPEAKER_00: How is this different from this? So I think that's one which is the line to.
+
+SPEAKER_04: Maybe bring me the forms from branches being struck with right. The foundational view.
+
+SPEAKER_00: will be pretty much aligned with NEXA.
+
+SPEAKER_04: Sierra, it's basically Sierra.
+
+SPEAKER_00: Sierra is the chatbot, right? But then on the energetic banking side, it's something the components will be enabled as part of NEXA anyway. But the key difference is the spot that will be covered. Because of NEXA, the priority is to migrate existing 200 MWX journeys into SLEP. For this one, it's focusing on those journeys which is not even on the MWX trains. So that would be kind of like a project that we work together with operations teams as well. It would be a fun two-factor project.
+
+SPEAKER_04: So let's, again, make sure we, I think these are the same capabilities for ALH. Yes. And I'm saying, I like to discuss the rights, it's actually the forms. And I think what we could do here, align the names, make it clear. It's writing on Sierra. So I think that should be pretty much there, but the question is going to be the fulfillment API. That's going to be the biggest question mark, how to solve that, because most of those have not any fulfillment. So this is going to be one for us.
+
+SPEAKER_00: So the fulfillment API is that one on the outside? Nelson is also raising another business case to build the Bill 1 API as well to connect with this office space. With this one, we'll cover more on the front-end part. But then together with the objective ops and the Bill 1 API that will be available as part of Nelson's objective operations projects, that will be a full-front-end project.
+
+SPEAKER_04: question is whether he would build those APIs needed for these journeys.
+
+SPEAKER_00: Yeah, that would be something you'd have to look at. But that would be something you'd have to look at.
+
+SPEAKER_02: Yeah, that would be something you'd have to look at. One part is that can be very journey specific and say, what if Hayes picked a different journey from HSBC? I think it's unlikely we'll convert on every journey we want to build, right?
+
+SPEAKER_04: Exactly, exactly. But I think what it is more about is how we approach those journeys that are today done by forms and branches, they could be different for executive and AMH. Yeah. And what is the approach to link that up, or actually, you know, create the fulfillment APIs in the same way, then maybe it's a joint requirement for the ops teams for Nelson to build. And Or if we decide not to create fulfillment, what are the escalation routes within that Sierra chatbot for those questions where we believe the API is too expensive to build? I think there could be a co-build kind of principles the way we approach this. But I agree with you, we might not end up in the similar journeys one to one. There could be some similarities, but there could be different journeys because I know that, you know, the level of, I think you've done some digitalization of forms over the last few years, I remember.
+
+SPEAKER_00: Yeah, yeah.
+
+SPEAKER_04: Yeah.
+
+SPEAKER_02: Because I'm thinking like, for example, if a fulfillment via credit card is a reward dollar versus a fulfillment, a cash rebate, and those fulfillment API will need to be linked into different systems, right? So, and you know, the most difficult part, a lot of times you really need to book the source system IT in order to make sure this happens. So then that will create a divergence, depends on the journey that we select. Yes.
+
+SPEAKER_04: That's good. I think what we really need to do, John and Alex, we really need to get to the list of top 10 bots.
+
+SPEAKER_00: We have that, but then on Nelson's side, because Nelson is actually looking at that. He's actually over his team today. Yeah, I know. So that's why he wants to see whether any signatures. His team is trying to help us to swap that as well.
+
+SPEAKER_02: Yeah, but it will apply to common journey only. That's the point you want to make. because there's no, nothing can be just universally connected to all systems. Yeah.
+
+SPEAKER_00: Okay.
+
+SPEAKER_06: Going to the next one. That's the next one. I think, again, discuss this one in digital platform. And after that, we also had a follow-up discussion. All the foundational capabilities can be co-built and use case. We will go through it. Yeah. And the last one is one PWS. This is also something that we agreed in the digital platform that we will call by service.
+
+SPEAKER_00: This is the best one.
+
+SPEAKER_03: Yes, and we offer other cases. So any other questions or anything you want to mention?
+
+SPEAKER_02: No, we will be best friends after this meeting.
+
+SPEAKER_07: No, no, it's like, Laura, did you become a forever best friend? You're not best friends already. No, we are best friends forever. Best friends forever.
+
+SPEAKER_00: Thank you. No comparison.
+
+SPEAKER_02: I think the principle is, I think all the foundational components, I do think we need to co-build, otherwise we got challenged by different parties. So I think across Fonfilla, it's actually to our advantage to co-build the core components. But then the commercialization piece, the application level, um then that will um absolutely become some of the divergence so we'll see if we if if the um if the money is to build um but only focus on the technical foundation absolutely i think everything is co-buildable but we do need to uh from football i want to again, emphasizes the commercial aspects working for other systems, and that could be a different decision made from AMH CAS side versus our side. When we look at the pool of funding, we need to have that level of common components as well as the pool for a divergent component.
+
+SPEAKER_04: I agree. I have a question. There will be a question for you and Hendrik very quickly about if 90% of this is co-built, what would be the efficiencies done in the tech space, right? So we need to think about this.
+
+SPEAKER_07: Oh, these are universal questions. I have already, I have already psychologically So the expectation is that all the ideas to make would come down by a big percentage. So let's see.
+
+Unknown: Just to Laura's point, the focus over the next two weeks should be exactly that, right? Working out what is the commonalities?
+
+SPEAKER_01: What is the common cost? And also, what is the specific items relating to both sides of amh and a specific right very good that is a challenge yeah okay okay thank you very much guys thank you thank you thank you
