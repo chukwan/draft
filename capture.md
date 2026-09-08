@@ -1,199 +1,335 @@
-Susan: OK,好 我暫時還沒轉台,如果大家留意 要轉台,請聽我說 Bessie 進入了,Roy 進入了 Eric 也在了 Daro Grace 也加入了 Billy 在了 我想我們 齊人,其實我們可以開始 好,那我們開始吧 我想我說廣東話可以嗎?這個 section
+Wil: 借用你们的import, 改了URL 是否可以做到这件事呢?理论上是可以的 但是至于你说,如果是这样的话,我怎样知道哪些是应该由 哪里去拿呢?我觉得是等商业去谈了先 因为我们商业还没谈这件事 我理解的就是,简单点说就是 暂时在我们的配置下,在恒生的配置下 因为那些file都放在KMS 所以那个URL是不能发送给我们的客户 OK,除非 我们要做某一些另外的 additional的mapping 例如说在KMS里面的metadata 里面加册某些东西 这个是Aware的 但是现在,Day 1 at the moment,我想先谈清楚 究竟如果Assume 所有CIO的data是从KMS的情况下 那个integration应该怎样做? 这个我没ok
 
-Roc: 好,好
+Alvina: OK
 
-Susan: 好,我開始吧 這個是 AMH Haze BRR Co-design 的第一個 section 我們會 從一些關於 全部都是 Billy 和 Rod 或者其他有一點點的 我們會放在一起 這個第一個 section 我會 within 30 minutes 每個 section 大約是 4-5分鐘 希望不會 overtime 第一個 section 第一個 item 先 這些全部都是 CTB 的 item ok 這個 section 是 facilitate 我們的 tech lead 和 SA 去問問題的 第一個 item 是 UFCR Expansion 這個 item Roy 你可不可以很快地 講兩句 coverage 關於什麼?
+Wil: 是的 我也是那句,Aware会没有发送给客户的能力 但是 那件事要跟商业合作,我们才可以知道究竟是 应该怎样 而我assume的就是如果真的做Raspberping,就借用你们的importer去再用 所以我想先处理了 那些file先,情况就是你当KMS的file是和你们的conference的data是一样 你们叫API去拿conference的raw file 同样地,你可以去拿到KMS的raw file 只不过我在想,回到刚才一开始说的那件事 给了raw file给你们,你们在那边做passing 本身我们也pass了一段的file 会不会就是两边各自都做一次passing 还是说我们直接给了pass的content给你们 然后你们去做 我就想看看你们的意见,其实两边都ok啊 其实不是很好,我不知道你们pass了的东西是什么 还有那个tracking method是我们那边去做的,还是你们那边 不要说你们那边,我们那边,是在哪个system里面做 我想看看你们那边的意见 given现在 KMS的情况是这样的话
 
-Roy: 好的,首先謝謝 Susan 的時間 其實這個是 我們自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自自 特别是说交易的数据 作为一个相对的交易 和策略性的交易,这个数据应该是要涉及到商务 但是在UFCR本身的收益 直至现阶段为止,它并没有 可以提供一个全套交易数据 可以给我们的商务作为直接的消费 所以以这个 谈判和作为一个基础 我们也会想 提出并继续发掘 相对应的全套交易数据 去涉及商务数据的使用 因为商务数据在这类的交易数据 以历史而来都出现了不同准例的问题 包括不限于,例如in-work的TT 某些数据标志是发现在 本身IBUS标志的那一部分 就未必是那么齐整的,相对于 有FCData,所以我们也会在SCOPE2 想有全套交易数据的数据 其一,其二就是本身UFCR 现阶段它只能够作为它本身的项目 直至现在已经有日程的阶段 都还在遵守一些想对应 FCR上面的位置,兼且这个就是 UFCR这个项目本身的主题 我们也会想探讨其余的可行性 就是将一些非FCR主体的DataPoints 和相对应的要求,可以做一个 expanded coverage的要求,而这张Ticket 其中一个最大的主体,例如Transaction Data 正正就是这些东西的一部分,那我先在这里暂停
+Alvina: 但是你们pass还是pass 字用来的,还是怎样
 
-Susan: 好,好,谢谢Roy,我想问 客队我知道Anthony给了一些Questions Anthony你很快问一下
+Wil: 我们现在就只是pass了文字而已 没有说我用AI再把image给一个description,然后再做下去 没有做这件事
 
-Anthony: 我好奇你们拿了Full Dataset 你们是怎么access的,它是一个System上 还是怎样,因为很大嘛,要认知的财务 那你们是怎么看的呢 其实我们作为Business User
+Alvina: 因为我听闻,我们在latest那些是要
 
-Roy: 并不是直接去用那支Dataset的 或者说我们最少CRMU的层面上而言 都是一向是collaborate with Data Analytics Team 去再用那些Data去做的 因为其实现在不是说完全没有Transaction Data 不过现在的Transaction Dataset 是分散了很多不同的Business Table,也有部份之间 有协作开在Ibis那里而来的 有各种Quality Issue 在我们有Evaluate的FC那边的Data 首先是每天都在维持着 其他的Data Quality,我们都有拿到他们某些 front end的System,拿去对的 是的确比现阶段的Business Dataset好一点的 再加上通过UFCR这个Project 我会将它作为一个Triggering或者契机 认知到他们大家都有一个共同的Resource 去作为一个比较后的Future State 去将他们那些Transaction Dataset去给回Business 去做一个Ownership和Visibility的 所以我们在各种契机之下 都会想去做这个行动 并且在2027那里去开始Kickstart 这个方向的 OK
+Wil: 要digest image 你说的是听闻你们的意思是指
 
-Susan: 好,Anthony你还有没有问题?
+Alvina: 我们现在有些document有个graph PDF是不是有一张很漂亮的 我知道,我们会拆掉的
 
-Anthony: 暂时没有这个
+Wil: 等一下,你们要 拆掉的,是在说requirement到哪里
 
-Susan: 麻烦,我想问一下SA Team在这里的Daniel 还有另外一个同事是吗?
+Alvina: 是,是wealth的requirement
 
-Ivan: 你好 我想问,其实这些好像我听下去 在DataWise上面好像未 可能在AmixSite未必有这个Capability去做 我不知道,我想问一下恒生 譬如Alanis,我们是否已经有这些Capability 还是怎样去做,例如OmiBase是否已经有这些东西 你好,Ivan,我也是BFCR的
+Wil: wealth的requirement,明白
 
-Unknown: 其实我们都没有,因为我们现在都是靠U
+Alvina: 要拆掉,看2025年多少钱 但是你们的做法是什么,是经document studio
 
-SPEAKER_01: FCR的项目去跟AMH做一些Data Exchange 我们现在应该这样说 UFCR就是将恒生的OmiBase的Data推上去 汇丰就是IHUB那边推上去的 我们推的Data其实现在有一些Financial Crime Risk 刚才说的那些Blacklist,Grave List那些就在上面 但是有些Non-FCR就没有的 我们下一个步骤就是将那些都想推上去 所以刚才Roy说的那些Pain Point 基本上汇丰和恒生是Share的,这样吧,谢谢 所以那个Solution现在就是用Data Fabric
+Wil: document intelligence document studio,还是你们直接自己 两个东西来的 gooer那个 document studio 是啊 因为他保养了,然后就用他们那个 不知道什么鬼的名字,我不知道他们改了什么鬼的名字 总之就是他们是用AI来describe所有的图 然后再把那些图变回RAG的context
 
-SPEAKER_00: 即是SDP上一些Data 经Data Fabric去送给两家的Business 那个Solution应该已经在了 听起来就是在争取一些Data 要多放一些Data上去 Science是这样,对不对?
+Daniel: 再put回去
 
-Ivan: 嗯,没错,没错,Staph
+Wil: 但是你们有没有试过准确度
 
-Eric: 正确
+Kyle: OK的,我们转用了document intelligence去check data
 
-Ivan: 嗯,即是两边都是一样的,Solution也是这样去的
+Alvina: 图那边是ok的
 
-Susan: 好,想问一下有没有其他问题? 没有,我们移到下一个 OK,下一个就是 都是Roy或者Rod可以帮忙说一说
+Wil: 我们图的都是
 
-Billy: 这个我说吧 这个是TNAA 我们本身其实现在这个TNAA传媒就是 Transaction Network Analysis Assistant 其实这个Phase 1其实今年已经在做的 是一个AI Solution AMH LBW去做Transaction Review 和我们的Network Review 通过我们的一个System叫做Smart Lab 但是我们现在就去做 Standard去Phase 2的 Phase 2呢,其实就是包括 我们继续Enhance我们本身AI的Logic 还有第二个关键就是Phase 2 如果Hunson呢 是要Enable Hunson的Readyness for Usage的 包括一些Data的Preparation 和一些Risk Scenario 因为Hunson那边是用第二个Network 2 叫Target Graph的工具 所以大致上这个Item不是一个New Build的 但是反而是一个 一个Condition Improvement 我们现在在做的AI Solution Hunson呢就是一个Integration或者Preparation 去使用我们现在Phase 1的东西
+Alvina: graph,当然不是很固定
 
-Susan: 好,谢谢Billy 想问Tag Team有没有问题 在一个Comment里面
+Wil: 明白 听起来是这样的话,似乎你直接拿kms的raw file好一点 我觉得是,因为我怕我们两边的requirement不是很 不同 一来呢
 
-Anthony: 他提到过Haze那段 没有Receive Funding for Haze 是什么意思呢? 是不会的,还是 就是
+Alvina: 二来就是似乎,如果你在说在wealth里面可能会有一些interpretation
 
-Susan: 哪里有Comment? 对不起,Anthony
+Wil: 因为可能在kms里面,如果把kms里面的RAG的一个passing 强行放在你们那里,好像又会影响到那件事 那impact impact就是 我们会有一个double 的cause 因为在kms里面pass了一转,可能在wealth intelligence里面pass另外一转 但是如果我们给个raw file来的话,就有一个好处就是保留了在wealth里面的 世界specific的一个 passing process,可以standardize,无论是amh还是恒生 都是enjoy同一个wealth的passing process 明白 我想问现在我们有没有一个API可以拿到一个比如说daily的delta list 或者我假设,我想象的一件事是 每一天 either我用push或者pool的方法 我都要知道,identify到,比如说我们在CIO里面这个domain里面 今天的changes document是什么 有没有这个能力? 我的理解应该有的 最简单就是你可以想象 平时的process就是 我们的business 会定期update那些document上去的 根据我的理解就是business曾经有说过,他们很少甚至乎 不会 去改动一些已经upload了的document,因为suppose那些document已经出了街了 就算如果出了街的话,他们最终就找另一份新的 文件去盖的,所以我们不会存在就是说 我有些所谓的edit 或者delete的case的 我只会是newly add的case 我可以想象就是 我有些东西上去KMS里面 然后KMS是需要告诉 或者是 无论是KMSpush过去Wealth Intelligence,或者是Wealth Intelligence走过来pool 我们都需要知道 我set了daily一转 我就 shortcut n-1的就fully,你只是给n-1的 这样就避免了duplicate,因为如果不是的话我还需要去check那个duplication 我是不是拿了等等那个东西嘛 which is not make sense 那就是说 有没有一个能力就是说,我time base就是说我这一段时间 拿modify 不要拿create,拿modify,因为 given真的会有modify的时候 我都可以cater到嘛,如果是这样的话 有没有一个这样的能力 或者如果没有的话,我们就可能要build这个能力出来 因为我们拿了条list suppose那条list就可以reuse我们get document的那个url KMS现在是support both s2b和ib2b的嘛 因为如果这个是一个batch的action,我们就用ib2b就不可以用s2b了
 
-Anthony: 曾经他在里面有个Column J里面 他写着No Receive Funding As being raised by Heng Seng BII 这个可能是Outdated了
+Alvina: 你们的document有没有entitlement 某一个人才 某一个staff id才可以看到
 
-Susan: 这个可以 我看到 Anthony你有没有其他问题? 因为我看到Daniel举手的
+Wil: 我们现在是group level的 应该是 我们set的所谓domain level就是说 我们在那个 你可以想象就是有一个 grouping virtual的,logical的 对了 local的就是说我这个local的 给到什么adgroup的人去access 这样 如果是CIO的document 其实suppose 就是我们要和business那边去align 这一堆东西我们会这样推过去wealthy intelligence 这堆东西是不是public的,是不是internal的 那就不应该是说只是一某部分的人看,因为我们不是pp所以没那么sensitive 我觉得应该这件事是会这样align 就是要拿这个alignment的
 
-Daniel: OK,可以 你好,我想问一下 6月底的时候 应该AMH那边做过一个Tag Graph的 一个Study或者Key of Meeting 我想问一下现在的Status起点 因为以我所知 Heng Seng是用Tag Graph的 现在Existing TNA那边是 是绑绝了SmartLink的 但是SmartLink 以我所知 不是Target Stage 应该AMH也在想 大概我想问一下 这件事现在去到哪里?
+Alvina: 还有你们那个 delta list 是不是可以放document type的 我就是要cio view而已 CIO view是一个document type
 
-Billy: 这个就Vlog那边解释了 但是TNA 暂时AMH那边的Network Data 都是用SmartLink的Data 就算我们Extended BEE去Vlog那边 去使用 其实现在也是一个Co-run的状态 他们都OK继续使用SmartLink的Data 为DNA的用途 他们,就是Heng Seng都用SmartLink的Data Heng Seng是用Tag Graph的 但是刚才所说 如果为Phase 2 就是Heng Seng的Enablement 那就要花一些功夫 首先将Tag Graph的Data 转化成一个AI Readable的Data Preparation OK,我暂时这个问题先问一下
+Wil: 你们整个KMS有很多document suppose的就是我们在说我们CIO的 CIO给的upload上去的document就放在一个domain里面 如果你说除非这个东西可能我们要carefire的就是如果他们那个CIO upload的document除了CIO inside 另外做一些东西其实不需要放进去的话 我想可以在我们的category里面可以做到这件事 就是说简单点说就是如果我们那个delta的事情就要传统好像filebase这样 我可以base by一个time given的time after这个时间里面再做filtering 这个我想可能就要和我那边的business去夹 但是相对地你们就可以说我call你这个API我就拿得到 比如说n-1这段时间 或者n-2这段时间的那个date里面的一个file list 然后你们就逐个逐个去拿 那就变成在你们那边去骂一件事 可以去这样骂
 
-Daniel: 这个AI不是一个Tag Graph的Dependency
+Alvina: 但是那条file list都是filter了 by个category 又好 我想到时候API如果有API拿回这些
 
-Billy: 或者SmartLink的Dependency 主要是一个Network Data的Dependency 所以Once Ready其实两边都用不到 都封了,对了
+Daniel: 其实就会有些反应 就是我尽量逐一转一转 你们现在拿CIO的 是啊是啊
 
-SPEAKER_00: 好 好,我想让大家知道 我们近来收到 也不是近来,早几个月 Global有一个解决方案 走了出来,叫RTMM 或者有个Program 它好像在做相类似的 我担心好像有些丢棘期而已 Hello, Linus
+Alvina: 因为我
 
-Roc: 我是Rock,VFC,我是Heng Seng RTMM AI其实正正最后的End State 是会Incorporate TNA into it 这个你就当它是一个External Agent which will Inject into RTMM AI 之前其实一开始看到Observation Heng Seng我们没有一个Separate的Visit Funding 其实这个本身是对的 因为我们 有另外一笔钱 叫做Project Falcon 就是Support Implementation for RTMM AI 我们也和那边的PM去Clarify 其实那边最后是Falcon那笔钱 是会Include Heng Seng CRMU Implementation Cost 不过就是In General 就是Route 57这个Ask 我们是Agreed as 个目标来的
+Daniel: 有个type就拿回来 但是你那个一定要戒到business要的那个
 
-Ivan: OK 不好意思,想问一问 Platform wise 是不是在AI的Platform 已经有什么东西 有的了
+Alvina: 会会会
 
-Billy: 我们Face 1的Phototype 现在用Pilot的了
+Wil: 我反而另外一样东西想问的就是 如果是这样 instead of wealth intelligence 去pull from KMS 有没有可能KMSpush过wealth intelligence 我push到某一块地方然后你们去吃 那变成了 你不需要理会究竟你有没有总之你给我的file我assume就是 应该要吃到wealth intelligence
 
-Ivan: 但是暂时是Open给AMH的User 对不起,是不是家豪他们Team 用的AI Platform 对不起,我不知道哪个AI Platform 你在Refer 我们用Google AI Platform Google AI Platform,OK,可以,谢谢 没问题
+Alvina: 你给错了 如果是这样的话
 
-Susan: OK,我再移动 好,我们去第三个Item,谢谢 继续到这个Further TMX & Bar Catch Roy 或者Rod,谁可以讲一讲
+Wil: push去sv sftp
 
-Roy: 好,谢谢Susan 这里其实是在说 继续去Leverage一些 现在HSBC Retail那边 已经在用什么Solution 当然我们也是通过DNA去做Data Access 和用途的 有相对部分的TMS和Bar Catch Data 就已经在无论是CRM与DNA 已经合作的Intelligence 或者在其他地方已经使用 这个Item最主要是继续去Explore 还有In case我们Identify到 即是Primpoint到一些具体的Opportunities 在现在的Data Pipeline上 并未去Enable到的位置 我们都会想通过这个Item 想对应的一些Resources的Support 去处理相对应的Data Onboarding Process 所以这里我会将它 现阶段定性为是一个Data Discovery 和Enablement的一个工作 最主要是在这个位置 好,谢谢Roy
+Kyle: 不是的那个要专利牌了
 
-Susan: Tag Team
+Wil: 不可以sftp 如果我要close cloud去做data file
 
-SPEAKER_00: 没有
+Kyle: 你们在哪里
 
-Susan: Assay Team 恒生的Data Picture是
+Wil: GCP啊 OK 所以那个我们要做data file 要走根据data data那边的话就应该要走jennifer 我想在哪个方便点而已 因为其实如果是file太大或者是太多其实push 用jennifer的方法好像好一点 美国limit大一点
 
-Ivan: 是不是已经有在OmiBase 我不知道OmiBase是否已经添加到 还是这条路还未起
+Alvina: API一定有limit
 
-SPEAKER_00: BioCatch Data这个 要问问Calvin 我们好像是 现在是未有的 但是Rollmap会不会这样做呢 要问问Calvin
+Wil: 但是那个不好处就是什么呢?不好处就是我给你一个raw file 其实我里面有些metadata suppose你应该是要去 去连接KMS的嘛 就没有了 我又要再交多一个metadata file给你
 
-Ivan: 但不是的 也就是一样的 比如他们想Ihub 我们想
+Alvina: 我觉得 是啊 阿卡拉说我们现在去INR 都是用API
 
-SPEAKER_00: 我不知道Ihub现在是不是在做 但是这些BioCatch Data是不是要存在 或者会不会存在OmiBase Data Platform上 要问一问 阿琪的意见 但是不是技术的问题
+Kyle: 是的API
 
-Ivan: 哦 介不介意问多句 这次AMH这边做的原因是 因为要用这些Data 还是 是Gaudit 对不起
+Alvina: 其实API我们就一定可以的 因为现在去INR也是这样
 
-Roy: 首先其中一个用途 或者我可以去讲一下用途 现在一段其实我有部分的TMS和BioCatch Data 我们已经是间接去消耗的 即是一些存在的Data Pipeline 但是我们一直用 一直都看到 还有研究过解决方案的本身 就看到应该会再继续有 更多的机会去用一些 现在还未用的TMS和BioCatch Data 这个就是最主要的Ideology本身 去更多的FCR的Detection 和一些额外的Attribute 去做一些Perventive的Control之用 因为这个是已经在换取的Data 但是差在未Enable到某些 我们现在Business Use Case上的Enablement 所以是这个Enablement的本身 我想有时候就放在这里
+Kyle: 不过我们这条文是放DXP的
 
-Ivan: 恒生都有机会用 或者有类似的用法 我相信是
+Alvina: 就是放 iGoogle 因为如果我经API呢其实我就备了
 
-Unknown: 还是
+Wil: 我备了data那边的一个transaction file 因为API是standard
 
-Roy: 这方面Roy如果有需要 可以去补充 但是我相信的就是 Data Point本身 已经在捕捉的时候 还有它这个TMS和BioCatch的Solution 是一些FCR和Frog的一些Solution 绝对是会有相对的价值的 阿Line
+Alvina: 变了
 
-Ivan: 好 我们这边再拿回去 和Teklim再研究
+Wil: 我的API就是我给你一条list之余 我可以有metadata 如果你们那边有需要存metadata去做process的话 例如说做个file association 然后我就给你一条link你再去拿 那就是变了 N加1这么多转 比如我有50个file 你扣5元一转 你拿个delta list然后就call50次去拿50个file回来这样 但是如果是这样,Daniel可能你要帮我和KMS那边合一合 如果做一个这样的API大概要多久 什么时候可以ready 因为我们business 是,阿娜你说
 
-Eric: 对不起 对不起,我想问Roy 我们Ihub这边 你说这些BioCatch和TMS 你认为现在在捕捉 是有Bank的System在捕捉 还是怎样的 现在我们最主要都是通过
+Alvina: 还有呢你说API应该是delta来的 Editial load 都要想 Editial load就未必用API了可能就是要 MENU也好,MENU accept那些file给我们也好
 
-Roy: WithDNA的协作 但是以Business很初步的认知 就是例如通过一些FeedSide的Route 就已经有一个间接对于这个 比较在Upstream的Fender Data的Access 但是它并没有去Consume 例如Eric也好 它都并没有去Consume所有TMS的Source 和BioCatch的Data 所以我们会想继续去 Explore further 一些未必在现在的Use Case上 已经在用或者在Cover的TMS 和BioCatch DataPoint 去再做一个Further Enablement
+Wil: 你本身,你本身你们之前有说过的嘛,CIO的data其实你们都不会拿最 不会拿很旧的那些的嘛 是啊,就是我说的就是说
 
-Eric: 你意思是DNA 就是Business Team自己在捕捉 而不是说 IT有System现在在捕捉这些东西
+Alvina: 你问business 不是的,你
 
-Roy: 我现阶段不排除 IT是不是也有 但是最少我们现在通过DNA的Pathway 是有部分的Data Access的 当然是一个间接的Data Access 是不是Menu Upload 还是什么 都是Pipeline Pipeline,好
+Wil: 你之前都一直跟着我说他们看最新的资料,我问我的business 我们可以问business的,如果那个
 
-Eric: 因为我是想知道DNA 它们如果自己Collect 它是不是在用它自己的方法 不知道在哪里 Menu在不同的网站 不知道用什么方法去搞 明白,这方面是 我想最主要是想拉回到Ihub
+Alvina: Iniso delta我觉得可以再谈 是最新的,是最新的 不过呢 不同的document type呢,他们的expiry都不同的 在knowledge base 有些就 有些就一年,有些就三个月 想看 就是年报那种friend这样 我不知道为什么要存一年,不过有些就 如果他一年出一次的话,那我 就算存一年,我只是得一份而已,我觉得ok的 要看量有多少,用API 可以的,不过 不过,如果量多就
 
-Billy: 因为现在AMH那边 它们存放在Flood System里 但是DNA因为它们都看Flood的 它就 somehow可以Manually Extract 这些Data 给我们一些Specific的Use 我觉得Ultimately 我们也想把这些Data 带回到Ihub里 给我们的Dashboard Self-Serve 或者做自己研究也好 去做这些东西 因为so far我想现在DNA 都在帮我们Serve一些 One-Off的Data Request Ticket 这样去使用
+Wil: 这样说,我觉得Iniso可以再谈的 因为我们真的要跟business合,究竟他们会有多少 然后从而看究竟Iniso的量有多少的 反而你说的我daily delta 因为我assume是daily升,你们现在拿sale都是daily升的嘛 daily的嘛,你们那边
 
-Fu Yeun Lee: Hello,我想请问Ivan 是不是Ihub 和那个Underline的Tech Structure会改 是吗 未知道
+Kyle: 是的,daily
 
-Ivan: 因为Flood就是 因为如果两边都有Synergy的话 是不是我们应该不Rely on 就是刚才同时也有Mention 究竟是用什么方法呢 AMH有些方法 恒生就没有方法 如果有机会 可能就有机会 要Build一些similar的东西 大家一起去做 还是怎样 去连接Data进来 你有这样的发生
+Wil: 我assume我们这里都是daily,这里可能我们需要问sale的 同事就是我daily的几个月份文件 这个KMS里面应该会有 一个记录 然后之后那件事就是说,我们刚才探讨的是 用一个push和pull嘛,那我filebase还是API,如果是真的API,大家都觉得这样去做的话 是好点这样的API,反而另外一件事就是,我想问在wealthy intelligence里面 你们比如说,你经过API去拿,除了说我知道了URL之后 其实 你还需要什么data,有没有需要其他任何的metadata
 
-Fu Yeun Lee: 因为我听到Jason Fang说 因为Benedict接了一张单
+Alvina: 我现在就想问一下,如果是在那里,那里的那个
 
-SPEAKER_00: 接了一张单
+Kyle: 要看下,要看下,例如是那个 那个document的 那个分类 然后sale daily还是weekly report 跟着那个 date update的date 然后就去哪个
 
-Fu Yeun Lee: 你问Jason Fang
+Alvina: publish date,update的date,然后那个是哪一个公司的
 
-SPEAKER_00: 我跟Jason Fang
+Kyle: report来特斯拉,或者什么类似的metadata 要的,因为我们要去
 
-Fu Yeun Lee: 他Present了半小时 他说他们在想 怎样把Ihub Infra的Tech Platform 和OmniBase拉近它 或者是Unify了它 就是Functionality可能有个格子 但是下面的Underline是一样的 希望比如API一样 Data Inclusion Point一样之类的 那我可能你跟他们Link一Link 好点 我想IT TeamLink一Link 然后股数应该用好的方向去估 好吗 没问题 谢谢
+Wil: 老实说,里面呢,我不知道你们写的 或者那个solution有没有facetable 因为有某些data,其实你们是就着你们CIO平时写的手法来做的 我都要看下我们CIO的手法是否也是这样的 我不知道这件事是如何,可能这件事会有所影响,但是那个问题是
 
-Susan: 谢谢 谢谢 好 我们Move on去下一个Item Presentive Data 都是Roy或者Rock的 是
+Kyle: 要看你们恒生的business,它怎么用那个variantation 因为 我们拿回这些data,其实要做 那个 起个vector 然后你做回那个indexing trunking那些东西,它怎么search 它那个question bank是怎样的,大概 你如果你是做过RAG,你要做trunking,suppose你都不会
 
-Roy: 谢谢Susan 其实作为Data上面的用法都是类似的 继续去有一些比较新的Data Enablement 去复制一些Preventive Control 和一些Analysis之用的 包括但不限于 Data Source可能这次有点不同 例如GPS 和某些在ID卡以来的Preventive Data 这些是会更为一些 特别是在GPS 其实已经在Onboarding的时候 就已经在Product Journey上已经Collect了 但是现阶段并没有一个直接的 D downstream Enablement 直接去一些Preventive的System 例如Eric 所以我们都会想将它去作为一个相对的Data Enablement 作为一个Control的 而我们认知中 Haze是某部分层的Data 例如GPS其实已经在用了 所以会有部分Catch-up的阶段 但是当然也有说有很多不同类型的Code-Build Opportunity 我们都会想去作为Data Enablement 包括但不限于 说我们在一些 在换取中的Data 在他们自己的Internal Data Set 甚至是未的 我们想Enable的 例如ID卡本身的一些文字上的Data 可以令到我们可以更加好地去Categorize 包括但不限于 可能他们的Essue Date 或者相对应一些比较具体的Matrix 我们都会想去Collect Enable 用来Onboarding Control 以及FCI Enable 这就是有部分的例子去协助 Illustrate 我们想做的方向 我现在都暂停 大家有没有什么问题想补充
+Wil: 逐份逐份文件看的啦,你都是在说用那个algorithm去计 我做trunking,我embedding,我反而不担心去做那个unstructured 反而是你们有些structure的mapping,好像你刚才说的 一个文件,可能他们说我们要有些 asset class,例如说我这份文件其实是在说美股的周报 美股这个tag可能有associate,因为我不是based on那个 内容去 做个association,而是做tagging去做个association 这些我相信就是刚才Carol你说的,有些cathification等等 publish我理解啦,反而是company其实我不是很理解,就是我是不是要将每一个comp里面 每个company都要make it as a list 因为我们没有的嘛,我是理解的,CIO里面 所以我担心的就是如果是这样的话,这些tagging可能是怎样interpret data都摆在logic side里面 就变了其实恒生可以adopt到,从而拿到那个effect是有限 因为 本身那个data structure,本身那个source会有点不同 但是我想这样说,到底做到多少这件事,我想可能往后面再看,但是至少 可能看会不会你们有个list 去告诉我们,究竟其实有什么metadata是你们会用 是什么来的 然后看看究竟KMS那边是否可以provide,如果没有 我们这边要看怎样去解决这个问题 至少现阶段我们 谈的就是我们KMS会给一个API拿delta file 然后里面会包Metadata,就是这个file里面 有什么metadata,或者这个Daniel你再update一下 因为 拿file就没有metadata,如果是这样的话,就是说一条list 拿list的时候就会有metadata 那metadata我们可以包到什么呢 那我们就要做mapping
 
-Susan: 好 Tag Team Anthony
+Alvina: 这个ok 然后我们就拿回香港的API
 
-Anthony: 没有
+Daniel: 或者你问KMS
 
-Susan: 好 Assay Team 我们之后如果是 大家可以再投一些Questions给我们 我们可以Consolidate 再去补充的 或者有什么Actions可以告诉我们 好 如果OK 我们就移动了 那么 CCTV Enhancement Branch Infrastructure 那么这个Fancy或者Eddie 对不起
+Alvina: 问KMS 他们需要什么metadata
 
-Eric: 对不起Susan 对不起我刚才Mute了 我相信 因为第四个Item 如果你说讲一些爆Matrix的东西 我想这里提出一个Question 就是说 这些是不是一些叫做Data Classification 属于一些Highly Restricted的Data 如果是 我想回顾一下就是Assay 就是Solution Architects 那时候可能要帮忙review 因为据我认识 就是我们IHUB GCP或者AMH only base 据我知道 现在我们之前都是 只是可以Support到Data Classification 就是去到Restricted Data only 那么如果要将一些BioMatrix 这些如果是Classified 是一些Highly Restricted的Data 如果要再放进去Cloud 可能在Solution Architecture上面 是要有一Set的Review的 所以这个可能扩大给一些Assay 要去review整个现在的Solution上面有什么东西 包括Control上面要有什么 Transit的Data 这些Highly Restricted的Data Transit,Store,Process的时候 需要有什么Extra的Requirement要去做
+Wil: 对了,还有一些位置如果真的没有的话,其实有多大影响对于wealth intelligence里面 因为我们CIO同时去做那个分那个 mapping的时候,都讲到明,我们的tagging都写在CIO document里面 我估计你那边做OCL拿了所有tagging的,那些tagging你就知道了 我就不想再加下去了 我们的business是可以去到这样的地步的 所以我都要看的就是,有某些位置,可能tagging里面有,我们已经拿到 或者我们要再传下去,再拿,这件事是合理的,但是我暂时担心不是全部拿到 我看到的是
 
-Susan: 好啊,谢谢Eric
+Alvina: 我走的而已 你说走都可以啦,因为我不熟悉的影片都是这样的 我的意思是你没有那些东西,就给个AI去判断,准不准 另外一件事,那些metadata的tagging 唯一的帮手就是 Synergy Synergy 所以如果我们知道了existent有什么tag,然后我们尽量map,map不到的
 
-Billy: 这个可以到时借镜Flood那边的Use Case 因为其实这些Data 本身Flood System都有 我们都是想 又好像刚才的Data 是否想它扯回到我们IHUB的世界 那么可能相关的Highly Restricted Data 这些东西 他们已经discuss过 和Clarify过 可以Leverage一下 我们到时可以做一个参考 我们Mark的Reamark在那里
+Wil: 我们就看看有没有解决,没有解决就听天由命,我觉得OK的
 
-Susan: 谢谢Eric 我们有Assay的同事 到时他们再看的时候 可以让他们recap知道 谢谢 好 那么我们去CCTV了 Bessy或者Eddie可以说说 Eddie有没有做了?
+Alvina: 如果真的不行,就建立一些rules去做,去拆啦 可以,可以
 
-Bessie: 有,那我说吧 有了,在哪里? 在那里了 Carol,Carol是不是? 或者我也先说一下 或者Eddie和Carol补充 那么CCTV现在这个Announcement 主要是在ATM里面 在机器里面想装一个 想装一个CCTV 让我们可以认得清楚一点客户 因为现在这些CCTV的Capturing 就是在这个顶部 就永远都是有一些角度的 可能是打斜的拍 或者是30左右 这样拍下去的客户 当拍下去的时候 就拍不到任何的正面 现在这个Enhancement 就是希望Build in在ATM里 当它Withdraw Cache的时候 就可以拍到正面 就是一些Cache Milk的 Money Milk的Risk 那么现在的阶段就是 应该我们在 我们在用NCR 我不知道弹性在用什么ATM机 如果用NCR本身它已经有Build in的位置 可以做到CCTV的 那么我们现在就在跟NCR聊天 但是本身它 Inbuilt在ATM里面用它的Hardware 但是它下来的Software 怎么Capture 怎么样去存起它 存多久 这些我们就在跟IT聊天 究竟我们是 Internal是要写一个Software 才可以知道我在什么情况下 才拍下它 就是可能那一刻 就是一个什么Image 像我们的Video Image 还是一幅照 是一个正面照 还是怎么样 那么这个就是跟NCR图 和Internal的IT人聊天的 这样 Wonder Pilot Insights 我们打算Pilot 1都是在旺角的 那么 然后我看到Haze的答案 就是那个Update 就是你们都是 是有没有问题
+Wil: 可以,那what's next? 就可能看,麻烦Carol给我们一条list,你send给Daniel和我 share出来,Daniel就麻烦你量一量跟Given他们做一件 做这个API,这个API是support整个wealth 他没得不做的,他不做的,我要搬老板出来
 
-Susan: 不如找回Tech Team有问题 或者是 是不是Eddie 我刚才有记得Eddie在这里 现在Mandy不在这里了
+Daniel: 我刚才问了Rollin,他们超过排了,不要紧,你照问他,他说没有,就先输了
 
-Bessie: 不要紧
+Wil: 是啊,如果没有的话就找 找Alex去谈
 
-Susan: Haro 对了 有没有Supplement 在这里 在这里吗 有没有Supplement 如果没有我们要问一下Tech和SA Team 他们有没有什么问题
+Alvina: 因为那件事是
 
-SPEAKER_00: 跟我们谈谈有没有什么问题 好
+Wil: 你先说吧
 
-Susan: 谢谢 这一刻没有问题 好 SA Team OK 没有问题 好 谢谢
+Alvina: 没有,我说Carol你找Chinson 说一说,我觉得问题很大,Given我们已经在做这个Pattern 因为我做不到,我本身有想过做一个standalone的file movement
 
-Roc: 通常会基于预先预规的方向去做的 不过暂时都是基于高层层或主要的方向 有一个可能性就是 除了这些方向或进入了Tipology 其实两间银行也会有其他预先预规 但我们未必会在卫打上 所以这个想法就是我们想 就是Generative AI 去协助我们在发展这些Tipology的同时 除了跟着这些Dematic 或是一些高层层的Tipology 去翻转他们的规则 的 同时也可以更加明白 用Generative AI去理解 在过去几个月 会不会有新的规则 除了这些Dematic的Tipology 是可以找到出来的 所以我们就是想着 用Generative AI的用途 在CRMU建立Tipology的同时 透过打通AI和我们内部的一些Data Set 我们可以有一个提示 可以去问什么是新的 有什么新的规则 会不会有些建议 我们有什么新的Tipology可以发展 Believe这个就可以去catch到一些更加多 之前可能或者一直都没有catch到的一些insight 去协助我们做一个review的时候 那个scope可以更加全面
+Wil: 如果是做file movement的话,其实那个effort就变成了放在 Wealth intelligence那里,因为我们 做file movement就是,可能我会有两个file同名,一个就是Jason,一个就是Lon在Wallfile 明白明白,所以我只是和他说一声而已,先让他听一下
 
-Susan: 谢谢Rock 想问一问Tech Team SATeam
+Alvina: 应该没问题 但是你们什么时候出呢
 
-Daniel: 喂喂喂 我想问一下现在有没有一个System在做什么 还是现在本身是Many
+Wil: Business的口吻当然是越快越好
 
-Roc: 我从恒生的perspective 首先我们CRMU是未Enable 这个Generative AI的 不过我们在恒生在Explore中 The use of这个叫做Data Assistant 就是它应该都是Serve as a Generative AI的Use case 它暂时应该是 within DNA是有用的 我们就是想要expand这个Use case 去打通我们平时CRMU会看到的一些Dashboard Let's say是OmiBase或者FCR1 那就去Enable Functions
+Alvina: 我看到Tony恒生都没过,你们现在出什么,Viltel还是CNBC CNBC就预了下年一Q出的
 
-Daniel: 那就是Data已经齐了 因为Data Assistant后面的OmiBase 其实Existing已经有Data OmiBase只不过在Data Assistant上面 On top再加一些新的Generative AI的Initiator 你觉得是这样吗
+Wil: 恒生Viltel要做先 恒生Viltel本身说不出 但是两个星期之后突然间就说要,又是9月10月,突然间说要
 
-Roc: 我的Understanding是这样 为什么
+Alvina: 总之他说
 
-Unknown: 因为用这个用个用个用个用个 用个用个用个 用个用个用个
+Wil: 突然间就说我们老板要出了声,要这件事,你IT死出来了 那种情况
 
-Susan: OK 我知道我们已经过了,如果大家可以多留几分钟 我们再说最后一个题目 Fuji Printing,Patrick,请 好,谢谢Susan
+Alvina: Tony知道的嘛,因为我看他上个星期才做了一个
 
-SPEAKER_07: Fuji Printing,恒生和汇丰现在都是用Fuji 在印我们的指示,通知,印币之类的 他们通知我们明年3月会完结这个服务 所以现在我们在做RFP,选择几个不同的卖家 恒生和汇丰是同一个确保 基本上大部分的发展都是同一时间会做的 或者很快,家明给我分享一个图 可以很快,大家看看 看到吗?现在我的屏幕
+Wil: 那个问题是,就算,我这样说,就是我们的solution先不要理会他有没有resources,因为他有没有resources 不影响我们的solution 除非我们有两个option,一个是要浪费时间做点 但还是要看究竟哪个叫做合理点,proper点 这样 我想可能这样说吧,看你们那边会不会都可以问到,比如Twins,如果做一个file base的话 究竟是怎样,因为 file base里面都有effort 我觉得是看有没有什么大家拿出来称,因为暂时我觉得
 
-Anthony: Logan,看到
+Alvina: 还有一个考虑的,你们其实一天会有多少,应该不多的
 
-SPEAKER_07: OK 看到了 基本上恒生和汇丰是在共同的确保 有几个项目我们要做的 第一就是做一些转换,现在存在的 在400或者i-Series生成的一些图片 经过一个分配层,VPSX和ConnectDirect 是去推出给卖家印的 将来我们会更换Fuji这个服务 就是选择一个大陆的卖家 和一个在香港的卖家 去减少集中风险的 除了Infrastructure,做了一些转换 Distribution Layer和测试,其实都会和恒生一起去做的 想看看大家有没有什么问题
+Wil: 我问回,这个我问回
 
-Anthony: 其实听起来两家都已经合作了 没有特别各自的东西要拨或者要解决
+Alvina: 如果你说一天 一天 50-100条 拿不是问题 拿完之后都要process 是不是真的这么完美地,六个小时内做完呢 我当我半夜 cut off 12点 你们又搞了两天
 
-SPEAKER_07: 是的 我放大家的信息,这个其实今年我们已经在做一些的
+Wil: 我明白,我明白,所以其实 如果你这样说的话 如果真的要这样cater 理论上file base是最理想的 因为我就不断搬file过去,你们consumer就抹走 这个是最理想的
 
-Susan: 就是在拿钱,已经开了,在做的了 所以我们下年 我想问你一个问题,为什么是在BRC的
+Alvina: 所以要看量,如果你说 没有的,每个礼拜 只有几份,一天几份,可能weekend多一点 但是weekend你不用开行嘛 就是礼拜天慢慢做都可以 那 我觉得API都ok的,如果你不是说每晚有几十份
 
-Bessie: 为什么不是在CCO的 Statement 因为其实这个是Obs的item
+Wil: 我要问一问,但是你提完我之后,我又突然起了一条筋,我觉得file base好像 安全点
 
-Susan: 我们其实是没有地方放的 所以被问,Betty就觉得不如就放在BRC里面 但是Ona呢? Ona
+Alvina: 两种也好也不好
 
-Bessie: 即是钱坏,我想都是工钱的事弹 但是Ona也是CCO是不是? Ona应该就是Obs
+Wil: 我觉得这样说吧,我as Aki 在座大家都是architect 如果我用API call可能叫做more pretty点,但是问题是我cater不到你们刚才说的量 因为他突然间真的有些东西突然间cater 真的会出的话 我因为 我on daily的话,我API不够facible enough 除非我会有个,你们那边会记住了 我上次ask的是这个时间 然后呢 你给了我一个list,我还会记录下我哪几个success,哪几个file 我处理不切 下一次我再怎么separate,怎么处理,如果不是的话,我没有这个 catering的话,我resilience是顶不到的
 
-Susan: Obs是Ona? Patrick就是,我不记得是Nelson Nelson,Ona,那他Sign off呢?
+Alvina: 因为现在我们问INR,是daily的吗
 
-Bessie: 我offline跟你说一下这个,好吗?
+Kyle: daily的,但是我back回来一点,因为 INR去API那边metadata很齐张 但是如果 如果是conference 你KMX那边的metadata 有多少呢,我就想 我都不知道 先探讨一下
 
-Susan: 我们可以和Patrick再见,没问题 是的,是的,是的 想问回IT和SA team有没有其他questions on这个item?
+Alvina: 我的integration metadata 没有人回答,要business下场,还有要看report
 
-Ivan: 我只问一句,我知道在找Vendor的 不过是不是中间的assumption大家都不会转的 我见大家,因为我都听同事说在做这个project 是,assumption的意思是 就是比如你的by batch出给Vendor去编 都是一样的,我们都会by batch的
+Kyle: 回来INR,是daily,我们是去callAPI,去识别到哪些是 Delta参与的document
 
-SPEAKER_07: 明白,谢谢
+Alvina: 但是他是怎样的,他是一条API问完,他给了我list,然后我cache 我把delta的list放到staging 然后逐个去拿,还是怎样的
 
-Susan: 好的,我相信这个是last item 好,这个section,section1我们complete 刚才有说到有一两个highlight fromSA有 有一个我们会写回是关于in case我们可能要SA team 做一些high risk的data review,那些我们会mark 一些remerks或者comments 尽量放到central file里面,所以大家可以for reference offline,如果大家还有什么问题的questions 请send给我,我们可以consolidate的 OK,那会再给我们的business users去review other than that,我们就complete这个section了 好的,谢谢各位,Thank you
+Kyle: 我要出场 等一会
 
-Fu Yeun Lee: 拜拜,Thank you
+Alvina: 对啊,你讲conference 对的,可以称用filebase,或者用API 我今天也找个时间问一下 因为如果你们那边,我是不是都拿了你的list,我慢慢consume
+
+Wil: 就跟user说,我们mode是t-1,但是有时会delay 这个是其中一个,但是如果说我总之搬过来了,你们慢慢consume的话,照理说你们就更clean 因为你们做的东西就是,总之我看到 file有10个,就做10个
+
+Alvina: 没错,我就不需要说,又要cache低,然后又要记录下哪个record做了,哪个没做
+
+Wil: 你里面的logical似乎更麻烦
+
+Alvina: 对啊,我要staging,要逐个去conference 对啊,如果不是我放在sv,那它已经有足够的sla
+
+Wil: 还有足够的resilience 我又不会再担心file loss了,那唯一的是什么呢,唯一一个不好处就是 我们没办法check到究竟那个consumption rate,我只能够check, wealth intelligence有没有这个file 但是我就没有一个figures,究竟total有多少个 我真的各自有%concern 但是你问我,我觉得 business未必需要这么real time知道,我有多少file我没consume,你要和我消多少
+
+Alvina: 但是我们web intelligence有个pick 是看source的 就是给一个rm或者staff去 所以那个我会在metadata,就是suppose如果真的有
+
+Wil: 那个我都要回你kms的url 要的要的,因为到最后如果是这样做的话,我甚至乎可以做的就是,我在kms里面做一个batch 然后就说 我自己detect到,然后我就把那个file拿过来,和一个jsonfile 那个jsonfile可能是同一个document name 然后里面就包了你们想要的metadata,或者我们可以准备的metadata 包括了那个url 那个url是kms的url,还是那个web site的url呢就fathable了 因为我可以kms在里面
+
+Alvina: 对,所以变成了日后你再说,我们business那边真的要找,我真的要send给那个客户,这个jsony
+
+Wil: 我觉得ok,因为我个人都觉得是合理的 我没理由空口和那个 user说话,那个customer说话,我们是这样写的
+
+Alvina: 因为你给我我都会问,那你有没有一个link给我看一份document
+
+Wil: 你自己找吧,这件事就不make sense了
+
+Alvina: 但是如果我是
+
+Wil: January的话,我就入后就是,我在kms里面maintain的时候,maintain完,然后showdown我就可以 扔给你的时候 你不需要 改wealth intelligence里面的logic 就已经可以做得到 这件事了 我觉得这样可能会好一点 Daniel 如果是这样,我明天跟你合作 我今天跟你合作
+
+Alvina: 我们也拼一下同事
+
+Wil: Daniel我跟你合作的,是两边,我想都要问的,不过如果可以做到filebase,你问我 我个人我会建议filebase 一来他cater fail之后 他做resilience那件事,ok,因为 kms知道我push是file,我就再在January过 那也同一个方法,其实可以cater到inisolo
+
+Daniel: 那还需要问他拿吗 还需要开头有一个API就拿 两类方法来的,如果file我们
+
+Wil: 两边都consider,但是纯粹on solution wise 我暂时觉得 一个用API拿delta,再逐个file拿 vs kms去做push,放到sv,然后wealth intelligence 自己consume filebase有个好处就是de-couple 我知道我搬file过去,file我就自己再搬过 对wealth intelligence来说,我看到有file我就consume,没有file我就不consume 整件事是 multi-couple的,第一 第二就是 我可以cater inisolo 第三就是 如果我这个file死了,我日后第二天再 再兑过来,其实大家都more flexible的 这样 但是 我都想问,就是kms那边如果提供一个API的情况去做个data去拿的话 那个情况会是怎样,如果真的 filebase不work的话,我们都有另一个backup solution 我会这样建议
+
+Alvina: 但我想问jonipa会做这些东西吗,因为我之前用jonipa 真的 是一个data file的形式 对呀,简单点说就是我们会将
+
+Wil: 我放了 放了一堆file在staging里面 然后给juniper,juniper就去吃,就说你确定会把这个staging里面的file搬去target sv这样
+
+Alvina: 他不会做任何事情的 我以前用juniper是set 多少点send一个file,那个file叫abc.csv 不是的,我们是可以filebase,可以fotobase的嘛,总之你把整个foto里面的data
+
+Wil: 搬过去 不会做个周快乐搬的 他唯一不好处的是 他唯一不好处的是什么呢,慢 不是guarantee的一个sla来的 他有可能是很快,五分钟里面send到,或者可能你等几个钟都send不到的 但是in close cloud我们就一定要用juniper 我们没办法,但是似乎就这样听下去 好像大家做的东西相对独立和小型的 好多 那变成我们要配合的就是 那个file naming,就是raw file的naming,和本身json data的那个file
+
+Alvina: 那个metadata
+
+Wil: 那个file怎么配合呢,比如说我见到这里,我就改了个 后面的extension做json,我就expect是拿到那个metadata 第二就是那个meta file里面的structure是怎样,就只配这两样东西 那似乎少点东西配合
+
+Alvina: 是的
+
+Wil: 还有error handling就是各自理会,我们不需要大家夹大家的error handling
+
+Alvina: 还有很多时候升回,我之前问过他们,很多时候都是用it support 不知道为什么对加 那条link有事
+
+Wil: 你说的是 url base API base
+
+Alvina: 可能是,API死了又拿不到,其实最后都是用it去 是呀,这个最通常,为什么你吃不到,可能是
+
+Wil: 我最担心的就是,他的API不是做到 不是做到,我拿n-1或者n-2,我死了一只,我再拿过,我怎么拿呢 然后就要,我要特意去找哪一个发生死了 那件事就算我那边排行公司也有这么generic的API 你那边又要cater这件事
+
+Alvina: 是啊 是啊
+
+Wil: 如果你那边有cater,大家也要cater 那些effort都大了,不如用回我file base 我宁愿推file base 是啊,还有你会有很多API traffic的嘛
+
+Alvina: 如果要reload啊,或者 不知道为什么
+
+Wil: 是啊,还有我觉得对我们来说呢 KMS我prefer去宁愿自己在1月的div file放在某个地方 好过他provide一个API出来,其实是否有很大的reusability,其实又不一定
+
+Alvina: 这样吧,我们暂时
+
+Wil: 按着两个方向先啦
+
+Alvina: file base好像比较好点 问问大家,问问lgmateam的意见先啦
+
+Wil: 是啊,然后之于effortwise可能就要靠他们啦 我就问回,我就问回CIO的同事,或者我们那边,究竟大概量是多少啦 但是如果用这个方法的话,量应该不算很大问题
+
+Alvina: 我觉得 我们暂定去这个方向先啦
+
+Wil: 那我看一下,尝试 我希望有时间send回个wrap up的email啦,我记得不记得而已因为 这样啦,Daniel你没有什么特别问题呀,on这个sing up
+
+Daniel: 是啊
+
+Wil: 你觉得
+
+Daniel: 我唯一的东西就是 如果one off的话呢 其实他就只不过我们都会谈到,几时几月这样子 多久的伤害出来,一次就夹,但是如果你之后再有其他file type 就每一次都要夹一次啦,这个就不像是一样
+
+Alvina: 是啊,我们现在又遇到,当初就是从古初开始呢 那个vcr可能support三类document的啦 可能是CIO weekly 或者daily digest,ingest那些这样啦,然后呢 其实我们现在on going每一个月都帮他们加约的document type 香港也是这样的 所以其实 加document type的type意思是指category 是啊是啊是啊,projective有个confirmation 他们有成 初初只有五六种document啦 CIO view 现在记到这么多,其实这两年他们 不停地做
+
+Wil: 我理解 我的理解是他们那些所谓的category是virtual attacking来的嘛
+
+Alvina: 是啊是啊,是不是virtual,他们都是那个document的名字
+
+Wil: 名字difference不是很合理的吗
+
+Alvina: 他们是这样的,category全部都是CIO来的,但是report名 其实你看到他们每个report的frequency都不同啦,calcification不同啦 然后expiry time都不同的 当初没有那么多的,现在加一下呢,我们下面还在做的 spirey有不同的
+
+Wil: 我不知道,我觉得
+
+Alvina: 他们的expiry不同,应该是给我们看的,我们自己用的 是的 我的意思是他们每一年都会加几份report的
+
+Wil: 我在想是不是group了他们,就是当是我有几类group,这个group A就是这样的 你加file,我带个问题 file name照样不应该影响到那件事的嘛,我们不会基于file name来做logic的嘛
+
+Alvina: 最主要应该是这些 要看放了knowledge bay的那个多久啦 接着要拿回来看,retention放多久啦 所以就group了他们,比如说我不会profile给他们任选的嘛,而是说
+
+Wil: 比如说type A 你就是resilience那么多 然后这个那么多 我们去谈那个group是容易的嘛
+
+Alvina: 是的,那个integration是一样的,但是他们这里我们为什么要做呢,很多时候都是要做logic simulatty check的logic,所以你看到,我的意思,我想带出的意思就是可能今天 我明白我明白,20份report,每一年都在加一下,所以用batch,pro,你one of low 就容易点搞 哦,我明白,我明白
+
+Wil: 老实说 我觉得那个位置是 这个我之后大家再夹,就是比如说里面究竟我们是否可以在恒生里面和user说 只有几个category,你一是选这个,retention就一定是这么多的啦 那看可不可以这样局他们 这样就simplify这个logic 你问我,我尝试这样做
+
+Alvina: 他们通常后加的东西 就是这些report,他们无端端说,我们business是做多了三分之一 没有的啦,加上
+
+Wil: 这个category,至少logical process,我知道,我只会有多少份retention是五日这样 或者七日 但是我处理logical,我比较type,那你那份document就map了,原来这个type,我在metadata里面加上 它是type really,type叫really 这样 那变成了,我不知道,我未完全踩进去看究竟logic是不是应该这样做,但是我纯粹这样想而已 这个再谈吧,我觉得
+
+Alvina: 我们要做的,也要看report的sample 因为我们拆的时候,他们有些东西 没有了,我等给business自己处理,或者给RTF自己处理
+
+Wil: 就是开播做implementation的时候
+
+Alvina: 因为要执得 要 真的有些logic要做,才会 才会弄到 acuracy那么高
+
+Wil: 我觉得这样看,如果你说我们要执的,在import里面的process 要做某些东西的 要去document去行的,不是一个generic的RAG,而是一个 per type的customer的RAG 如果真的要做到这样的话,我只能够说,就是based on user,到时候就真的 一拍一拍看,但是我不知道,我觉得那个位置 是不是真的需要做到这个地步呢
+
+Alvina: 我初时也觉得不需要这样 证明他们真的这样做 不要紧啦,我们 不要紧,我们之后再做吧,我觉得试了
+
+Wil: 我觉得试了先,比如说我们align了一个solution 然后就各自去pass,有需要过会就过会,没有需要过会就align,至少我们align了 然后share 然后如果两边需要各自做事,就要看要多久的effort,然后再给business 坐底可能要11月
+
+Alvina: 但是你们现在只是做KMS的事 你们不要其他source的了
+
+Wil: 例如呢
+
+Alvina: 这样说吧,CIO我们之前就放了sharepoint,但是就没有integrate
+
+Wil: 那好啦,然后 年头就demise 有谈过究竟是不是应该在wealth的世界做一个CIO的system的 knowledge system的maintenance 到最后呢,我们wealth没钱 大家就agree了 全世界 全世界 wealth的IT啦 wealth的IT啦 然后我们AI的case AI lead啦 Architect啦,就aligned了 我们将CIO的document放在KMS 所以对于我们来说呢,KMS就会是CIO的knowledge的source 我们就不会说 我会放一些conference,会放一些DXP 大不了的就是我这份文件可以通过一个什么的URL可以在access到 这样而已 所以暂时我见到CIO是 是standard的 然后其他的news那些东西,大家都是经MDS,refinitiv,etdat等等那些东西 那都是standard的
+
+Alvina: 不行啦,refinitiv要改用mcp contract的问题 今早我先和Tony解释过一段 应该是refinitiv 就是LSEP 他们被人收购了,现在叫LSEP 他们说以前那张contract,dap 那些usage不是for AI的 现在应该是Business和他们在谈一份新的contract 谈完之后,就要拿market news的那个piece 应该转去call他们的mcp
+
+Wil: 这样说吧,如果转了mcp,那个integration要再谈,要再过会,问题是 我和Business那边share过 如果他转了mcp 到底他
