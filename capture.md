@@ -1,391 +1,335 @@
-SPEAKER_02: at 2 0 5 okay
+Wil: 借用你们的import, 改了URL 是否可以做到这件事呢?理论上是可以的 但是至于你说,如果是这样的话,我怎样知道哪些是应该由 哪里去拿呢?我觉得是等商业去谈了先 因为我们商业还没谈这件事 我理解的就是,简单点说就是 暂时在我们的配置下,在恒生的配置下 因为那些file都放在KMS 所以那个URL是不能发送给我们的客户 OK,除非 我们要做某一些另外的 additional的mapping 例如说在KMS里面的metadata 里面加册某些东西 这个是Aware的 但是现在,Day 1 at the moment,我想先谈清楚 究竟如果Assume 所有CIO的data是从KMS的情况下 那个integration应该怎样做? 这个我没ok
 
-SPEAKER_12: hey hi neil hey hi davey hey hello hello hello hello everyone
+Alvina: OK
 
-SPEAKER_02: uh i think we can start as um 205 or 204 so we can have more people then we can
+Wil: 是的 我也是那句,Aware会没有发送给客户的能力 但是 那件事要跟商业合作,我们才可以知道究竟是 应该怎样 而我assume的就是如果真的做Raspberping,就借用你们的importer去再用 所以我想先处理了 那些file先,情况就是你当KMS的file是和你们的conference的data是一样 你们叫API去拿conference的raw file 同样地,你可以去拿到KMS的raw file 只不过我在想,回到刚才一开始说的那件事 给了raw file给你们,你们在那边做passing 本身我们也pass了一段的file 会不会就是两边各自都做一次passing 还是说我们直接给了pass的content给你们 然后你们去做 我就想看看你们的意见,其实两边都ok啊 其实不是很好,我不知道你们pass了的东西是什么 还有那个tracking method是我们那边去做的,还是你们那边 不要说你们那边,我们那边,是在哪个system里面做 我想看看你们那边的意见 given现在 KMS的情况是这样的话
 
-Unknown: start
+Alvina: 但是你们pass还是pass 字用来的,还是怎样
 
-SPEAKER_01: two
+Wil: 我们现在就只是pass了文字而已 没有说我用AI再把image给一个description,然后再做下去 没有做这件事
 
-Unknown: cool
+Alvina: 因为我听闻,我们在latest那些是要
 
-SPEAKER_02: Okay, maybe I think we can start the meeting. Yes, so the objective today is to get the solution and the quotation for the AI enablers ready for this week's submissions. And believe that the IT team shall also get the IT architect's consent on the proposed solution as well. So this is our first session to review the input, and if it's a need, we can schedule a follow-up session later this week. And one quick thing. Yes. We will focus on the AI enablers only. So the business use case for the AI and related decisions will be covered in the respective business sessions. So let's end the other question. If no, then let's start. And one thing is that I will switch between two Excel files. This one, we have a consolidated view of the AI items from AMH and HACE. While most of the input, the IT input, will be in the in this code, common files. Okay, so I will switch back and forth. Okay, so the first thing will be this one, the AI Assist campaign with the binary pricing. And last time we said that is mapped with the AI for credit card. But I think that for this item, we still have some discussion about how to build. I find that it's already, but I think we may, you know, I think the detail is still in the purification. So, but anyway, let's see the first item first. Are we trying to use the unit ID to find out the common items from the car from the code build file? Sorry, guys. Well, I think someone has changed the filtering.
+Wil: 要digest image 你说的是听闻你们的意思是指
 
-SPEAKER_01: Okay, so this item, this should be a parent, okay, to code build.
+Alvina: 我们现在有些document有个graph PDF是不是有一张很漂亮的 我知道,我们会拆掉的
 
-SPEAKER_02: And next we build the IT input as well as any architecture input on the code build sessions. So for the solution architecture code build, is there anything you want to supplement on the 80% finance, 60% balance, something? Anything we need to know from the architect?
+Wil: 等一下,你们要 拆掉的,是在说requirement到哪里
 
-SPEAKER_11: So we can go back to the item. Yeah.
+Alvina: 是,是wealth的requirement
 
-SPEAKER_02: Sure. Yes, it's you, right? The AI Assist campaign with binary pricing. You said that from the architecture build, the funds end, that 80% can be code build and 60% can balance the people build.
+Wil: wealth的requirement,明白
 
-SPEAKER_11: Yes, yes, yes. For the fund end, because I understand that for the, this, it may involve some agentic workflow and also some staff fund end. That's why if both side can code build together, I think that part code build. Yeah, that's why it's high. Even fund end, you know, for two brand?
+Alvina: 要拆掉,看2025年多少钱 但是你们的做法是什么,是经document studio
 
-SPEAKER_02: It's for staff fund end, right?
+Wil: document intelligence document studio,还是你们直接自己 两个东西来的 gooer那个 document studio 是啊 因为他保养了,然后就用他们那个 不知道什么鬼的名字,我不知道他们改了什么鬼的名字 总之就是他们是用AI来describe所有的图 然后再把那些图变回RAG的context
 
-SPEAKER_11: Not digital fund end, right? Okay, so only the, you know, maybe the card will be different and the furniture will be quite similar.
+Daniel: 再put回去
 
-SPEAKER_02: Okay, good. But one thing, I think when we consider the code build, you know, compared with the, I'm not sure because last time we have a mapping on these two. So when you compare, okay, so we can have 80% code build. Are you comparing these two items? Or I can say that you compare this AI Assist campaign with binary pricing with the AI for credit card and said that there's 80% can be code build and 60% bank can be code build. Are you doing, you know, this kind of comparison? Hmm.
+Wil: 但是你们有没有试过准确度
 
-SPEAKER_11: I don't know. Okay. I, how I do this, I compare the protect, I saw from the initiative. Okay. And in my mind, I'll come out common maybe solutions or high level, very high level solutions. And then, yeah, and then I will take out which part we potentially have a high architecture alignment or not. And then I will provide a figure. Yeah. And also from to the front end, I think I just explained it. And then also I can decide. I noticed that the requirement is still in very high level. But from tech perspective, I can foresee there's much rockets on how we should actually design the backend because it may involve some kind of data collection from external party with an agent. Hmm. And also some kind of agent making the decision for what's best to a customer. And also last, we need to consider how we send out those offer or some transactions, something like that to our customer. Yeah. Okay. That's a really good.
+Kyle: OK的,我们转用了document intelligence去check data
 
-SPEAKER_10: Yeah. Yes. Can I comment on that? I think we have two initiatives. One is the AI-assisted data. The other is the AI-assisted campaign optimization. And this one is particularly on the dynamic pricing, right? For if you switch on the left-hand side. On that one, from my understanding from the lending team, most of the investment will be on basically automating, creating automation for on the full-frame system to support like a campaign execution. And that means like they want to change the card origination and loans origination. Like that is on the front end. They want to change the society for the credit decisioning system. They want to change the ability to update rapidly the pricing and the fulfillment as well as like have the ability to have dynamic pricing. So are all those like changes that I just mentioned similar? Like with regards to haste on what they need? Like has it been discussed between the two lending teams? Yes. No. No, for me. Yeah. I don't think so. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah.
+Alvina: 图那边是ok的
 
-Unknown: Yeah.
+Wil: 我们图的都是
 
-SPEAKER_11: Yeah. Yeah.
+Alvina: graph,当然不是很固定
 
-Unknown: Yeah.
+Wil: 明白 听起来是这样的话,似乎你直接拿kms的raw file好一点 我觉得是,因为我怕我们两边的requirement不是很 不同 一来呢
 
-SPEAKER_11: Yeah. Yeah. Okay, no, I'm just wondering, because what you just said, Ivan, I hear you.
+Alvina: 二来就是似乎,如果你在说在wealth里面可能会有一些interpretation
 
-SPEAKER_10: I think it's more related to the other one, the AI-assisted campaign optimization. But on that particular line, it was more related to the lending on the fulfillment system, what they wanted to enable automation so that it can support a more rapid campaign, like from ideation to delivery.
+Wil: 因为可能在kms里面,如果把kms里面的RAG的一个passing 强行放在你们那里,好像又会影响到那件事 那impact impact就是 我们会有一个double 的cause 因为在kms里面pass了一转,可能在wealth intelligence里面pass另外一转 但是如果我们给个raw file来的话,就有一个好处就是保留了在wealth里面的 世界specific的一个 passing process,可以standardize,无论是amh还是恒生 都是enjoy同一个wealth的passing process 明白 我想问现在我们有没有一个API可以拿到一个比如说daily的delta list 或者我假设,我想象的一件事是 每一天 either我用push或者pool的方法 我都要知道,identify到,比如说我们在CIO里面这个domain里面 今天的changes document是什么 有没有这个能力? 我的理解应该有的 最简单就是你可以想象 平时的process就是 我们的business 会定期update那些document上去的 根据我的理解就是business曾经有说过,他们很少甚至乎 不会 去改动一些已经upload了的document,因为suppose那些document已经出了街了 就算如果出了街的话,他们最终就找另一份新的 文件去盖的,所以我们不会存在就是说 我有些所谓的edit 或者delete的case的 我只会是newly add的case 我可以想象就是 我有些东西上去KMS里面 然后KMS是需要告诉 或者是 无论是KMSpush过去Wealth Intelligence,或者是Wealth Intelligence走过来pool 我们都需要知道 我set了daily一转 我就 shortcut n-1的就fully,你只是给n-1的 这样就避免了duplicate,因为如果不是的话我还需要去check那个duplication 我是不是拿了等等那个东西嘛 which is not make sense 那就是说 有没有一个能力就是说,我time base就是说我这一段时间 拿modify 不要拿create,拿modify,因为 given真的会有modify的时候 我都可以cater到嘛,如果是这样的话 有没有一个这样的能力 或者如果没有的话,我们就可能要build这个能力出来 因为我们拿了条list suppose那条list就可以reuse我们get document的那个url KMS现在是support both s2b和ib2b的嘛 因为如果这个是一个batch的action,我们就用ib2b就不可以用s2b了
 
-SPEAKER_01: Yeah, yes, similar, yeah.
+Alvina: 你们的document有没有entitlement 某一个人才 某一个staff id才可以看到
 
-SPEAKER_11: I think just to supplement, this was discussed in the lending team on Friday,
+Wil: 我们现在是group level的 应该是 我们set的所谓domain level就是说 我们在那个 你可以想象就是有一个 grouping virtual的,logical的 对了 local的就是说我这个local的 给到什么adgroup的人去access 这样 如果是CIO的document 其实suppose 就是我们要和business那边去align 这一堆东西我们会这样推过去wealthy intelligence 这堆东西是不是public的,是不是internal的 那就不应该是说只是一某部分的人看,因为我们不是pp所以没那么sensitive 我觉得应该这件事是会这样align 就是要拿这个alignment的
 
-SPEAKER_01: discussions. Jane had set up that meeting. Maybe, Ivan, you'd recall, I know you've been in so many meetings.
+Alvina: 还有你们那个 delta list 是不是可以放document type的 我就是要cio view而已 CIO view是一个document type
 
-SPEAKER_11: Yeah, yeah, yeah. This morning, even this morning, I discussed with Jennifer and Daryl as well. So many meetings, yeah, sorry.
+Wil: 你们整个KMS有很多document suppose的就是我们在说我们CIO的 CIO给的upload上去的document就放在一个domain里面 如果你说除非这个东西可能我们要carefire的就是如果他们那个CIO upload的document除了CIO inside 另外做一些东西其实不需要放进去的话 我想可以在我们的category里面可以做到这件事 就是说简单点说就是如果我们那个delta的事情就要传统好像filebase这样 我可以base by一个time given的time after这个时间里面再做filtering 这个我想可能就要和我那边的business去夹 但是相对地你们就可以说我call你这个API我就拿得到 比如说n-1这段时间 或者n-2这段时间的那个date里面的一个file list 然后你们就逐个逐个去拿 那就变成在你们那边去骂一件事 可以去这样骂
 
-SPEAKER_10: So, Vini, what was the conclusion of that discussion on lending? Is this also that 80% reusable across Hays and HSBC for that scope of what was described to me by Jennifer and the lending team?
+Alvina: 但是那条file list都是filter了 by个category 又好 我想到时候API如果有API拿回这些
 
-SPEAKER_01: I don't think we came to a percentage. Distribution. It was just if tech teams had any questions, they could have asked. But I think Vaishan and the tech teams basically took away to discuss in the background and come back on how much is reusable.
+Daniel: 其实就会有些反应 就是我尽量逐一转一转 你们现在拿CIO的 是啊是啊
 
-SPEAKER_10: Understood. I just want to make sure that what Ivan mentioned is more applicable for the campaign optimization, the end-to-end. That still needs to be discussed in detail. But for that one, that line is specific to what was put forward by the lending team.
+Alvina: 因为我
 
-SPEAKER_11: Yeah. We just...
+Daniel: 有个type就拿回来 但是你那个一定要戒到business要的那个
 
-SPEAKER_01: We also have come up by conclusion this morning because we noticed that there's some operation
+Alvina: 会会会
 
-SPEAKER_11: difference. I think it is better to take action to align both sides because we are looking forward to the one single solution in one market, yeah. Instead of two or three, yeah.
+Wil: 我反而另外一样东西想问的就是 如果是这样 instead of wealth intelligence 去pull from KMS 有没有可能KMSpush过wealth intelligence 我push到某一块地方然后你们去吃 那变成了 你不需要理会究竟你有没有总之你给我的file我assume就是 应该要吃到wealth intelligence
 
-SPEAKER_09: I hear you. One quick question, Qin Zhou. I'm sorry I missed a Friday meeting with too many meetings. Just for this one on the AI part. I think everyone... I have the same comments, right? So for the AI part, it's more for automation or is for like... Leo, right? I mean, create campaigns. Like what... I mean, for space for the dynamic pricing one. This role... Campaign automation...
+Alvina: 你给错了 如果是这样的话
 
-SPEAKER_10: This role particularly is for the enablement from a lending standpoint for a lending campaign to be able to launch a campaign, like to ideate and launch a campaign in a more rapid manner.
+Wil: push去sv sftp
 
-SPEAKER_00: Because usually when you want to launch a campaign, you may need to configure in your system,
+Kyle: 不是的那个要专利牌了
 
-SPEAKER_10: the ability to display the campaign on the geometry, on the geometry, on digital, you may want an ability to track, the fulfillment of, like, the offer, for example, you need to spend ten thousand bucks within a month, and then, you can, like, basically, unlock, like, the benefit, for, to give back, like, maybe, a cashback, any forms of that so there is less on the ai side it's more like on the uh from the landing like end-to-end standpoint like when you want to make it happen you need to like put that in your order system that's why like when i was listening to ivan i think all the points that i mentioned was correct but it's more to another initiative the ai assisted campaign like optimization but
+Wil: 不可以sftp 如果我要close cloud去做data file
 
-SPEAKER_09: this one is more on the landing side so what got you got it because for the pricing part we have a i think i'm also aware we have a tool called ultt so it's live i think last year or year before basically help you to do like for landing for fulfillment for campaign design i'm not sure if that one can be reused uh like like like with some enhancements to accommodate this because there is an existing uh platform in production called ultt i'm sure if last friday has been yeah yeah i remember i remember that's for haze uh i i cannot say it it cannot be reused but i for for me
+Kyle: 你们在哪里
 
-SPEAKER_11: i i just positioned that as a because i i'm from architect i need to provide a view on longer term
+Wil: GCP啊 OK 所以那个我们要做data file 要走根据data data那边的话就应该要走jennifer 我想在哪个方便点而已 因为其实如果是file太大或者是太多其实push 用jennifer的方法好像好一点 美国limit大一点
 
-SPEAKER_09: yeah my recommendation on the agent workflow or some more advanced technology yeah okay okay
+Alvina: API一定有limit
 
-SPEAKER_02: okay so i'm just thinking uh being uh if this item is more landing instead of the ai specific uh shall we you know i'm i i i always think that it's related to air enablers but it actually is either more related to the air landing
+Wil: 但是那个不好处就是什么呢?不好处就是我给你一个raw file 其实我里面有些metadata suppose你应该是要去 去连接KMS的嘛 就没有了 我又要再交多一个metadata file给你
 
-SPEAKER_10: it enables an ability for uh the campaign idea there is a assist to to to make it happen in a faster manner because if you have a good idea but uh you are hampered by the fact that you
+Alvina: 我觉得 是啊 阿卡拉说我们现在去INR 都是用API
 
-SPEAKER_05: need to configure all your back-end system to make it happen uh you don't reap the benefits
+Kyle: 是的API
 
-SPEAKER_10: that's why i like this one it's like combined together it enables the ability to create more ideas that are more dynamic and that can be put in place in a faster manner okay uh the reason i asked this question
+Alvina: 其实API我们就一定可以的 因为现在去INR也是这样
 
-SPEAKER_02: is that uh i want to see whether we uh i shall put this in in the air and enable sessions or we shall you know discuss this item in the landing sessions will be more appropriate um my
+Kyle: 不过我们这条文是放DXP的
 
-SPEAKER_10: understanding is like this is being discussed also on the landing side because it's like specific that needs to be discussed between landing uh hcc and hays having said that i remember a comment from laura uh saying that uh if we have dynamic pricing like it is specific to landing like can be also on deposit can be on other things so cool have also similar uh capabilities like uh for different products on terms of dynamic pricing that allows you to support like an ability to launch like new campaign for on the product specific campaign so there can be a wider discussion but for time being like the landing of democratic democratic democratic democratic democratic democratic democratic democratic democratic democratic democratic on the product specific campaign so there can be a wider discussion but for a time being like
+Alvina: 就是放 iGoogle 因为如果我经API呢其实我就备了
 
-SPEAKER_02: the landing knows where what they want like uh that was put forward by the landing hsbc yes okay um then really maybe we can uh further discuss whether we we can you know move this symptom to to the main sessions or we discuss it in this meeting because it's more focused on the a and a okay okay okay anyway uh so this is what we have and uh for the last anyway we can call you first we um sorry guys um my oh anyway my my window is freeze again there too many uh person on
+Wil: 我备了data那边的一个transaction file 因为API是standard
 
-SPEAKER_00: this excel anyway uh for the i see that uh for the it quotation you said that it is uh uh 1.5 million
+Alvina: 变了
 
-SPEAKER_02: for the uh different uh for the single existing single deployment but um how about you know if we co-build this item or we'll build for both haze and and and the image uh any input on the value of this uh who is the id team's researcher for these items hi paul uh this is dominic uh from the image side and
+Wil: 我的API就是我给你一条list之余 我可以有metadata 如果你们那边有需要存metadata去做process的话 例如说做个file association 然后我就给你一条link你再去拿 那就是变了 N加1这么多转 比如我有50个file 你扣5元一转 你拿个delta list然后就call50次去拿50个file回来这样 但是如果是这样,Daniel可能你要帮我和KMS那边合一合 如果做一个这样的API大概要多久 什么时候可以ready 因为我们business 是,阿娜你说
 
-SPEAKER_08: actually yes last friday we uh we worked with uh john ma's team uh uh to uh revisit the uh cobu uh synergy uh we still take some time to to come back uh john is it right yeah yeah so so we are we are we are working on this yeah okay we're so we're supplementing later right right good okay and another thing is that i need
+Alvina: 还有呢你说API应该是delta来的 Editial load 都要想 Editial load就未必用API了可能就是要 MENU也好,MENU accept那些file给我们也好
 
-SPEAKER_02: to ask martin or architect uh i'm not sure you know i'm not sure i'm not sure whether you know what you're talking about uh i'm not sure i'm not sure i'm not sure i'm not sure i'm not sure so anyway do we need to create another role with this new the id um to to have a pair to to fulfill the requirement from from from the guideline uh uh and the entry uh for haze and input the value again something you got my meaning because we have a duplicate uh role for for every item uh paul you're calling me a for for every item uh paul you're calling me a
+Wil: 你本身,你本身你们之前有说过的嘛,CIO的data其实你们都不会拿最 不会拿很旧的那些的嘛 是啊,就是我说的就是说
 
-SPEAKER_06: uh paul you're calling me a question is do you need to duplicate the entry yeah for the haze because this one is for image
+Alvina: 你问business 不是的,你
 
-SPEAKER_02: and for this one actually i i i'm not i'm still not sure whether this af credit card is you know um correlated with this ring if no then shall we add a duplicate row and then duplicate the
+Wil: 你之前都一直跟着我说他们看最新的资料,我问我的business 我们可以问business的,如果那个
 
-SPEAKER_06: the content and make a row for the haze haze one yeah so if if if the if row 199 is not the same as row 24.
+Alvina: Iniso delta我觉得可以再谈 是最新的,是最新的 不过呢 不同的document type呢,他们的expiry都不同的 在knowledge base 有些就 有些就一年,有些就三个月 想看 就是年报那种friend这样 我不知道为什么要存一年,不过有些就 如果他一年出一次的话,那我 就算存一年,我只是得一份而已,我觉得ok的 要看量有多少,用API 可以的,不过 不过,如果量多就
 
-SPEAKER_02: oh then i think you should you should create i went to visual make a big one first because i really can't see this one very correlated with this thing i can't see it yet and uh and another thing for the action item is the it will input us uh for the value for for the common call total pay to cost or all the specific costs something like that okay um good okay and we we are confident that uh we can complete uh this input this week right john and dominic yeah we're going to do this
+Wil: 这样说,我觉得Iniso可以再谈的 因为我们真的要跟business合,究竟他们会有多少 然后从而看究竟Iniso的量有多少的 反而你说的我daily delta 因为我assume是daily升,你们现在拿sale都是daily升的嘛 daily的嘛,你们那边
 
-SPEAKER_13: we could on the other hand but uh why are we going to discuss this item is whether the ultt solution could could be utilized by amh as a assumption that would be the a copy of co-design decision okay as a key factor oh so you said that so you'll consider i don't know how we're going to i remember
+Kyle: 是的,daily
 
-SPEAKER_11: utlt is based on power platform right power platform solution for now power platform is recently changed to contain i think if you extend the use case it will be a hard for it is it should not be extending new usage but for it yeah therefore i think you should looking forward on the solution yeah i i got you i got you because we would like to separate the
+Wil: 我assume我们这里都是daily,这里可能我们需要问sale的 同事就是我daily的几个月份文件 这个KMS里面应该会有 一个记录 然后之后那件事就是说,我们刚才探讨的是 用一个push和pull嘛,那我filebase还是API,如果是真的API,大家都觉得这样去做的话 是好点这样的API,反而另外一件事就是,我想问在wealthy intelligence里面 你们比如说,你经过API去拿,除了说我知道了URL之后 其实 你还需要什么data,有没有需要其他任何的metadata
 
-SPEAKER_13: power platform start with the uh um we so we we call so so we call ai engine to make the price as dynamic that's good so so so we would like to see if the ultt call engine for the uh price which is we we could utilize but how we're going to integrate with the modernized fund then that would be another topic so if we assume we could utilize them dynamic pricing engine as assumption that would be make us much more easier then we will separate this part with the future finance for the I think display as integration with the core engine would that be more much more easier for us I think every we can talk
+Alvina: 我现在就想问一下,如果是在那里,那里的那个
 
-SPEAKER_11: offline yes which yes well yeah yeah okay right can I just ask quickly
+Kyle: 要看下,要看下,例如是那个 那个document的 那个分类 然后sale daily还是weekly report 跟着那个 date update的date 然后就去哪个
 
-SPEAKER_10: Dominique are you discussing those points with way Shanho
+Alvina: publish date,update的date,然后那个是哪一个公司的
 
-SPEAKER_11: hey no no please get get them on and Kenny his her call it yeah okay any mess well yeah because this is like a love capability directly on the landing team
+Kyle: report来特斯拉,或者什么类似的metadata 要的,因为我们要去
 
-SPEAKER_10: so they will be best to be able to get accommodate was the target state what will be the common capabilities that can be like either converging or or like separate that that's quite important yeah and I will offline discuss how I'm going to make this cool beautiful
+Wil: 老实说,里面呢,我不知道你们写的 或者那个solution有没有facetable 因为有某些data,其实你们是就着你们CIO平时写的手法来做的 我都要看下我们CIO的手法是否也是这样的 我不知道这件事是如何,可能这件事会有所影响,但是那个问题是
 
-SPEAKER_13: decided together let me double check with the casting because last week we
+Kyle: 要看你们恒生的business,它怎么用那个variantation 因为 我们拿回这些data,其实要做 那个 起个vector 然后你做回那个indexing trunking那些东西,它怎么search 它那个question bank是怎样的,大概 你如果你是做过RAG,你要做trunking,suppose你都不会
 
-SPEAKER_08: also engage with them to to come up the similar conversations all together but in fact I'm not quite sure if should be should we put all IT teams I I want to double check okay there should be only one line Dominic in this file
+Wil: 逐份逐份文件看的啦,你都是在说用那个algorithm去计 我做trunking,我embedding,我反而不担心去做那个unstructured 反而是你们有些structure的mapping,好像你刚才说的 一个文件,可能他们说我们要有些 asset class,例如说我这份文件其实是在说美股的周报 美股这个tag可能有associate,因为我不是based on那个 内容去 做个association,而是做tagging去做个association 这些我相信就是刚才Carol你说的,有些cathification等等 publish我理解啦,反而是company其实我不是很理解,就是我是不是要将每一个comp里面 每个company都要make it as a list 因为我们没有的嘛,我是理解的,CIO里面 所以我担心的就是如果是这样的话,这些tagging可能是怎样interpret data都摆在logic side里面 就变了其实恒生可以adopt到,从而拿到那个effect是有限 因为 本身那个data structure,本身那个source会有点不同 但是我想这样说,到底做到多少这件事,我想可能往后面再看,但是至少 可能看会不会你们有个list 去告诉我们,究竟其实有什么metadata是你们会用 是什么来的 然后看看究竟KMS那边是否可以provide,如果没有 我们这边要看怎样去解决这个问题 至少现阶段我们 谈的就是我们KMS会给一个API拿delta file 然后里面会包Metadata,就是这个file里面 有什么metadata,或者这个Daniel你再update一下 因为 拿file就没有metadata,如果是这样的话,就是说一条list 拿list的时候就会有metadata 那metadata我们可以包到什么呢 那我们就要做mapping
 
-SPEAKER_06: but yes we can check okay so let's continue then the second item will be
+Alvina: 这个ok 然后我们就拿回香港的API
 
-SPEAKER_02: the AI coaching and training and and you met with actually is our this has free being asked to do this and I think that's a good point I think that's a good point cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool One of it is mapped with the Haze smart knowledge. And then another one, the license training will be mapped with the channel items from Haze. And then for the AI coach, actually it's in the OW program now, and it's not in the VZIP. So anyway, you can take a look on that. And then, let's see the AMH quotation first. Okay, so again, it's 80, 60%. Anything you want to mention? I guess just reveal for the AMH items. No? I think it's quite similar. Because the financial. The face thing. Yeah. So we assume the 80% and that could be something different. Maybe, I'm not sure. But the fact. Yes, yes, yes. Because the smart knowledge can also include external data. That's why you think that. Yes, correct. Not all the things people build. Okay, correct. I agree. And then for the AMH quotation, it's single deployment should be 1 million. Anything IT teams want to. Discuss or want to ask. And again, I think the video team, you guys will fill out the video that the, you know, the, the copy or common cost, blah, blah, blah, in later this week before by the end of this week. Okay. And. Hello. Hello. Sorry.
+Daniel: 或者你问KMS
 
-SPEAKER_07: Hi, Paul. Yes, yes, yes. I think it's actually the three items looks totally separate. Yes. I mean, one is about training, one is about the smart knowledge. And then I went back to. Yes. Yeah. I'm not sure what it is. Oh, sorry. I think it's a way to instead of one column, shall we change to three delegates? Otherwise, for KMS or we call it a cage in image. Yeah, it's can be, I think it'd be a copier or use 18%. Or. Or even a ball. But for some other other two option, I don't know. Actually, I don't know what it is and all and have no any relation about commands. Yeah.
+Alvina: 问KMS 他们需要什么metadata
 
-SPEAKER_02: Mm hmm.
+Wil: 对了,还有一些位置如果真的没有的话,其实有多大影响对于wealth intelligence里面 因为我们CIO同时去做那个分那个 mapping的时候,都讲到明,我们的tagging都写在CIO document里面 我估计你那边做OCL拿了所有tagging的,那些tagging你就知道了 我就不想再加下去了 我们的business是可以去到这样的地步的 所以我都要看的就是,有某些位置,可能tagging里面有,我们已经拿到 或者我们要再传下去,再拿,这件事是合理的,但是我暂时担心不是全部拿到 我看到的是
 
-SPEAKER_12: Image teams, what's your view on whether we should break into three rows or three. Three sub items are under the same. Umbrella of AI coaching and training, but they are there for different purposes. They're under different technology stacks. So and the first and third item when the product. Okay. So if there's any visa, we just pay through vendor. I think that's very minimal integration with HSBC or Hansen system. And then for the second item, which Gavin just mentioned, AI knowledge. Yeah. I think at least 80% of copier. But then it's right. These two break them down into three sub items to make sure that the copier part is clear. Okay. So I have a question. Yeah. Sorry. Yeah.
+Alvina: 我走的而已 你说走都可以啦,因为我不熟悉的影片都是这样的 我的意思是你没有那些东西,就给个AI去判断,准不准 另外一件事,那些metadata的tagging 唯一的帮手就是 Synergy Synergy 所以如果我们知道了existent有什么tag,然后我们尽量map,map不到的
 
-SPEAKER_09: I do agree. I think the second item is the core or the most. Like important. I mean, in terms of our idea, internal idea for drive as the key parts, one three more like when their solution just from different vendors. Yeah.
+Wil: 我们就看看有没有解决,没有解决就听天由命,我觉得OK的
 
-SPEAKER_12: Mm hmm. So do we we sell a quote with you this Friday, maybe end of this week to look at different usage of cameras in 2027. So we have that exchange action with one night last week. Right. So this week, going to share a bit more, I mean, understand a bit more about how do we want to use. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah.
+Alvina: 如果真的不行,就建立一些rules去做,去拆啦 可以,可以
 
-Unknown: Yeah. Yeah. Yeah. Yeah. Yeah. Yeah.
+Wil: 可以,那what's next? 就可能看,麻烦Carol给我们一条list,你send给Daniel和我 share出来,Daniel就麻烦你量一量跟Given他们做一件 做这个API,这个API是support整个wealth 他没得不做的,他不做的,我要搬老板出来
 
-SPEAKER_12: Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah.
+Daniel: 我刚才问了Rollin,他们超过排了,不要紧,你照问他,他说没有,就先输了
 
-SPEAKER_02: too okay okay okay so one just sorry just one point uh one of my i see for ai coachings uh they
+Wil: 是啊,如果没有的话就找 找Alex去谈
 
-SPEAKER_03: have some knowledge management items uh maybe we can also consider uh how to uh integrate different knowledge source into single ones uh single hong kong care system so uh basically we we can have a look here as well so uh for all knowledge uh we don't want to manage it in different places but we want to centralize it into one places so uh artist you mean that uh that could be one uh
+Alvina: 因为那件事是
 
-SPEAKER_02: assist that uh this the the knowledge yeah maybe some document procedure etc using for the ai
+Wil: 你先说吧
 
-SPEAKER_03: coachings are the knowledge should also centralize as well so uh this part i think we need to take a look yeah okay
+Alvina: 没有,我说Carol你找Chinson 说一说,我觉得问题很大,Given我们已经在做这个Pattern 因为我做不到,我本身有想过做一个standalone的file movement
 
-SPEAKER_02: i i think the question is is also considering using that kms for the shooter boat
+Wil: 如果是做file movement的话,其实那个effort就变成了放在 Wealth intelligence那里,因为我们 做file movement就是,可能我会有两个file同名,一个就是Jason,一个就是Lon在Wallfile 明白明白,所以我只是和他说一声而已,先让他听一下
 
-SPEAKER_10: also as a grounded source of knowledge leo do you plan to do that also yeah i think so i think i think in general we can
+Alvina: 应该没问题 但是你们什么时候出呢
 
-SPEAKER_09: we can we can keep some like uh placeholder rights for the kms
+Wil: Business的口吻当然是越快越好
 
-SPEAKER_00: as uh as knowledge provider it can be provided to like integration yeah so we can put some
+Alvina: 我看到Tony恒生都没过,你们现在出什么,Viltel还是CNBC CNBC就预了下年一Q出的
 
-SPEAKER_09: placeholders that uh it colleagues things like appropriate yeah okay if i may ship in uh well
+Wil: 恒生Viltel要做先 恒生Viltel本身说不出 但是两个星期之后突然间就说要,又是9月10月,突然间说要
 
-SPEAKER_08: for the kms uh uh areas it's more like on uh data platform related so uh the usage of the ai uh use case or solutions partner with the the data tag team we can further discuss on it it's more like on data platform related so uh the use case or solutions designer or architecture
+Alvina: 总之他说
 
-SPEAKER_02: uh perspective yeah it's fine and uh one thing i want to ask is that uh for the one million dollars uh for these initiatives okay that may actually most of them come to the uh kms well the other one we need to call again because i think that for this one is this one one thousand I think the computer cube. Sorry, guys. Why it suddenly changed? Wait a minute.
+Wil: 突然间就说我们老板要出了声,要这件事,你IT死出来了 那种情况
 
-Unknown: Okay.
+Alvina: Tony知道的嘛,因为我看他上个星期才做了一个
 
-SPEAKER_02: Good. So because I find that for this one, it's calling 1,000K or 1 million.
+Wil: 那个问题是,就算,我这样说,就是我们的solution先不要理会他有没有resources,因为他有没有resources 不影响我们的solution 除非我们有两个option,一个是要浪费时间做点 但还是要看究竟哪个叫做合理点,proper点 这样 我想可能这样说吧,看你们那边会不会都可以问到,比如Twins,如果做一个file base的话 究竟是怎样,因为 file base里面都有effort 我觉得是看有没有什么大家拿出来称,因为暂时我觉得
 
-SPEAKER_13: So actually, the majority is going to the KMS, right?
+Alvina: 还有一个考虑的,你们其实一天会有多少,应该不多的
 
-SPEAKER_02: Well, the other two. When we break into a nice, we need to call. Am I right? Or there's a distribution like 100K for this one, 200K for this one.
+Wil: 我问回,这个我问回
 
-SPEAKER_12: We do have a high level splits of the cost here of these three items.
+Alvina: 如果你说一天 一天 50-100条 拿不是问题 拿完之后都要process 是不是真的这么完美地,六个小时内做完呢 我当我半夜 cut off 12点 你们又搞了两天
 
-SPEAKER_02: So I mean, they combined for 1,000K. So we need to do the distribution again. Okay. Then I'll give it to you guys. Okay.
+Wil: 我明白,我明白,所以其实 如果你这样说的话 如果真的要这样cater 理论上file base是最理想的 因为我就不断搬file过去,你们consumer就抹走 这个是最理想的
 
-SPEAKER_12: Sorry. So for this item, I think, how much Hang Seng put in the plan?
+Alvina: 所以要看量,如果你说 没有的,每个礼拜 只有几份,一天几份,可能weekend多一点 但是weekend你不用开行嘛 就是礼拜天慢慢做都可以 那 我觉得API都ok的,如果你不是说每晚有几十份
 
-SPEAKER_02: Oh, you mean? Okay. Sorry.
+Wil: 我要问一问,但是你提完我之后,我又突然起了一条筋,我觉得file base好像 安全点
 
-SPEAKER_12: So for us, it's three items, 1 million together. So Hang Seng. By the way.
+Alvina: 两种也好也不好
 
-SPEAKER_07: Hi. Hello, David. Hi. Please tell me. We all have meeting with an IPC this Wednesday and confirm in order to confirm the requirement. Yeah. I think maybe I will ask a message. I think. Yeah, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool
+Wil: 我觉得这样说吧,我as Aki 在座大家都是architect 如果我用API call可能叫做more pretty点,但是问题是我cater不到你们刚才说的量 因为他突然间真的有些东西突然间cater 真的会出的话 我因为 我on daily的话,我API不够facible enough 除非我会有个,你们那边会记住了 我上次ask的是这个时间 然后呢 你给了我一个list,我还会记录下我哪几个success,哪几个file 我处理不切 下一次我再怎么separate,怎么处理,如果不是的话,我没有这个 catering的话,我resilience是顶不到的
 
-SPEAKER_02: knowledge. Actually, I think it's the same 8060 or different you need to be working for the Haze smart knowledge. Smart knowledge only.
+Alvina: 因为现在我们问INR,是daily的吗
 
-SPEAKER_11: Smart. Okay, okay. I'll take a look. But I think a similar should be Yeah, let me
+Kyle: daily的,但是我back回来一点,因为 INR去API那边metadata很齐张 但是如果 如果是conference 你KMX那边的metadata 有多少呢,我就想 我都不知道 先探讨一下
 
-SPEAKER_02: Yes. Yeah, because the concept is the same. I mean, and I can put first but you can be later I hide it in yellow. And then for this one for Haze the quotation for the whole SMS sorry, the smallish is 1.7 million dollars. Yeah, but I think I'm not sure you just include this. But of course, it's related to the small as well. There's some some correlation but for the whole item, you will be 1.7 million is the big items. Any question or for the teams anything you want to supplement for this 1.7? 1.7 million? USD?
+Alvina: 我的integration metadata 没有人回答,要business下场,还有要看report
 
-SPEAKER_12: No, Leo, I think the number you put on his eyes like five times more than I put on the AMX side. So we're looking to know what do plan to do if you want to call fun on things that you think of that I think that's good opportunity.
+Kyle: 回来INR,是daily,我们是去callAPI,去识别到哪些是 Delta参与的document
 
-SPEAKER_09: But first person not I don't have the right to put a value right if I will put it even higher. But you find a scope. You just make the order of a lot. I think it has several items. So you see like, for example, there is not isn't is not limited to the long list to branch user, right? There are some like CPM users, they also use that.
+Alvina: 但是他是怎样的,他是一条API问完,他给了我list,然后我cache 我把delta的list放到staging 然后逐个去拿,还是怎样的
 
-SPEAKER_00: So there are some quotation. And also, I think one specific asked
+Kyle: 我要出场 等一会
 
-SPEAKER_09: by or hello, WPB, specifically Randy's like, because for the cat ball part, there'll be also some knowledge, knowledge base and maintenance, things like that. So she's basically there was a previous item and their digital side and also AI for the knowledge management. I mean, how to use the internal knowledge and then pass to, to to to to tap out things like that. So basically, there are two large items under so why is like specific for for for the smart knowledge. And then there is another part for the knowledge, like refinements, we can be readily available to across different like channels. So that's why this quite high value, but but I think that's probably that the only item I see has higher value.
+Alvina: 对啊,你讲conference 对的,可以称用filebase,或者用API 我今天也找个时间问一下 因为如果你们那边,我是不是都拿了你的list,我慢慢consume
 
-SPEAKER_01: Yeah, but I think happy to change on Friday if I see, I do
+Wil: 就跟user说,我们mode是t-1,但是有时会delay 这个是其中一个,但是如果说我总之搬过来了,你们慢慢consume的话,照理说你们就更clean 因为你们做的东西就是,总之我看到 file有10个,就做10个
 
-SPEAKER_09: think most of the items should be should be cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool on from two sides okay and i have one question indeed to the business architect um
+Alvina: 没错,我就不需要说,又要cache低,然后又要记录下哪个record做了,哪个没做
 
-SPEAKER_02: so uh we just use this as a sample uh just imagine is the kms for image and case for haze and we have different code and then uh we have different you know amj specific or hay specific cost for this one how you know how we can consolidate the bill because just like for this one uh just use one thousand uh one thousand one one million call for the image and then we have a specific cost and then we call 1.7 million for for the hay and as well here again we have the age haze and uh hey emission hay specific cost item uh mosaic will copy together so how we can you know for this pair how how we can indicate the cost surprisingly shall we after after the consultation maybe we will be you know two million for to copy together for the kms for both image and hate i just make a example for two million then these two rows they will be duplicate two million two million and the same am specific cost same hay specific cost uh or they will be different i don't know how to indicate for your post processing oh poor so the top i the top item here is from amh
+Wil: 你里面的logical似乎更麻烦
 
-SPEAKER_05: the bottom item here is from ace yes and and and they are related this and just for example just
+Alvina: 对啊,我要staging,要逐个去conference 对啊,如果不是我放在sv,那它已经有足够的sla
 
-SPEAKER_02: the easiest example is that they will be co-built these two will be co-built okay they will have
+Wil: 还有足够的resilience 我又不会再担心file loss了,那唯一的是什么呢,唯一一个不好处就是 我们没办法check到究竟那个consumption rate,我只能够check, wealth intelligence有没有这个file 但是我就没有一个figures,究竟total有多少个 我真的各自有%concern 但是你问我,我觉得 business未必需要这么real time知道,我有多少file我没consume,你要和我消多少
 
-SPEAKER_05: same score difficult build then we will duplicate the value i mean you coming yeah so um for these ones here would remain the same these are the original reference values but everything across the table so you can just copy and paste down here let us worry about how to uh finalize the
+Alvina: 但是我们web intelligence有个pick 是看source的 就是给一个rm或者staff去 所以那个我会在metadata,就是suppose如果真的有
 
-SPEAKER_02: so they will duplicate first just my sample oh just so uh image has this item and image and this item and then uh assume we have a co-build there should be some synergy then we this two will be mobile for both these two items then the final final conclusion the final output you guys and two and then say copy together for the submission am i right or we'll blank one of the item and then leave the other with the value oh i could only hear half half of what you just said you
+Wil: 那个我都要回你kms的url 要的要的,因为到最后如果是这样做的话,我甚至乎可以做的就是,我在kms里面做一个batch 然后就说 我自己detect到,然后我就把那个file拿过来,和一个jsonfile 那个jsonfile可能是同一个document name 然后里面就包了你们想要的metadata,或者我们可以准备的metadata 包括了那个url 那个url是kms的url,还是那个web site的url呢就fathable了 因为我可以kms在里面
 
-SPEAKER_05: were cutting in and out but this part here and this part here just for consistency just um
+Alvina: 对,所以变成了日后你再说,我们business那边真的要找,我真的要send给那个客户,这个jsony
 
-SPEAKER_02: completeness just yeah make it the same let the buses are getting more about how to figure out
+Wil: 我觉得ok,因为我个人都觉得是合理的 我没理由空口和那个 user说话,那个customer说话,我们是这样写的
 
-SPEAKER_05: the right numbers at this point i think so are the team do you get
+Alvina: 因为你给我我都会问,那你有没有一个link给我看一份document
 
-SPEAKER_02: it on an architecture team so uh if we just as a pro and because we're separating the free one
+Wil: 你自己找吧,这件事就不make sense了
 
-SPEAKER_09: we did the kms and this one we have the uh sorry as uh smart knowledge came the same thing smart
+Alvina: 但是如果我是
 
-SPEAKER_02: knowledge for this one uh we have the smart knowledge and friend for image and we have a one small knowledge from the haze then uh for for the um the quotation i've for the the uh !
+Wil: January的话,我就入后就是,我在kms里面maintain的时候,maintain完,然后showdown我就可以 扔给你的时候 你不需要 改wealth intelligence里面的logic 就已经可以做得到 这件事了 我觉得这样可能会好一点 Daniel 如果是这样,我明天跟你合作 我今天跟你合作
 
-SPEAKER_08: so the first item that one million uh or uh existing uh single deployment course estimate that one million covers uh kms only right yeah i know but you guys would input uh you know the
+Alvina: 我们也拼一下同事
 
-SPEAKER_02: yellow it covers three different things because that's right that's why i want to double check
+Wil: Daniel我跟你合作的,是两边,我想都要问的,不过如果可以做到filebase,你问我 我个人我会建议filebase 一来他cater fail之后 他做resilience那件事,ok,因为 kms知道我push是file,我就再在January过 那也同一个方法,其实可以cater到inisolo
 
-SPEAKER_08: because because how do we uh adjust uh the two roles or initiatives to merge into the one um it's quite difficult for me to comment before we can have a align the solutions or approach to uh uh build these two cases i agree dominic the deja will be the slice
+Daniel: 那还需要问他拿吗 还需要开头有一个API就拿 两类方法来的,如果file我们
 
-SPEAKER_10: of dice by like uh the sub items if you have uh for example the kms uh the initial cost estimate out of the 1 million. For sake of argument, I'm not sure how much it was, it was maybe 200k, but there was a scope for AMH that was much smaller than what HACE wants to do with regards to the overall KMS. So the key question is like what's the commonalities into the KPT that go into like a total figure and then there could be some specific ask for AMH and for HACE. But it needs to be sliced for the KPT, this is what we're talking about. When it comes to coaxing, there's a specific coaxing and then the matter of scope for AMH is the same that HACE wants and what will be the dollar figure associated to that. And last but not least is the wealth license trading. If we believe that HACE will reuse the wealth license trading solution, what will be the enhancement and investment? Are they expected also the same for HACE? And then you can write that down. So it's basically to document an assumption on the scope and the dollar figure associated to that between HACE and HSBC.
+Wil: 两边都consider,但是纯粹on solution wise 我暂时觉得 一个用API拿delta,再逐个file拿 vs kms去做push,放到sv,然后wealth intelligence 自己consume filebase有个好处就是de-couple 我知道我搬file过去,file我就自己再搬过 对wealth intelligence来说,我看到有file我就consume,没有file我就不consume 整件事是 multi-couple的,第一 第二就是 我可以cater inisolo 第三就是 如果我这个file死了,我日后第二天再 再兑过来,其实大家都more flexible的 这样 但是 我都想问,就是kms那边如果提供一个API的情况去做个data去拿的话 那个情况会是怎样,如果真的 filebase不work的话,我们都有另一个backup solution 我会这样建议
 
-SPEAKER_02: But I'm not sure, I don't think that could work. But I'm not sure if this approach can fulfill the business architect need finally. Because I think Martin, maybe if I'm wrong, because I think the final we want to output is that just the easiest example, this one is KMS. And HACE and AMH were allied, which has your ask in the KMS. HACE has that ask in the KMS. But these two will be combined and could be . together and we will, you know, converge, okay, or combine all the ask into a single item. Then we have a total cost. And then the total cost, we include the common cost and then the image specific cost and hate specific cost. And there is the final submission for the architect to proceed to get the funding. But if we, two items and two items should be, have different value, then I'm not sure if the architect, they can continue their work. Martin, can you comment?
+Alvina: 但我想问jonipa会做这些东西吗,因为我之前用jonipa 真的 是一个data file的形式 对呀,简单点说就是我们会将
 
-SPEAKER_05: Sorry, why would the two roles have different values? The only thing that should be different would be these two, right? Everything else would be the same.
+Wil: 我放了 放了一堆file在staging里面 然后给juniper,juniper就去吃,就说你确定会把这个staging里面的file搬去target sv这样
 
-SPEAKER_08: Well, what I learned is the first role, it covers AI coaching, KMS and well,
+Alvina: 他不会做任何事情的 我以前用juniper是set 多少点send一个file,那个file叫abc.csv 不是的,我们是可以filebase,可以fotobase的嘛,总之你把整个foto里面的data
 
-SPEAKER_02: Well, you will be put into three items, Dominic. Because the first one, I made the assumption that the first round, you know, you know, into three, nine, we have to do this. You know, we are already, and then one night we be only on the KMS or the, you know, okay. Okay. One night we be on, then this night shall be, finally, the final, finally, it will be the same, although the brand specific with the hate models, including the common, common cost, image specific cost, hate specific cost. So it's a pair. That's the objective of this exercise. So we have the same value, right, Martin? This is what we want to achieve.
+Wil: 搬过去 不会做个周快乐搬的 他唯一不好处的是 他唯一不好处的是什么呢,慢 不是guarantee的一个sla来的 他有可能是很快,五分钟里面send到,或者可能你等几个钟都send不到的 但是in close cloud我们就一定要用juniper 我们没办法,但是似乎就这样听下去 好像大家做的东西相对独立和小型的 好多 那变成我们要配合的就是 那个file naming,就是raw file的naming,和本身json data的那个file
 
-SPEAKER_05: Paul, you have some more questions. But okay, I'll try to make, hopefully make this a bit easier.
+Alvina: 那个metadata
 
-SPEAKER_04: So these remain the same.
+Wil: 那个file怎么配合呢,比如说我见到这里,我就改了个 后面的extension做json,我就expect是拿到那个metadata 第二就是那个meta file里面的structure是怎样,就只配这两样东西 那似乎少点东西配合
 
-SPEAKER_05: Don't touch these. Dominic, what you're saying is what if AMH is more brain specific and Hayes has less brain specific, meaning AMH is asking for more in this case. Is this what you're talking about?
+Alvina: 是的
 
-SPEAKER_08: Not quite. Indeed, if everyone, maybe just me, if everyone believes that, okay, the KMS mentioned in row one is more or less the same as row two or should merge together, yes, that is the common cause. We should do that. We should join up for these two cases. But for those specific items listed in two rows, that is quite different somehow, I believe. So the specific cause under AMH and Hayes will be different from each other on the row one and row two, correct?
+Wil: 还有error handling就是各自理会,我们不需要大家夹大家的error handling
 
-SPEAKER_12: Sorry, I'm... I think, so sorry, guys. I think we spent 10 minutes. We've got any outcome on this point. I want to recall, I mean, last meeting between Cass and Laura, I think, Leo, you mentioned for two items that were not in your list before, AI coaching and WLT, first, you hand-send this to create a new row, right?
+Alvina: 还有很多时候升回,我之前问过他们,很多时候都是用it support 不知道为什么对加 那条link有事
 
-SPEAKER_09: Because that's something you want.
+Wil: 你说的是 url base API base
 
-SPEAKER_12: I think you just create these two, then my item can break down into three sub-items and then correspond to your three items. Then we can make things easier. I agree. I think Chino agreed, David.
+Alvina: 可能是,API死了又拿不到,其实最后都是用it去 是呀,这个最通常,为什么你吃不到,可能是
 
-SPEAKER_09: I think Chino has already created two items. But Paul, I think you can double confirm with Emily. So I think what we can do is like AI coach and AI training. So we have, I don't know, a common cause, like say for example, 200K. And then AMH item become 800K, right? 1 mu minus 200, 800K. And ours is 1.7. And then we can see, okay, if this 1.7, KMS and AMH KMS are the same scope, like maybe we add them together and then apply a ratio or something like that to make it natural party. Do you think that makes sense? Or... Okay. I agree. We spent 10 minutes on this one. I think we can... Okay.
+Wil: 我最担心的就是,他的API不是做到 不是做到,我拿n-1或者n-2,我死了一只,我再拿过,我怎么拿呢 然后就要,我要特意去找哪一个发生死了 那件事就算我那边排行公司也有这么generic的API 你那边又要cater这件事
 
-SPEAKER_02: I agree that we will break into three items and then IT team piece, you know, input the federal value on this one. I think I believe you guys can finish by this week anyway for the submission. Okay. And then we'll go into the third item. Let me find. Okay. The federal value there, I think it's more related to the... Okay. For this one. Let's see. If we copy this item, then AMH need to add, you know, a dummy or add a new row to pair with this Haste items. And okay. It's very good. For the first rank, for the architecture view, maybe, Ivan, you can take a look.
+Alvina: 是啊 是啊
 
-Unknown: Okay.
+Wil: 如果你那边有cater,大家也要cater 那些effort都大了,不如用回我file base 我宁愿推file base 是啊,还有你会有很多API traffic的嘛
 
-SPEAKER_02: And the front end and the back end common percentage. Okay. So, you can see the data, I think. Okay. Okay. And then for the ID code, for the IDNs, anything you want to mention or want to raise out? For this item?
+Alvina: 如果要reload啊,或者 不知道为什么
 
-SPEAKER_00: Hello. I input this figure for IT. There is some prerequisites criteria I list in the column U. The solution, I assumption based on the Fano Labs with the STT function and only base storage for the core script and also the corner organizer as the AI service agent. And then the CRM, SFA from end, maybe MSD or MWS for the UI UX part. So, this is my assumptions on my estimation.
+Wil: 是啊,还有我觉得对我们来说呢 KMS我prefer去宁愿自己在1月的div file放在某个地方 好过他provide一个API出来,其实是否有很大的reusability,其实又不一定
 
-SPEAKER_02: Okay. Okay. So, Tim, any question for this ID quotation or the assumption? If no, then I mean, maybe we can, you know, just copy this row and then we run as a, you know, a pairing. Okay. No other question? Then we'll... Do you guys hear me? Hello, hello, hello, hello. Yes, yes, yes. We just show that my connection is not. So, I'm referring... Okay. Let's continue. Is that... Oh, okay. This one is AI channel 003. Okay. This one. This has copilot. Again, this one is a COBIL item. And I think if we agree to COBIL and AMH build it to add a duplicate row for this thing, and let's see. Ah, where's the story details? For the architect, can you, you know, what you want to explain or what some, anything you want to add? Yeah, maybe this is where maybe I have some fine tune on the just because this may be
+Alvina: 这样吧,我们暂时
 
-SPEAKER_04: have some business logic in the or band, but I think at least maybe 90% at least because there will have some assumption because... Okay. So, I think that's a good question because for the self copilot, we will using the internet data and then we will using the RMP, which is moving to the moving to the my workspaces. So, I'll give them that those are those already have some roadmap on there. So, given those roadmap will be implemented next year or start to implement it, given that it will be higher COBIL percentages. Okay.
+Wil: 按着两个方向先啦
 
-Unknown: I see.
+Alvina: file base好像比较好点 问问大家,问问lgmateam的意见先啦
 
-SPEAKER_02: Okay. And then for the for the bank is also 90% or... Yeah, not around 90% because maybe some sub yeah, maybe some agent logic about the business
+Wil: 是啊,然后之于effortwise可能就要靠他们啦 我就问回,我就问回CIO的同事,或者我们那边,究竟大概量是多少啦 但是如果用这个方法的话,量应该不算很大问题
 
-SPEAKER_04: process that maybe have some fine tune languages, involve some AMH side effort, but the technicals are all on solution wise, it will be ready once those system are ready in AMH side. So, it will be it will be ready for that.
+Alvina: 我觉得 我们暂定去这个方向先啦
 
-SPEAKER_02: Okay. Let's continue. And then for the ID code, anyone, maybe it can't you can't hear you again. Oh, yeah.
+Wil: 那我看一下,尝试 我希望有时间send回个wrap up的email啦,我记得不记得而已因为 这样啦,Daniel你没有什么特别问题呀,on这个sing up
 
-SPEAKER_00: Yes. My quotation, following Vue's assumptions, we will have some data platform providing the customer data and entire data for the data system service to provide the data to the customer. So, we will have the data to provide the latest language to as a code. And then we have some knowledge platform to provide the VCO news. The number four is the contact organizer to serve as the agent service. And the last one is the RMP, we call CRM for that. So, it will be my workspace. So, AMH could also be leveraged for that. Okay. I just have one question.
+Daniel: 是啊
 
-SPEAKER_02: Is that, okay, if Vue said that it is like the design can be code built. So, I'm not sure, you know. The portion. Yeah, the portion. Okay, it could be different logic, but it's just a question. You can explain it. Is this reasonable that the specific cost will be, you know, when you combine is more than the common cost? Because you combine this 1000 will be the specific cost. Well, the common is only 800. But Vue said that, or Vue assumed that each can be 90% can be code built.
+Wil: 你觉得
 
-SPEAKER_00: Depends on the, if AMH following our UIU requirement and the agent workflow from, the agent workflow. I think the. Yeah, I understand.
+Daniel: 我唯一的东西就是 如果one off的话呢 其实他就只不过我们都会谈到,几时几月这样子 多久的伤害出来,一次就夹,但是如果你之后再有其他file type 就每一次都要夹一次啦,这个就不像是一样
 
-SPEAKER_02: Because if you assume that AMH can totally follow the current Haze design, so you can, you know, then maybe, or you assume that AMH will have some brand specific requirement on the UI, then you will need some more budget for the specific AMH. Yeah, I put some buffer for the AMH specific.
+Alvina: 是啊,我们现在又遇到,当初就是从古初开始呢 那个vcr可能support三类document的啦 可能是CIO weekly 或者daily digest,ingest那些这样啦,然后呢 其实我们现在on going每一个月都帮他们加约的document type 香港也是这样的 所以其实 加document type的type意思是指category 是啊是啊是啊,projective有个confirmation 他们有成 初初只有五六种document啦 CIO view 现在记到这么多,其实这两年他们 不停地做
 
-SPEAKER_00: Oh, then you set my suggestions.
+Wil: 我理解 我的理解是他们那些所谓的category是virtual attacking来的嘛
 
-SPEAKER_02: Then Vue and Cathy, maybe you guys, you two can align. Okay. You know, you two shall, based on the same assumption, then you two can align on the number. I'm not challenging you Cathy, you can keep this number, but maybe Vue, you may consider maybe it's 70% or 55% code build for the front end. Then you be. Actually, it depends on the details requirements as you know.
+Alvina: 是啊是啊,是不是virtual,他们都是那个document的名字
 
-SPEAKER_04: If the business think, or the distribution or the UX design is not that similar, then they will have a bigger percentage. A bigger percentage of customized or others. And that ask, it will turn down the code build. But the problem is the percentage is means once the requirements align, then it will, all the coding will build on the My Workspaces. Then those coding can be reused or even some core library or whatever. But it is not about the UI or the prompting. Just like I mentioned. The prompting is totally just a data. It's not a system itself. So in my assumption, the percentage is affected is because say, if we build the front end coding in say our MSD currently, but not in the My Workspace, then the percentage of course will be lower and also cannot be reused. So this is the assumption.
+Wil: 名字difference不是很合理的吗
 
-SPEAKER_02: So if the percentage is about from a heavy. Yeah.
+Alvina: 他们是这样的,category全部都是CIO来的,但是report名 其实你看到他们每个report的frequency都不同啦,calcification不同啦 然后expiry time都不同的 当初没有那么多的,现在加一下呢,我们下面还在做的 spirey有不同的
 
-SPEAKER_04: Yeah. Yeah, cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool
+Wil: 我不知道,我觉得
 
-SPEAKER_02: cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool Okay, again, I think if we agree to co-build then it shall make a double role for this item. And for this one, I see that Dave, you have some question, anything you want to mention about this?
+Alvina: 他们的expiry不同,应该是给我们看的,我们自己用的 是的 我的意思是他们每一年都会加几份report的
 
-SPEAKER_12: As before, I think in Hang Seng it wasn't digital, but I heard from Claude that Kim make it in a lower priority. So for now it is unfunded in Hang Seng. That's what I heard from Claude. For us, for him...
+Wil: 我在想是不是group了他们,就是当是我有几类group,这个group A就是这样的 你加file,我带个问题 file name照样不应该影响到那件事的嘛,我们不会基于file name来做logic的嘛
 
-SPEAKER_02: Actually, Davey, sorry. What I heard from Claude is that CAST mentioned... He mentioned that the passkey is also in a lower priority. He told me that. So it is correct or it's a miscommunication?
+Alvina: 最主要应该是这些 要看放了knowledge bay的那个多久啦 接着要拿回来看,retention放多久啦 所以就group了他们,比如说我不会profile给他们任选的嘛,而是说
 
-SPEAKER_12: The passkey is separate. So in this item, there are two things, right? Agentic AI authentication and passkey. The first part of it, agentic AI authentication, it is not the priority for digital, but it's a priority under agentic commerce, which is under the lending business. So I think I put this comment. I think four weeks ago when I first saw the list. So it doesn't matter if it's not a priority under Hang Seng digital. We just want to show that it is under priority for HMH. Just not under HMH digital, but lending.
+Wil: 比如说type A 你就是resilience那么多 然后这个那么多 我们去谈那个group是容易的嘛
 
-SPEAKER_02: Okay. In the lending. Okay. Anyway, obviously we will build the value. Davey and Paul, what's that line, if I recall correctly, about both HMH and digital?
+Alvina: 是的,那个integration是一样的,但是他们这里我们为什么要做呢,很多时候都是要做logic simulatty check的logic,所以你看到,我的意思,我想带出的意思就是可能今天 我明白我明白,20份report,每一年都在加一下,所以用batch,pro,你one of low 就容易点搞 哦,我明白,我明白
 
-SPEAKER_10: Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Yeah, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, cool, HSBC providing some funding to accelerate on the readiness of Asian Hub from Group AI so that it can allow to create a virtual assistant per se for different staff and different use case. Was it my understanding initially? Yeah, I think this item, so the authentic authenticate and passkey should be grouped
+Wil: 老实说 我觉得那个位置是 这个我之后大家再夹,就是比如说里面究竟我们是否可以在恒生里面和user说 只有几个category,你一是选这个,retention就一定是这么多的啦 那看可不可以这样局他们 这样就simplify这个logic 你问我,我尝试这样做
 
-SPEAKER_09: under another item. I think it's for the payment, things like that, if I remember correctly. And that one is specific for collaboration with Group AI platform on the local agent mode, things like that. So Hong Kong Pillar can work closely with GAIP team to enhance the features specific for Hong Kong Pillar. Which effectively is to allow for any of our colleagues to create their own agent equipped
+Alvina: 他们通常后加的东西 就是这些report,他们无端端说,我们business是做多了三分之一 没有的啦,加上
 
-SPEAKER_10: with the REV. cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool base, be able to execute actions like by hooking into MCB servers, different things like this. But I don't think yet the Group AI platform agent will cope with all the needs that we need. That's why that was the idea. I'm not sure whether it's a model that we need to discuss with Group AI platform, whether they are keen on that. But that was the original intention of that line.
+Wil: 这个category,至少logical process,我知道,我只会有多少份retention是五日这样 或者七日 但是我处理logical,我比较type,那你那份document就map了,原来这个type,我在metadata里面加上 它是type really,type叫really 这样 那变成了,我不知道,我未完全踩进去看究竟logic是不是应该这样做,但是我纯粹这样想而已 这个再谈吧,我觉得
 
-SPEAKER_09: Yeah, I think we need to collaborate closely with both local IT and Hong Kong parts like Group AI IT team under David Rice. So I think that I think most of the parts should be computable. From GAIP, there are two modes. There's a high local mode and high local mode. I think we want to enhance this with funding to accelerate the implementation in Hong Kong side.
+Alvina: 我们要做的,也要看report的sample 因为我们拆的时候,他们有些东西 没有了,我等给business自己处理,或者给RTF自己处理
 
-SPEAKER_10: Correct. But the point that Davey mentioned is very correct in the ability to provide an agent function with the consent and the right to execute action. There could be different techniques on the authentication side, like on who you trust to provide a consent authority to do something. But here that line was specifically about expanding the Group AI platform agent hub solution so that all colleagues like HSBC as well as HACE can create their own virtual assistants for a given need that they have.
+Wil: 就是开播做implementation的时候
 
-SPEAKER_12: I think for Hang Seng, again, I heard from Claude. So this item was raised by IWPB and I think Claude took a reference from them and then asked whether HACE wanted it or not. And then the answer is maybe no for now. So it wasn't initiated from Hang Seng. But it doesn't matter. So for in the... In the agent commerce use case under me, in the AMX side, I put exactly the capability thing you just mentioned. So from a mapping exercise perspective, they look like similar. But then if we just disregard this IWPB thing and then let Hang Seng business to view whether the agent commerce capabilities, I mean, KYA concept, whether these are applicable to them or not, it's also OK. I think to make it simple,
+Alvina: 因为要执得 要 真的有些logic要做,才会 才会弄到 acuracy那么高
 
-SPEAKER_00: Hang Seng can disregard this.
+Wil: 我觉得这样看,如果你说我们要执的,在import里面的process 要做某些东西的 要去document去行的,不是一个generic的RAG,而是一个 per type的customer的RAG 如果真的要做到这样的话,我只能够说,就是based on user,到时候就真的 一拍一拍看,但是我不知道,我觉得那个位置 是不是真的需要做到这个地步呢
 
-SPEAKER_12: It's not... It's not underfunded anyway, right? So no harm to just disregard it.
+Alvina: 我初时也觉得不需要这样 证明他们真的这样做 不要紧啦,我们 不要紧,我们之后再做吧,我觉得试了
 
-SPEAKER_02: So we'll proceed first to see whether the follow-up prioritizations, to see what happened. And then anyway, again, for this one, maybe architect team, you can take a look on the COBIL, you know, the percentage of the COBIL for the front end and the back end. And for the other team, please also input the... the common cost and the specific cost, OK? For... By this week's submission. So I think for the AEI enablers, we have all the things. Any other questions or anything you really need to discuss? OK, if no, then I'll ask you guys a question. Whether we need, you know, a follow-up session to... Before our submission by this week. For the AEI enablers,
+Wil: 我觉得试了先,比如说我们align了一个solution 然后就各自去pass,有需要过会就过会,没有需要过会就align,至少我们align了 然后share 然后如果两边需要各自做事,就要看要多久的effort,然后再给business 坐底可能要11月
 
-Unknown: do you have any questions?
+Alvina: 但是你们现在只是做KMS的事 你们不要其他source的了
 
-SPEAKER_02: Or do you have any questions? If no, then I think we can hold it first. And if we, you know, if we really need, then we'll say, yeah, OK. But I think at this moment, we just need the teams to input the yellow value. And then that's it. We'll use it for the first submission. Any other question?
+Wil: 例如呢
 
-SPEAKER_09: If I look at the original, like, table that Kat and Laura have for the meeting together, some items, like... No, no, no. There's one item called, hey, it's like, like from the enabler on case data analytics and CRM application item.
+Alvina: 这样说吧,CIO我们之前就放了sharepoint,但是就没有integrate
 
-SPEAKER_02: So we didn't cover that item or it's like... You mean the data and you mean the CRM data one, right?
+Wil: 那好啦,然后 年头就demise 有谈过究竟是不是应该在wealth的世界做一个CIO的system的 knowledge system的maintenance 到最后呢,我们wealth没钱 大家就agree了 全世界 全世界 wealth的IT啦 wealth的IT啦 然后我们AI的case AI lead啦 Architect啦,就aligned了 我们将CIO的document放在KMS 所以对于我们来说呢,KMS就会是CIO的knowledge的source 我们就不会说 我会放一些conference,会放一些DXP 大不了的就是我这份文件可以通过一个什么的URL可以在access到 这样而已 所以暂时我见到CIO是 是standard的 然后其他的news那些东西,大家都是经MDS,refinitiv,etdat等等那些东西 那都是standard的
 
-SPEAKER_09: Yes. CRM data one.
+Alvina: 不行啦,refinitiv要改用mcp contract的问题 今早我先和Tony解释过一段 应该是refinitiv 就是LSEP 他们被人收购了,现在叫LSEP 他们说以前那张contract,dap 那些usage不是for AI的 现在应该是Business和他们在谈一份新的contract 谈完之后,就要拿market news的那个piece 应该转去call他们的mcp
 
-SPEAKER_02: CRM data one?
-
-SPEAKER_09: No, no, there is a, if you remember, or is put under AICRM001. Oh, OK. OK. Let me check. Yes, I think so.
-
-SPEAKER_01: It's the first item. So it's already cut? It's mapped to the CRM item from AMH side.
-
-SPEAKER_09: Yeah, I think the first row, like... Yeah, Paul, you can go to the first row in this file.
-
-SPEAKER_02: In this row? Yes, yes.
-
-SPEAKER_01: This one? Yeah, so this is the AMH item. And this is the Hang Seng item. So they are mapped together. OK. So they're on the code.
-
-SPEAKER_09: Yeah. So this one? This one, I think we...
-
-SPEAKER_02: Is there any IT working on this?
-
-SPEAKER_09: Oh, OK, I'm in chat.
-
-SPEAKER_02: Are we missing this one? Sorry, guys. Let me go and look at this. OK, for this one, right?
-
-SPEAKER_09: Yes.
-
-SPEAKER_02: OK, so my capabilities become AI now anyway. OK, for this one. Paul, are you covering this in tomorrow's meeting messages?
-
-SPEAKER_01: There is a meeting on messaging tomorrow, right?
-
-SPEAKER_06: Yes, I'm definitely .
-
-SPEAKER_09: So I mean, on the Hang Seng side, because I think we already overrun. But on the Hang Seng side, it's under AI enabler. I think just probably needs... I'm not sure if messaging will cover. But if messaging cover, then OK. OK. OK. OK. OK.
-
-Unknown: OK.
-
-SPEAKER_09: OK. OK. OK. OK. OK. OK. OK. cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool Sorry, I think I missed this item.
-
-SPEAKER_02: Sorry, guys. Let's spend five more minutes to this one. So again, I will repeat the content. I think you all know about this, about the CMMAI. And then any comments? I think we can view it together because these two are mapping together. So anything from the architecture view, anything you want to mention or discuss for these two items, the AI tampering? I think this name should be this one, right? I don't know why it become AI only. OK, the campaign automation and the data analytics and CRM. From the architecture view, anything you want to mention? I see that there's no applicable for this. And then there's 60% for the back end. While Haste is still bank. And Eichen, you want to, if anything you want to mention?
-
-SPEAKER_11: No. But can you tell me? Can you go back to the item? Sorry. Sure, sure, sure. A little bit left, yeah. Oh, yeah, yeah. From what I, yeah. Again, it doesn't include any customer and UI change. It looks like we are asking for a capability on enhancing the campaign, and behind there is some messaging. So I think it's a messaging dispatch to the tools, to customer. Yeah, I think, yeah, my comment is .
-
-SPEAKER_02: I think it's low fund end or low fund end change.
-
-SPEAKER_09: I'm not sure. Low fund end change, yes. Yeah, mainly back end, I would say, and staff facing. So for Haste one, there are two main item group under this one. So one is for just quick supplement because I know it's overrun. So one is from the CRM side. So CRM leads preparation. Right? That's one part, market intelligence. Another part is data . We'll keep it in hands for the data . That's more like the AI tooling on omnibus. I know AMH also have one similar tool. So I think Jason and John still online. So it's also under data . Approving air code like two months ago, something like that. So. Inside expert, you mean? I, yeah. It should be. It should be that name.
-
-SPEAKER_00: Yeah.
-
-SPEAKER_09: Because I think that they keep changing the name, right? So that part also needs to enhance. So I do see most of the items should be synergized. I think there's a lot of synergies.
-
-SPEAKER_10: I grew a few Leo. But to break it down into simple like capabilities, business capabilities, one is like a signal hub, a repository of different signals that can be enriched by Gen AI, by machine learning, anything like this. But that can be consumable by multiple channels. So we discussed about that Leo previously. So between DNA team of HACE and HSBC, they can discuss and align on that. Secondly is the campaign idea generation. I think HACE has a solution. We have a solution. So there could be a way to synergize and have the same way of having an ability to create campaign ideas. Thirdly is the affinity, like target audience. HACE has probably a solution. HSBC has a solution. They could be a solution. There could be ways also to synergize definitely. Like both points, sorry, is like the message generation. Like I know HACE wants to utilize like content 2.0, like as part of the target. We can utilize like direct LLM with problem engineering, but we can also align on what will be the target solution. And last but not least is the mess, like the whole campaign setup and every. Like I think like you have a different mechanism on HACE and actually this needs to discuss how will be the downstream mechanism. To ultimately like upload it to the downstream system, whether it is AEM, Pega, if it's like, there will be another FSA for Pega or if it's MDP. So all such things like step by step are probably very aligned between HSBC and HACE in terms of like the business process, but needs to be discussed on the solution on how much can be synergized in the longer term.
-
-SPEAKER_02: Good. Okay. So I can see that. I think these two, the APT and Knight and Caneco will be together. And I think what I did need to do is that, you know, we have different call, three million and two million for these two items. And I think after you guys, the IT teams consultation, we should have a common value for all this column, or this content, right? Maybe 3.5 million for both. And then the same value for this after the exercise. Am I right? Okay. Okay. So that's it for the meeting. Any other questions? And one quick question for the FX one,
-
-SPEAKER_09: it will be quoted by like another value stream. Yes. I assume they should do it. Not this group. Okay.
-
-SPEAKER_02: Not this session.
-
-SPEAKER_09: Because yeah, this session is only for the enablers. Okay. Okay. And also digital one, it will be also covered in another stream.
-
-SPEAKER_02: Yes. In the digital sessions. So I think in first thing, on first day, I will capture for you the IT folks to see how it's going, whether we are ready for the submissions or any other question. Okay. If need, we may need to set up another session. So the set up for a meeting to review the things again, but at the moment, I don't think so. Okay. Thank you very much. Okay. Thank you. Thank you. Bye bye.
+Wil: 这样说吧,如果转了mcp,那个integration要再谈,要再过会,问题是 我和Business那边share过 如果他转了mcp 到底他
